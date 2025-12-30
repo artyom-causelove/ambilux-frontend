@@ -1,0 +1,3 @@
+module.exports=[96443,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(61258);a.n(d("[project]/Documents/Pets/ambilux/frontend/node_modules/next/dist/client/components/builtin/global-error.js <module evaluation>"))},97832,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(61258);a.n(d("[project]/Documents/Pets/ambilux/frontend/node_modules/next/dist/client/components/builtin/global-error.js"))},99439,a=>{"use strict";a.i(96443);var b=a.i(97832);a.n(b)}];
+
+//# sourceMappingURL=c4e9c_next_dist_client_components_builtin_global-error_2bddbdea.js.map

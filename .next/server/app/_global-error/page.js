@@ -1,0 +1,11 @@
+var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/_global-error/page.js")
+R.c("server/chunks/ssr/[root-of-the-server]__1ccaaf29._.js")
+R.c("server/chunks/ssr/Documents_Pets_ambilux_frontend_36761296._.js")
+R.c("server/chunks/ssr/c4e9c_next_dist_b1270289._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__e97e32e7._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__4cb4c434._.js")
+R.c("server/chunks/ssr/c4e9c_next_dist_09a86c7f._.js")
+R.c("server/chunks/ssr/Documents_Pets_ambilux_frontend_src_app_25653a26._.js")
+R.c("server/chunks/ssr/25fc4_ambilux_frontend__next-internal_server_app__global-error_page_actions_18b3aabf.js")
+R.m(55227)
+module.exports=R.m(55227).exports

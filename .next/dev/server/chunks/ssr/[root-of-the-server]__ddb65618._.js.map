@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/1/Documents/Pets/ambilux/frontend/src/components/pages/home/video/index.tsx"],"sourcesContent":["export default function HomeVideo() {\r\n  return (\r\n    <video autoPlay loop muted>\r\n      <source src='/intro.mp4' type='video/mp4'></source>\r\n    </video>\r\n  );\r\n}"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBACE,0RAAC;QAAM,QAAQ;QAAC,IAAI;QAAC,KAAK;kBACxB,cAAA,0RAAC;YAAO,KAAI;YAAa,MAAK;;;;;;;;;;;AAGpC"}},
+    {"offset": {"line": 47, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/1/Documents/Pets/ambilux/frontend/src/app/page.tsx"],"sourcesContent":["import styles from './page.module.css';\n\nimport HomeVideo from '@/components/pages/home/video';\n\nexport default function Home() {\n  return (\n    <div>\n      <HomeVideo></HomeVideo>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;AAEA;;;AAEe,SAAS;IACtB,qBACE,0RAAC;kBACC,cAAA,0RAAC,4MAAS;;;;;;;;;;AAGhB"}}]
+}

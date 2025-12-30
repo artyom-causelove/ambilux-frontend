@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///C:/Users/1/Documents/Pets/ambilux/frontend/src/components/pages/home/contacts/home-contacts.module.scss"],"sourcesContent":[".contacts {\r\n  height: 55px;\r\n  width: 100%;\r\n  margin: -5px 0 0 0;\r\n  padding: 5px 0 0 0;\r\n\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n\r\n  background-color: var(--color-white);\r\n\r\n  a {\r\n    width: 30px;\r\n    height: 30px;\r\n    margin: 0 20px 0 0;\r\n  }\r\n\r\n  span {\r\n    margin: 0 0 0 60px;\r\n    font-family: 'Helvetica', sans-serif;\r\n    font-size: 18px;\r\n    font-weight: bold;\r\n  }\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;;;;;AAYE;;;;;;AAMA"}},
+    {"offset": {"line": 26, "column": 0}, "map": {"version":3,"sources":["turbopack:///C:/Users/1/Documents/Pets/ambilux/frontend/src/components/pages/home/video/home-video.module.scss"],"sourcesContent":[".wrapper {\r\n  overflow: hidden;\r\n  position: relative;\r\n\r\n  width: 100%;\r\n}\r\n\r\n.video {\r\n  width: 100%;\r\n}\r\n\r\n.image {\r\n  position: absolute;\r\n  bottom: -100px;\r\n  left: 50%;\r\n  width: 500px;\r\n\r\n  object-fit: contain;\r\n  transform: translateX(-50%);\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;AAOA;;;;AAIA"}},
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":""}}]
+}

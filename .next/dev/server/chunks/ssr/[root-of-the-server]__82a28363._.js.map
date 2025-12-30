@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/1/Documents/Pets/ambilux/frontend/src/app/about/page.tsx"],"sourcesContent":["export default function About() {\r\n  return (\r\n    <div>\r\n      <p>AAA</p>\r\n      <p>AAA</p>\r\n      <p>AAA</p>\r\n      <p>AAA</p>\r\n      <p>AAA</p>\r\n      <p>AAA</p>\r\n      <p>AAA</p>\r\n      <p>AAA</p>\r\n      <p>AAA</p>\r\n      <p>AAA</p>\r\n      <p>AAA</p>\r\n      <p>AAA</p>\r\n      <p>AAA</p>\r\n      <p>AAA</p>\r\n      <p>AAA</p>\r\n      <p>AAA</p>\r\n      <p>AAA</p>\r\n      <p>AAA</p>\r\n      <p>AAA</p>\r\n      <p>AAA</p>\r\n    </div>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBACE,0RAAC;;0BACC,0RAAC;0BAAE;;;;;;0BACH,0RAAC;0BAAE;;;;;;0BACH,0RAAC;0BAAE;;;;;;0BACH,0RAAC;0BAAE;;;;;;0BACH,0RAAC;0BAAE;;;;;;0BACH,0RAAC;0BAAE;;;;;;0BACH,0RAAC;0BAAE;;;;;;0BACH,0RAAC;0BAAE;;;;;;0BACH,0RAAC;0BAAE;;;;;;0BACH,0RAAC;0BAAE;;;;;;0BACH,0RAAC;0BAAE;;;;;;0BACH,0RAAC;0BAAE;;;;;;0BACH,0RAAC;0BAAE;;;;;;0BACH,0RAAC;0BAAE;;;;;;0BACH,0RAAC;0BAAE;;;;;;0BACH,0RAAC;0BAAE;;;;;;0BACH,0RAAC;0BAAE;;;;;;0BACH,0RAAC;0BAAE;;;;;;0BACH,0RAAC;0BAAE;;;;;;0BACH,0RAAC;0BAAE;;;;;;;;;;;;AAGT"}}]
+}

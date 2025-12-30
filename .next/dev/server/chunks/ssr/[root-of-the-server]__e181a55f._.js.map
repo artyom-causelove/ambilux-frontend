@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 17, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/Documents/Pets/ambilux/frontend/src/app/objects/[id]/page.module.scss [app-rsc] (css module)"],"sourcesContent":["__turbopack_context__.v({\n  \"wrapper\": \"page-module-scss-module__XgLNgq__wrapper\",\n});\n"],"names":[],"mappings":"AAAA;AACA;AACA"}},
+    {"offset": {"line": 42, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/1/Documents/Pets/ambilux/frontend/src/app/objects/%5Bid%5D/page.tsx"],"sourcesContent":["import styles from './page.module.scss';\r\nimport { useRouter } from 'next/router'\r\n\r\nexport default async function Object() {\r\n  const router = useRouter();\r\n\r\n  const response = await fetch(`http://localhost:3001/objects/${router.query.id}`);\r\n  const data = await response.json();\r\n\r\n  return (\r\n    <div className={styles.wrapper}>\r\n      {data.files.map((file: any) => \r\n        <img\r\n          alt='Object picture'\r\n          src={`http://localhost:3001/${file.path}`}\r\n        />\r\n      )}\r\n    </div>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;AAAA;AACA;;;;AAEe,eAAe;IAC5B,MAAM,SAAS,IAAA,uLAAS;IAExB,MAAM,WAAW,MAAM,MAAM,CAAC,8BAA8B,EAAE,OAAO,KAAK,CAAC,EAAE,EAAE;IAC/E,MAAM,OAAO,MAAM,SAAS,IAAI;IAEhC,qBACE,0RAAC;QAAI,WAAW,2MAAM,CAAC,OAAO;kBAC3B,KAAK,KAAK,CAAC,GAAG,CAAC,CAAC,qBACf,0RAAC;gBACC,KAAI;gBACJ,KAAK,CAAC,sBAAsB,EAAE,KAAK,IAAI,EAAE;;;;;;;;;;;AAKnD"}}]
+}

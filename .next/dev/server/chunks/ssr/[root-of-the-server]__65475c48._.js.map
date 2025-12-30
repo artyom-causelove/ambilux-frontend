@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 17, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/Documents/Pets/ambilux/frontend/src/app/example/page.module.scss [app-rsc] (css module)"],"sourcesContent":["__turbopack_context__.v({\n  \"wrapper\": \"page-module-scss-module__nd_2Aq__wrapper\",\n});\n"],"names":[],"mappings":"AAAA;AACA;AACA"}},
+    {"offset": {"line": 24, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/1/Documents/Pets/ambilux/frontend/src/app/example/page.tsx"],"sourcesContent":["\r\nimport Image from 'next/image';\r\n\r\nimport styles from './page.module.scss';\r\n\r\nexport default function Example() {\r\n  return (\r\n    <div className={styles.wrapper}>\r\n      <Image\r\n        alt='trid1'\r\n        src='/example/trid1.avif'\r\n        width={980}\r\n        height={566}\r\n      />\r\n      <Image\r\n        alt='trid2'\r\n        src='/example/trid2.avif'\r\n        width={980}\r\n        height={566}\r\n      />\r\n      <Image\r\n        alt='trid3'\r\n        src='/example/trid3.avif'\r\n        width={980}\r\n        height={566}\r\n      />\r\n    </div>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;AACA;AAEA;;;;AAEe,SAAS;IACtB,qBACE,0RAAC;QAAI,WAAW,iMAAM,CAAC,OAAO;;0BAC5B,0RAAC,oLAAK;gBACJ,KAAI;gBACJ,KAAI;gBACJ,OAAO;gBACP,QAAQ;;;;;;0BAEV,0RAAC,oLAAK;gBACJ,KAAI;gBACJ,KAAI;gBACJ,OAAO;gBACP,QAAQ;;;;;;0BAEV,0RAAC,oLAAK;gBACJ,KAAI;gBACJ,KAAI;gBACJ,OAAO;gBACP,QAAQ;;;;;;;;;;;;AAIhB"}}]
+}

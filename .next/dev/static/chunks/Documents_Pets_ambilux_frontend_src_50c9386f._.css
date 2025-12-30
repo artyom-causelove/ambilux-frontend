@@ -1,0 +1,41 @@
+/* [project]/Documents/Pets/ambilux/frontend/src/app/globals.scss.css [app-client] (css) */
+html, body {
+  background-color: #000;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* [project]/Documents/Pets/ambilux/frontend/src/components/header/header.module.scss.module.css [app-client] (css) */
+html, body {
+  background-color: #000;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header-module-scss-module__sUM59q__header {
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=Documents_Pets_ambilux_frontend_src_50c9386f._.css.map*/

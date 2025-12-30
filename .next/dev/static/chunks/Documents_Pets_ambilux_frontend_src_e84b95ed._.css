@@ -1,0 +1,87 @@
+/* [project]/Documents/Pets/ambilux/frontend/src/scss/globals.scss.css [app-client] (css) */
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-blue: blue;
+  --shadow-vertical: 1px 2px 5px 0px #0000004d;
+}
+
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  background-color: unset;
+  outline: unset;
+  border: unset;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: montserrat;
+  font-weight: bold;
+  font-style: normal;
+  src: url("/fonts/montserrat-bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: montserrat;
+  font-weight: light;
+  font-style: normal;
+  src: url("/fonts/montserrat-light.ttf") format("truetype");
+}
+
+/* [project]/Documents/Pets/ambilux/frontend/src/app/layout.module.scss.module.css [app-client] (css) */
+.layout-module-scss-module__Nm6aKG__body {
+  position: relative;
+}
+
+.layout-module-scss-module__Nm6aKG__background {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+}
+
+/* [project]/Documents/Pets/ambilux/frontend/src/components/header/header.module.scss.module.css [app-client] (css) */
+.header-module-scss-module__sUM59q__header {
+  z-index: 1000;
+  width: 100%;
+  height: 40px;
+  box-shadow: var(--shadow-vertical);
+  background-color: var(--color-white);
+  justify-content: center;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.header-module-scss-module__sUM59q__item {
+  cursor: pointer;
+  width: 160px;
+  padding: 18px 0 0;
+  font-size: 16px;
+  position: relative;
+}
+
+.header-module-scss-module__sUM59q__item:hover:before {
+  content: "";
+  background-color: var(--color-black);
+  width: calc(100% - 30px);
+  height: 5px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*# sourceMappingURL=Documents_Pets_ambilux_frontend_src_e84b95ed._.css.map*/
