@@ -1,0 +1,48 @@
+.about {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 60px 45px 40px 45px;
+
+  background-color: var(--color-white);
+}
+
+.logo {
+  margin: 0 0 38px 0;
+}
+
+.description {
+  font-family: 'montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgb(16, 40, 63);
+
+  margin: 0 0 50px 0;
+}
+
+.creator {
+  margin: 0 0 47px 0;
+}
+
+.fio, .profession {
+  font-family: 'montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--color-black);
+}
+
+.profession {
+  margin: 0 0 40px 0;
+}
+
+.project {
+  font-family: 'montserrat', sans-serif;
+  font-size: 18px;
+  margin: 0 0 22px 0;
+}
+
+@media screen and (max-width: 925px) {
+  .logo {
+    display: none;
+  }
+}

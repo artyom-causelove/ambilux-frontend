@@ -1,0 +1,31 @@
+.contacts {
+  height: 55px;
+  width: 100%;
+  margin: -5px 0 0 0;
+  padding: 5px 0 0 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-white);
+
+  a {
+    width: 30px;
+    height: 30px;
+    margin: 0 20px 0 0;
+  }
+
+  span {
+    margin: 0 0 0 60px;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 925px) {
+  .contacts {
+    display: none;
+  }
+}

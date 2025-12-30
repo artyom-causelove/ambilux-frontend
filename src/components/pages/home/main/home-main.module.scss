@@ -1,0 +1,169 @@
+.main {
+  overflow-x: hidden;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px 100px 30px 100px;
+  max-width: 1175px;
+  gap: 20px;
+}
+
+.item {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  background-color: var(--color-white);
+}
+
+.reverse {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  
+  .itemInfo {
+    padding: 25px 35px 25px 0;
+  }
+}
+
+.itemInfo {
+  display: flex;
+  flex-direction: column;
+
+  padding: 25px 0 25px 30px;
+}
+
+.itemTitle,
+.itemTimeline,
+.itemDescription,
+.itemSize,
+.itemCapacity,
+.itemSquare {
+  font-family: 'Helvetica', sans-serif;
+}
+
+.itemType,
+.itemAddress,
+.itemTimeline,
+.itemDescription,
+.itemSize,
+.itemCapacity,
+.itemSquare {
+  font-family: 'montserrat', sans-serif;
+  font-weight: lighter;
+  font-size: 17px;
+}
+
+.itemType {
+  font-size: 13px;
+}
+
+.itemTitle {
+  font-size: 22px;
+
+  margin: 10px 0 8px 0;
+}
+
+.itemAddress {
+  line-height: 30px;
+  font-size: 17px;
+}
+
+.itemSeparator {
+  background-color: var(--color-black);
+
+  margin: 25px 0 30px 0;
+  width: 75px;
+  height: 2px;
+}
+
+.itemType,
+.itemTitle,
+.itemAddress {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.itemTimeline {
+  margin: 0 0 25px 0;
+}
+
+.itemDescription {
+  margin: 0 0 25px 0;
+}
+
+.itemPictureWrapper {
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.itemPicture {
+  object-fit: cover;
+}
+
+@media screen and (max-width: 925px) {
+  .mainWrapper {
+    padding: 30px 0 30px 0;
+  }
+
+  .item {
+    width: 100%;
+    flex-direction: column;
+    background-color: transparent;
+  }
+
+  .itemInfo {
+    align-items: center;
+    padding: 10px 20px 50px 20px;
+  }
+
+  .reverse {
+    .itemInfo {
+      padding: 10px 20px 50px 20px;
+    }
+  }
+
+  .itemType,
+  .itemAddress,
+  .itemTimeline,
+  .itemDescription,
+  .itemSize,
+  .itemCapacity,
+  .itemSquare {
+    width: 100%;
+    text-align: center;
+  }
+
+  .itemTimeline,
+  .itemDescription,
+  .itemSize,
+  .itemCapacity,
+  .itemSquare {
+    font-size: 18px;
+  }
+
+  .itemTitle {
+    text-align: center;
+  }
+
+  .itemTimeline {
+    padding: 10px 0 0 0;
+  }
+
+  .itemSeparator {
+    display: none;
+  }
+
+  .itemPictureWrapper {
+    order: -1;
+  }
+}

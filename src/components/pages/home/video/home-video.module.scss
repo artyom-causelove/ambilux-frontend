@@ -1,0 +1,26 @@
+.wrapper {
+  overflow: hidden;
+  position: relative;
+
+  width: 100%;
+}
+
+.video {
+  width: 100%;
+}
+
+.image {
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  width: 500px;
+
+  object-fit: contain;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 925px) {
+  .video, .image {
+    display: none;
+  }
+}
