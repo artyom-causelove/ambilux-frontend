@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import styles from './header.module.scss';
 import Image from 'next/image';
 import { useState } from 'react';
+import { useMediaQuery } from 'usehooks-ts';
 // import Link from 'next/link';
 
 const contacts = [
@@ -28,6 +29,7 @@ const contacts = [
 
 export default function Header() {
   const router = useTransitionRouter();
+  const match = useMediaQuery('(max-width: 925px)');
   const pathname = usePathname();
 
   const [menu, setMenu] = useState(false);
@@ -94,8 +96,16 @@ export default function Header() {
     }
   };
 
+  const getHeaderPos = () => {
+    if (match) {
+      return menu ? 'fixed' : 'static';
+    } else {
+      return 'fixed';
+    }
+  };
+
   return (
-    <header className={styles.header} style={{ position: menu ? 'fixed' : 'static' }}>
+    <header className={styles.header} style={{ position: getHeaderPos() }}>
       {
         Object.entries(headerItems).map(([key, value]) => {
           if (value.type === 'button') return (

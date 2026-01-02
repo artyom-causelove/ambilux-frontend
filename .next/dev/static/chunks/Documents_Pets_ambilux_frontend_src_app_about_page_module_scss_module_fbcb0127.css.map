@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///C:/Users/1/Documents/Pets/ambilux/frontend/src/app/about/page.module.scss"],"sourcesContent":[".about {\r\n  max-width: 980px;\r\n  margin: 0 auto;\r\n  padding: 60px 45px 40px 45px;\r\n\r\n  background-color: var(--color-white);\r\n}\r\n\r\n.logo {\r\n  margin: 0 0 38px 0;\r\n}\r\n\r\n.description {\r\n  font-family: 'montserrat', sans-serif;\r\n  font-weight: bold;\r\n  font-size: 18px;\r\n  line-height: 26px;\r\n  color: rgb(16, 40, 63);\r\n\r\n  margin: 0 0 50px 0;\r\n}\r\n\r\n.creator {\r\n  margin: 0 0 47px 0;\r\n}\r\n\r\n.fio, .profession {\r\n  font-family: 'montserrat', sans-serif;\r\n  font-weight: bold;\r\n  font-size: 18px;\r\n  color: var(--color-black);\r\n}\r\n\r\n.profession {\r\n  margin: 0 0 40px 0;\r\n}\r\n\r\n.project {\r\n  font-family: 'montserrat', sans-serif;\r\n  font-size: 18px;\r\n  margin: 0 0 22px 0;\r\n}\r\n\r\n@media screen and (max-width: 925px) {\r\n  .logo {\r\n    display: none;\r\n  }\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;AAQA;;;;AAIA;;;;;;;;;AAUA;;;;AAIA;;;;;;;AAOA;;;;AAIA;;;;;;AAMA;EACE"}}]
-}

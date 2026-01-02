@@ -5,7 +5,7 @@ import styles from './footer.module.scss';
 export default function Footer() {
   return (
     <div className={styles.footer}>
-      <a className={styles.title} href='https://www.ambilux.com/' target='_blank'>© 2023 AMBILUX architects.</a>
+      <a className={styles.title} href='https://www.ambilux.com/' target='_blank'>© {new Date().getFullYear()} AMBILUX architects.</a>
       <span
         className={styles.button}
         onClick={() => document.querySelector('#wrapper')?.scrollTo({ top: 0, behavior: 'smooth' })}

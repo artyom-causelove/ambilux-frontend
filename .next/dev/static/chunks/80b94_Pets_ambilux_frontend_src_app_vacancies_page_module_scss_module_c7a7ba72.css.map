@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///C:/Users/1/Documents/Pets/ambilux/frontend/src/app/vacancies/page.module.scss"],"sourcesContent":[".vacancies {\r\n  max-width: 980px;\r\n  min-height: 1500px;\r\n\r\n  margin: 0 auto;\r\n  padding: 60px 69px 40px 69px;\r\n\r\n  background-color: var(--color-white);\r\n}\r\n\r\n.logo {\r\n  margin: 0 0 38px 0;\r\n}\r\n\r\n.info {\r\n  font-family: 'montserrat', sans-serif;\r\n  font-size: 24px;\r\n  color: var(--color-black);\r\n}\r\n\r\n@media screen and (max-width: 925px) {\r\n  .vacancies {\r\n    margin: 20px 0 20px 0;\r\n    padding: 20px 30px 20px 30px;\r\n    min-height: unset;\r\n  }\r\n\r\n  .logo {\r\n    display: none;\r\n  }\r\n}"],"names":[],"mappings":"AAAA;;;;;;;;AAUA;;;;AAIA;;;;;;AAMA;EACE;;;;;;EAMA"}}]
-}

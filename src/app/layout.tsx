@@ -1,13 +1,14 @@
 'use client'
 
 import { ViewTransitions } from 'next-view-transitions';
+import dynamic from 'next/dynamic';
 import Image from 'next/image';
 
 import '@/scss/globals.scss';
 
 import styles from '@/app/layout.module.scss';
 
-import Header from '@/components/header';
+const Header = dynamic(() => import('@/components/header'), { ssr: false, });
 import Footer from '@/components/footer';
 import { useState } from 'react';
 

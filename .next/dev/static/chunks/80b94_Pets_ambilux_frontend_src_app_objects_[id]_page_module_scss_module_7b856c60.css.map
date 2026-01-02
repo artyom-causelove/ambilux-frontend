@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///C:/Users/1/Documents/Pets/ambilux/frontend/src/app/objects/[id]/page.module.scss"],"sourcesContent":["// .wrapper {\r\n//   display: flex;\r\n//   flex-direction: column;\r\n//   align-items: center;\r\n\r\n//   gap: 10px;\r\n//   padding: 70px 0 30px 0;\r\n// }\r\n\r\n.wrapper {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  gap: 10px;\r\n  padding: 70px 0 30px 0;\r\n}\r\n\r\n.imageWrapper {\r\n  position: relative;\r\n}\r\n\r\n.image {\r\n  object-fit: cover;\r\n}\r\n\r\n@media screen and (max-width: 925px) {\r\n  .wrapper {\r\n    padding: 10px 0 10px 0;\r\n  }\r\n}"],"names":[],"mappings":"AASA;;;;;;;;AAQA;;;;AAIA;;;;AAIA;EACE"}}]
-}

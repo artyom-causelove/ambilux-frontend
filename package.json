@@ -12,14 +12,12 @@
     "next-view-transitions": "^0.3.5",
     "react": "19.2.1",
     "react-dom": "19.2.1",
-    "sendmail": "^1.6.1",
     "usehooks-ts": "^3.1.1"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@types/sendmail": "^1.4.7",
     "babel-plugin-react-compiler": "1.0.0",
     "sass": "^1.96.0",
     "typescript": "^5"
