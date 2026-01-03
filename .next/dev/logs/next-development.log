@@ -1,0 +1,14 @@
+[00:00:04.019] Server  LOG      ✓ Ready in 2.8s
+[00:00:07.888] Server  LOG      ○ Compiling / ...
+[00:00:09.028] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:09.496] Browser WARN    Image with src "/logo-white.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:10.724] Browser WARN    Image with src "https://ambilux.com/api/mikopark/mikopark-picture.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:10.724] Browser WARN    Image with src "https://ambilux.com/api/mikopark/mikopark-picture.avif" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:10.724] Browser WARN    Image with src "https://ambilux.com/api/malinovski/malinovski-picture.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:10.724] Browser WARN    Image with src "https://ambilux.com/api/malinovski/malinovski-picture.avif" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:11.770] Browser WARN    Image with src "https://ambilux.com/api/sosbul/sosbul-picture.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:11.770] Browser WARN    Image with src "https://ambilux.com/api/sosbul/sosbul-picture.avif" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:12.051] Browser WARN    Image with src "https://ambilux.com/api/smartcity/smartcity-picture.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:12.051] Browser WARN    Image with src "https://ambilux.com/api/smartcity/smartcity-picture.avif" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:12.379] Browser WARN    Image with src "https://ambilux.com/api/cultural-entertaiment/cultural-entertaiment-picture.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:12.379] Browser WARN    Image with src "https://ambilux.com/api/cultural-entertaiment/cultural-entertaiment-picture.avif" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.

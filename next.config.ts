@@ -5,10 +5,9 @@ const nextConfig: NextConfig = {
   images: {
     dangerouslyAllowLocalIP: true,
     remotePatterns: [{
-      hostname: '158.160.34.62',
-      protocol: 'http',
-      pathname: '/**',
-      port: '3001'
+      hostname: 'ambilux.com',
+      protocol: 'https',
+      pathname: '/**'
     }]
   },
 };

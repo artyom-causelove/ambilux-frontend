@@ -10,7 +10,7 @@ export default function Admin() {
 
   useEffect(() => {
     if (token.value) {
-      fetch('http://158.160.34.62:3001/messages', {
+      fetch('https://ambilux.com/api/messages', {
         headers: {
           'Authorization': `Bearer ${token.value}`
         }
@@ -24,7 +24,7 @@ export default function Admin() {
     event.preventDefault()
  
     const formData = new FormData(event.currentTarget)
-    const response = await fetch('http://158.160.34.62:3001/login', {
+    const response = await fetch('https://ambilux.com/api/login', {
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'

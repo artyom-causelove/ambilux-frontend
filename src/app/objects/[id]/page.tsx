@@ -13,7 +13,7 @@ export default function Object() {
   const [data, setData] = useState<any>(null);
 
   useEffect(() => {
-    fetch(`http://158.160.34.62:3001/objects/${params.id}`)
+    fetch(`https://ambilux.com/api/objects/${params.id}`)
       .then(response => response.json())
       .then(parsed => setData(parsed));
   }, []);
@@ -28,7 +28,7 @@ export default function Object() {
           <Image
             className={styles.image}
             alt='Object picture'
-            src={`http://158.160.34.62:3001/${file.path}`}
+            src={`https://ambilux.com/api/${file.path}`}
             fill
           />
         </div>

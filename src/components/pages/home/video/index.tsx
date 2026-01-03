@@ -13,7 +13,7 @@ export default function HomeVideo() {
         height={394}
       />
       <video className={styles.video} autoPlay loop muted playsInline poster="/intro.webp">
-        <source src='http://158.160.34.62:3001/main/intro.mp4' type='video/mp4'/>
+        <source src='https://ambilux.com/api/main/intro.mp4' type='video/mp4'/>
       </video>
     </section>
   );

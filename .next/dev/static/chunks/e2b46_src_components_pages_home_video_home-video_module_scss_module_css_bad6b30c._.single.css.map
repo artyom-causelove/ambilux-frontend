@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///C:/Users/1/Documents/Pets/ambilux/frontend/src/components/pages/home/video/home-video.module.scss"],"sourcesContent":[".wrapper {\r\n  overflow: hidden;\r\n  position: relative;\r\n\r\n  width: 100%;\r\n}\r\n\r\n.video {\r\n  width: 100%;\r\n}\r\n\r\n.image {\r\n  position: absolute;\r\n  bottom: -100px;\r\n  left: 50%;\r\n  width: 500px;\r\n\r\n  object-fit: contain;\r\n  transform: translateX(-50%);\r\n}\r\n\r\n@media screen and (max-width: 925px) {\r\n  .video, .image {\r\n    display: none;\r\n  }\r\n}"],"names":[],"mappings":"AAAA;;;;;;AAOA;;;;AAIA;;;;;;;;;AAUA;EACE"}}]
+}

@@ -14,7 +14,7 @@ export default function HomeMain() {
   const match = useMediaQuery('(max-width: 925px)');
 
   useEffect(() => {
-    fetch('http://158.160.34.62:3001/objects')
+    fetch('https://ambilux.com/api/objects')
       .then(response => response.json())
       .then(parsed => setData(parsed));
   }, []);
@@ -53,7 +53,7 @@ export default function HomeMain() {
         {child}
     </a>;
 
-    if (item.page === 'file') return <a className={className} href={`http://158.160.34.62:3001/${item.files[0].path}`} target='_blank'>{child}</a>;
+    if (item.page === 'file') return <a className={className} href={`https://ambilux.com/api/${item.files[0].path}`} target='_blank'>{child}</a>;
 
     return <a className={className} href={item.link} target='_blank'>{child}</a>;
   };
@@ -90,7 +90,7 @@ export default function HomeMain() {
                   null,
                   <Image
                     className={styles.itemPicture}
-                    src={`http://158.160.34.62:3001/${item.picture.path}`}
+                    src={`https://ambilux.com/api/${item.picture.path}`}
                     alt={item.title}
                     fill
                   />

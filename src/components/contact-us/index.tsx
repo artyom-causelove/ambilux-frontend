@@ -31,7 +31,7 @@ export default function ContactUs() {
     const tar = event.currentTarget;
   
     const formData = new FormData(tar)
-    const response = await fetch('http://158.160.34.62:3001/messages', {
+    const response = await fetch('https://ambilux.com/api/messages', {
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
