@@ -141,7 +141,6 @@ export default function Header() {
           />
         </div>
         <div className={styles.separator}></div>
-        <span className={styles.sorry}>ВЕДУТСЯ ТЕХНИЧЕСКИЕ РАБОТЫ, БЛАГОДАРИМ ЗА ПОНИМАНИЕ.</span>
         <div className={styles.menuWrapper}>
           {contacts.map(item =>
             <a href={item.link} key={item.alt} target='_blank'>

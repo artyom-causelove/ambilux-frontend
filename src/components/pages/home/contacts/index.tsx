@@ -33,7 +33,6 @@ export default function HomeContacts() {
           />
         </a>
       )}
-      <span>Мы проводим технические работы. Благодарим за понимание.</span>
     </div>
   );
 }

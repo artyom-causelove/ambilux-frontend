@@ -64,12 +64,12 @@ const contacts = [
 ];
 function Header() {
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(35);
-    if ($[0] !== "d837fc62a8c5dfb56ed2a731c430f38ab59f1e45739f5bce31934b1efb9797b9") {
-        for(let $i = 0; $i < 35; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(34);
+    if ($[0] !== "f604ee271a593f7b5213e6a24112a5b3781edba14b31ffd8c88f4dbe84805d00") {
+        for(let $i = 0; $i < 34; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "d837fc62a8c5dfb56ed2a731c430f38ab59f1e45739f5bce31934b1efb9797b9";
+        $[0] = "f604ee271a593f7b5213e6a24112a5b3781edba14b31ffd8c88f4dbe84805d00";
     }
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2d$view$2d$transitions$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTransitionRouter"])();
     const match = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$usehooks$2d$ts$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMediaQuery"])("(max-width: 925px)");
@@ -190,7 +190,6 @@ function Header() {
             }
         }["Header[(anonymous)()]"]);
         let t10;
-        let t11;
         let t9;
         if ($[16] === Symbol.for("react.memo_cache_sentinel")) {
             t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -202,110 +201,99 @@ function Header() {
                     fill: true
                 }, void 0, false, {
                     fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-                    lineNumber: 139,
+                    lineNumber: 138,
                     columnNumber: 49
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-                lineNumber: 139,
+                lineNumber: 138,
                 columnNumber: 12
             }, this);
             t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$components$2f$header$2f$header$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].separator
             }, void 0, false, {
                 fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-                lineNumber: 140,
-                columnNumber: 13
-            }, this);
-            t11 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$components$2f$header$2f$header$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].sorry,
-                children: "ВЕДУТСЯ ТЕХНИЧЕСКИЕ РАБОТЫ, БЛАГОДАРИМ ЗА ПОНИМАНИЕ."
-            }, void 0, false, {
-                fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-                lineNumber: 141,
+                lineNumber: 139,
                 columnNumber: 13
             }, this);
             $[16] = t10;
-            $[17] = t11;
-            $[18] = t9;
+            $[17] = t9;
         } else {
             t10 = $[16];
-            t11 = $[17];
-            t9 = $[18];
+            t9 = $[17];
         }
-        let t12;
-        if ($[19] === Symbol.for("react.memo_cache_sentinel")) {
-            t12 = contacts.map(_HeaderContactsMap);
-            $[19] = t12;
+        let t11;
+        if ($[18] === Symbol.for("react.memo_cache_sentinel")) {
+            t11 = contacts.map(_HeaderContactsMap);
+            $[18] = t11;
         } else {
-            t12 = $[19];
+            t11 = $[18];
         }
-        const t13 = `${__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$components$2f$header$2f$header$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].button} ${menu && __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$components$2f$header$2f$header$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].active}`;
-        let t14;
-        if ($[20] !== menu) {
-            t14 = ({
+        const t12 = `${__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$components$2f$header$2f$header$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].button} ${menu && __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$components$2f$header$2f$header$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].active}`;
+        let t13;
+        if ($[19] !== menu) {
+            t13 = ({
                 "Header[<div>.onClick]": ()=>setMenu(!menu)
             })["Header[<div>.onClick]"];
-            $[20] = menu;
+            $[19] = menu;
+            $[20] = t13;
+        } else {
+            t13 = $[20];
+        }
+        let t14;
+        if ($[21] === Symbol.for("react.memo_cache_sentinel")) {
+            t14 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$components$2f$header$2f$header$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].buttonIcon
+            }, void 0, false, {
+                fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
+                lineNumber: 166,
+                columnNumber: 13
+            }, this);
             $[21] = t14;
         } else {
             t14 = $[21];
         }
-        let t15;
-        if ($[22] === Symbol.for("react.memo_cache_sentinel")) {
-            t15 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$components$2f$header$2f$header$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].buttonIcon
-            }, void 0, false, {
-                fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-                lineNumber: 170,
-                columnNumber: 13
-            }, this);
-            $[22] = t15;
-        } else {
-            t15 = $[22];
-        }
-        if ($[23] !== t13 || $[24] !== t14) {
+        if ($[22] !== t12 || $[23] !== t13) {
             t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$components$2f$header$2f$header$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].mobileWrapper,
                 children: [
                     t9,
                     t10,
-                    t11,
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$components$2f$header$2f$header$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].menuWrapper,
                         children: [
-                            t12,
+                            t11,
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: t13,
-                                onClick: t14,
-                                children: t15
+                                className: t12,
+                                onClick: t13,
+                                children: t14
                             }, void 0, false, {
                                 fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-                                lineNumber: 176,
-                                columnNumber: 105
+                                lineNumber: 172,
+                                columnNumber: 100
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-                        lineNumber: 176,
-                        columnNumber: 64
+                        lineNumber: 172,
+                        columnNumber: 59
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-                lineNumber: 176,
+                lineNumber: 172,
                 columnNumber: 12
             }, this);
+            $[22] = t12;
             $[23] = t13;
-            $[24] = t14;
-            $[25] = t5;
+            $[24] = t5;
         } else {
-            t5 = $[25];
+            t5 = $[24];
         }
         t0 = `${__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$components$2f$header$2f$header$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].mobileMenu} ${menu && __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$components$2f$header$2f$header$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].activeMenu}`;
         t1 = Object.entries(headerItems).map({
-            "Header[(anonymous)()]": (t16)=>{
-                const [key_0, value_0] = t16;
+            "Header[(anonymous)()]": (t15)=>{
+                const [key_0, value_0] = t15;
                 if (value_0.type === "button") {
                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         className: `${__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$components$2f$header$2f$header$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].mobileItem} ${isActive(value_0.href) && __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$components$2f$header$2f$header$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].mobileActive}`,
@@ -313,7 +301,7 @@ function Header() {
                         children: value_0.title.toUpperCase()
                     }, key_0, false, {
                         fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-                        lineNumber: 188,
+                        lineNumber: 184,
                         columnNumber: 18
                     }, this);
                 }
@@ -332,7 +320,7 @@ function Header() {
                     children: value_0.title.toUpperCase()
                 }, key_0, false, {
                     fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-                    lineNumber: 190,
+                    lineNumber: 186,
                     columnNumber: 16
                 }, this);
             }
@@ -356,23 +344,23 @@ function Header() {
         t5 = $[10];
     }
     let t6;
-    if ($[26] !== t0 || $[27] !== t1) {
+    if ($[25] !== t0 || $[26] !== t1) {
         t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: t0,
             children: t1
         }, void 0, false, {
             fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-            lineNumber: 222,
+            lineNumber: 218,
             columnNumber: 10
         }, this);
-        $[26] = t0;
-        $[27] = t1;
-        $[28] = t6;
+        $[25] = t0;
+        $[26] = t1;
+        $[27] = t6;
     } else {
-        t6 = $[28];
+        t6 = $[27];
     }
     let t7;
-    if ($[29] !== t2 || $[30] !== t3 || $[31] !== t4 || $[32] !== t5 || $[33] !== t6) {
+    if ($[28] !== t2 || $[29] !== t3 || $[30] !== t4 || $[31] !== t5 || $[32] !== t6) {
         t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
             className: t2,
             style: t3,
@@ -383,17 +371,17 @@ function Header() {
             ]
         }, void 0, true, {
             fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-            lineNumber: 231,
+            lineNumber: 227,
             columnNumber: 10
         }, this);
-        $[29] = t2;
-        $[30] = t3;
-        $[31] = t4;
-        $[32] = t5;
-        $[33] = t6;
-        $[34] = t7;
+        $[28] = t2;
+        $[29] = t3;
+        $[30] = t4;
+        $[31] = t5;
+        $[32] = t6;
+        $[33] = t7;
     } else {
-        t7 = $[34];
+        t7 = $[33];
     }
     return t7;
 }
@@ -416,12 +404,12 @@ function _HeaderContactsMap(item) {
             height: 40
         }, void 0, false, {
             fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-            lineNumber: 244,
+            lineNumber: 240,
             columnNumber: 61
         }, this)
     }, item.alt, false, {
         fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-        lineNumber: 244,
+        lineNumber: 240,
         columnNumber: 10
     }, this);
 }
