@@ -5,6 +5,9 @@
 
   --shadow-vertical: 1px 2px 5px 0px rgba(0,0,0,0.30);
   --shadow-invertical: 1px -2px 5px 0px rgba(0,0,0,0.30);
+
+  --vt-duration: 700ms;
+  --vt-easing: cubic-bezier(0.87, 0, 0.13, 1);
 }
 
 body,
@@ -13,8 +16,23 @@ html {
   height: 100vh;
 }
 
-#content {
-  view-transition-name: body;
+// Слои view transition объявлены здесь, а не в CSS-модулях: Turbopack хеширует
+// значение view-transition-name внутри модулей так же, как animation-name,
+// и селекторы ::view-transition-*() ниже перестали бы совпадать с именами.
+#wrapper {
+  view-transition-name: page;
+}
+
+#site-header {
+  view-transition-name: site-header;
+}
+
+#site-footer {
+  view-transition-name: site-footer;
+}
+
+#site-background {
+  view-transition-name: site-background;
 }
 
 * {
@@ -43,30 +61,69 @@ a {
   text-decoration: none;
 }
 
-::view-transition-old(body),
-::view-transition-new(body) {
-  animation: none !important;
+@keyframes vt-slide-out {
+  to { transform: translateX(-100%); }
 }
 
-::view-transition-group(body) {
-  animation: none;
-  z-index: auto !important;
+@keyframes vt-slide-in {
+  from { transform: translateX(100%); }
 }
 
-::view-transition-image-pair(body) {
-  isolation: isolate;
-  will-change: transform;
+// Едущий слой: снимок #wrapper без шапки, подвала и фона — у них свои имена.
+::view-transition-group(page) {
   z-index: 1;
+  animation: none; // геометрия меняется мгновенно, движение задают old/new
 }
 
-::view-transition-new(body) {
-  z-index: 10000;
-  animation: none !important;
+::view-transition-image-pair(page) {
+  isolation: isolate;
 }
 
-::view-transition-old(body) {
-  z-index: -1;
-  animation: none !important;
+::view-transition-old(page) {
+  z-index: 0;
+  mix-blend-mode: normal; // вместо дефолтного plus-lighter
+  animation: vt-slide-out var(--vt-duration) var(--vt-easing) both;
+}
+
+::view-transition-new(page) {
+  z-index: 1;
+  mix-blend-mode: normal;
+  animation: vt-slide-in var(--vt-duration) var(--vt-easing) both;
+}
+
+// Неподвижные слои: без морфинга и без cross-fade.
+::view-transition-group(site-header),
+::view-transition-group(site-footer) {
+  z-index: 2;
+  animation: none;
+}
+
+::view-transition-group(site-background),
+::view-transition-group(root) {
+  z-index: 0;
+  animation: none;
+}
+
+::view-transition-old(site-header),
+::view-transition-old(site-footer),
+::view-transition-old(site-background),
+::view-transition-old(root) {
+  display: none;
+}
+
+::view-transition-new(site-header),
+::view-transition-new(site-footer),
+::view-transition-new(site-background),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(page),
+  ::view-transition-new(page) {
+    animation: none;
+  }
 }
 
 @font-face {

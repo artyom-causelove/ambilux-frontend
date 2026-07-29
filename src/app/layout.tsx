@@ -10,7 +10,8 @@ import styles from '@/app/layout.module.scss';
 
 const Header = dynamic(() => import('@/components/header'), { ssr: false, });
 import Footer from '@/components/footer';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import DesktopHeader from '@/components/header/desktop';
 import DesktopFooter from '@/components/footer/desktop';
 
@@ -20,6 +21,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const [scroll, setScroll] = useState(false);
+  const pathname = usePathname();
+
+  // Скроллится #wrapper, а не окно, поэтому штатный scroll-restore Next до него не достаёт.
+  // Эффект успевает отработать до снятия нового снимка view transition, так что новая
+  // страница попадает в него уже прокрученной наверх — без щелчка после анимации.
+  useEffect(() => {
+    document.getElementById('wrapper')?.scrollTo({ top: 0 });
+  }, [pathname]);
 
   return (
     <ViewTransitions>
@@ -33,7 +42,7 @@ export default function RootLayout({
             }
           }}>
             <DesktopHeader></DesktopHeader>
-            <div className={styles.background}>
+            <div id='site-background' className={styles.background}>
               <Image
                 className={styles.backgroundImage}
                 src='/background.png'

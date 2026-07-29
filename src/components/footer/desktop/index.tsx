@@ -3,7 +3,7 @@ import styles from './styles.module.scss';
 import Image from 'next/image';
 
 export default function DesktopFooter() {
-  return <div className={styles['desktop-footer']}>
+  return <div id='site-footer' className={styles['desktop-footer']}>
     <h1 className={styles['desktop-footer__logo']}>© 2026 Ambilux architects</h1>
 
     <button className={styles['desktop-footer__presentation']}>

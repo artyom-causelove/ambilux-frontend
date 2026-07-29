@@ -19,35 +19,11 @@ export default function HomeMain() {
       .then(parsed => setData(parsed));
   }, []);
 
-  const slideInOut = () => {
-    document.documentElement.animate([
-      { transform: 'translateX(0)' },
-      { transform: 'translateX(-100%)' }
-    ], {
-      pseudoElement: '::view-transition-old(body)',
-      easing: 'cubic-bezier(0.87, 0, 0.13, 1)',
-      fill: 'forwards',
-      duration: 700
-    });
-
-    document.documentElement.animate([
-      { transform: 'translateX(100%)' },
-      { transform: 'translateX(0)' }
-    ], {
-      pseudoElement: '::view-transition-new(body)',
-      easing: 'cubic-bezier(0.87, 0, 0.13, 1)',
-      fill: 'forwards',
-      duration: 700
-    });
-  };
-
   const getLink = (item: any, className: any, child: any) => {
     if (item.page === 'page') return <a
       onClick={(e) => {
         e.preventDefault();
-        router.push(`objects/${encodeURIComponent(item.path)}`, {
-          onTransitionReady: slideInOut
-        });
+        router.push(`objects/${encodeURIComponent(item.path)}`, { scroll: false });
       }}
       className={className}>
         {child}

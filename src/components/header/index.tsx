@@ -7,6 +7,7 @@ import styles from './header.module.scss';
 import Image from 'next/image';
 import { useState } from 'react';
 import { useMediaQuery } from 'usehooks-ts';
+import { scrollToContacts, scrollToContactsAfterTransition } from '@/utils/scroll';
 // import Link from 'next/link';
 
 const contacts = [
@@ -44,14 +45,9 @@ export default function Header() {
       onClick: (e: any) => {
         e.preventDefault();
         if (pathname !== '/') {
-          router.push('/', {
-            onTransitionReady: slideInOut(true),
-            // scroll: true
-          });
+          router.push('/', { onTransitionReady: scrollToContactsAfterTransition });
         } else {
-          const content = document.querySelector('#content');
-          const wrapper = document.querySelector('#wrapper');
-          wrapper?.scrollTo({ top: content?.scrollHeight, behavior: 'smooth' });
+          scrollToContacts();
         }
         setMenu(false);
       }
@@ -61,39 +57,6 @@ export default function Header() {
 
   const isActive = (href: string) => {
     return pathname === href;
-  };
-
-  const slideInOut = (scroll: boolean) => {
-    return () => {
-      document.documentElement.animate([
-        { transform: 'translateX(0)' },
-        { transform: 'translateX(-100%)' }
-      ], {
-        pseudoElement: '::view-transition-old(body)',
-        easing: 'cubic-bezier(0.87, 0, 0.13, 1)',
-        fill: 'forwards',
-        duration: 700
-      });
-
-      const anim = document.documentElement
-        .animate([
-          { transform: 'translateX(100%)' },
-          { transform: 'translateX(0)' }
-        ], {
-          pseudoElement: '::view-transition-new(body)',
-          easing: 'cubic-bezier(0.87, 0, 0.13, 1)',
-          fill: 'forwards',
-          duration: 700
-        })
-      
-      if (scroll) {
-        anim.addEventListener('finish', () => {
-          const content = document.querySelector('#content');
-          const wrapper = document.querySelector('#wrapper');
-          wrapper?.scrollTo({ top: content?.scrollHeight, behavior: 'smooth' });
-        });
-      }
-    }
   };
 
   const getHeaderPos = () => {
@@ -118,10 +81,7 @@ export default function Header() {
             <a
               onClick={(e) => {
                 e.preventDefault();
-                router.push(value.href, {
-                  onTransitionReady: slideInOut(false),
-                  scroll: false
-                });
+                router.push(value.href, { scroll: false });
               }}
               className={`${styles.item} ${isActive(value.href) && styles.active}`}
               key={key}
@@ -170,10 +130,7 @@ export default function Header() {
               <a
                 onClick={(e) => {
                   e.preventDefault();
-                  router.push(value.href, {
-                    onTransitionReady: slideInOut(false),
-                    scroll: false
-                  });
+                  router.push(value.href, { scroll: false });
                   setMenu(false);
                 }}
                 className={`${styles.mobileItem} ${isActive(value.href) && styles.mobileActive}`}
