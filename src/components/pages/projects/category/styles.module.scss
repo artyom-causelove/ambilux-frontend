@@ -1,0 +1,108 @@
+.category {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 0 150px 0;
+
+  // Белая карточка — только под текстом: галерея ниже живёт на фоне сайта,
+  // как список проектов на главной.
+  &__card {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+    padding: 30px 45px 60px 45px;
+
+    background-color: var(--color-white);
+  }
+
+  &__title {
+    margin: 0 0 15px 0;
+
+    text-align: center;
+    font-family: montserrat, sans-serif;
+  }
+
+  &__section {
+    margin: 0 0 40px 0;
+
+    font-size: 18px;
+    font-family: montserrat, sans-serif;
+  }
+
+  &__note {
+    margin: 20px 0 0 0;
+
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    font-family: montserrat, sans-serif;
+  }
+
+  &__button {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 520px;
+    height: 45px;
+    padding: 0 15px 0 15px;
+    margin: 0 auto 15px auto;
+
+    color: var(--color-white);
+    font-family: montserrat, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+
+    background-color: rgb(33, 33, 33);
+    border-radius: 5px;
+
+    &:last-of-type {
+      margin: 0 auto 0 auto;
+    }
+  }
+
+  // Высота галереи заранее не известна, поэтому раскрытие через grid, а не height.
+  &__gallery {
+    display: grid;
+    grid-template-rows: 0fr;
+
+    transition: grid-template-rows 0.5s ease-in-out;
+
+    &--open {
+      grid-template-rows: 1fr;
+    }
+
+    // Глобальное правило даёт только overflow-y, а схлопнуть нужно и по строке.
+    &-inner {
+      min-height: 0;
+      overflow: hidden;
+    }
+  }
+}
+
+.red-line {
+  text-indent: 20px;
+}
+
+@media screen and (max-width: 925px) {
+  .category {
+    padding: 0 0 100px 0;
+
+    &__card {
+      padding: 30px 20px 40px 20px;
+    }
+
+    &__button {
+      max-width: 420px;
+      height: auto;
+      padding: 12px 15px 12px 15px;
+    }
+  }
+}

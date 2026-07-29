@@ -2,7 +2,7 @@
 
 import styles from './page.module.scss';
 
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 
 const aboutSections = [
   `
