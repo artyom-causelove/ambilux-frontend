@@ -2,7 +2,6 @@
 
 import { ViewTransitions } from 'next-view-transitions';
 import dynamic from 'next/dynamic';
-import Image from 'next/image';
 
 import '@/scss/globals.scss';
 
@@ -42,14 +41,7 @@ export default function RootLayout({
             }
           }}>
             <DesktopHeader></DesktopHeader>
-            <div id='site-background' className={styles.background}>
-              <Image
-                className={styles.backgroundImage}
-                src='/background.png'
-                alt='Site background'
-                fill
-              />
-            </div>
+            <div id='site-background' className={styles.background} />
             <div id='content' className={styles.content}>
               {children}
             </div>
