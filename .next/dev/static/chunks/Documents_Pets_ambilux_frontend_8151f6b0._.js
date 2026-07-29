@@ -65,11 +65,11 @@ const contacts = [
 function Header() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(34);
-    if ($[0] !== "f604ee271a593f7b5213e6a24112a5b3781edba14b31ffd8c88f4dbe84805d00") {
+    if ($[0] !== "df5dd813806e558a95e3b926375e456b5219d714e98af8a645ac6a27ff96b3ec") {
         for(let $i = 0; $i < 34; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "f604ee271a593f7b5213e6a24112a5b3781edba14b31ffd8c88f4dbe84805d00";
+        $[0] = "df5dd813806e558a95e3b926375e456b5219d714e98af8a645ac6a27ff96b3ec";
     }
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2d$view$2d$transitions$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTransitionRouter"])();
     const match = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$usehooks$2d$ts$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMediaQuery"])("(max-width: 925px)");
@@ -106,7 +106,7 @@ function Header() {
                             onTransitionReady: slideInOut(true)
                         });
                     } else {
-                        const content = document.querySelector("#awd");
+                        const content = document.querySelector("#content");
                         const wrapper = document.querySelector("#wrapper");
                         wrapper?.scrollTo({
                             top: content?.scrollHeight,
@@ -447,7 +447,7 @@ function _HeaderSlideInOut(scroll) {
     };
 }
 function _HeaderSlideInOutAnonymousAnimAddEventListener() {
-    const content_0 = document.querySelector("#awd");
+    const content_0 = document.querySelector("#content");
     const wrapper_0 = document.querySelector("#wrapper");
     wrapper_0?.scrollTo({
         top: content_0?.scrollHeight,

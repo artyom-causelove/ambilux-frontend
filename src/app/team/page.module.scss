@@ -1,0 +1,90 @@
+.team {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+  padding: 30px 45px 150px 45px;
+
+  background-color: var(--color-white);
+
+  &__title {
+    margin: 0 0 15px 0;
+
+    text-align: center;
+    font-family: montserrat, sans-serif;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 20px 0;
+    
+    font-family: montserrat, sans-serif;
+
+    &__name {
+      font-size: 18px;
+      font-weight: bold;
+      padding: 0 0 5px 0;
+    }
+
+    &__job {
+      padding: 0 0 5px 0;
+    }
+
+    &__awards {
+      display: flex;
+      flex-direction: column;
+      padding: 0 0 10px 10px;
+
+      &__item {
+        
+      }
+    }
+
+    &__merits {
+      display: flex;
+      flex-direction: column;
+      padding: 0 0 0 10px;
+
+      &__item {
+        
+      }
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+
+    height: 45px;
+    padding: 0 15px 0 15px;
+    align-self: center;
+
+    color: var(--color-white);
+    font-family: montserrat, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+
+    background-color: rgb(33, 33, 33);
+    border-radius: 5px;
+  }
+
+  &__document {
+    display: flex;
+    overflow-y: hidden;
+    flex-direction: column;
+
+    height: 1px;
+    transition: height 0.5s ease-in-out;
+
+    &--open {
+      height: 1017px;
+    }
+  }
+}
+
+

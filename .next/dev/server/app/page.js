@@ -1,6 +1,6 @@
 var R=require("../chunks/ssr/[turbopack]_runtime.js")("server/app/page.js")
-R.c("server/chunks/ssr/c4e9c_7fa70ede._.js")
-R.c("server/chunks/ssr/[root-of-the-server]__6ad7505a._.js")
+R.c("server/chunks/ssr/c4e9c_next_dist_af60762b._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__8089cd8f._.js")
 R.c("server/chunks/ssr/c4e9c_a9a12d82._.js")
 R.c("server/chunks/ssr/[root-of-the-server]__e8a2741f._.js")
 R.c("server/chunks/ssr/Documents_Pets_ambilux_frontend_src_app_25653a26._.js")

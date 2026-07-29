@@ -13,7 +13,7 @@ html {
   height: 100vh;
 }
 
-#awd {
+#content {
   view-transition-name: body;
 }
 
@@ -27,6 +27,15 @@ html {
   background-color: unset;
   outline: unset;
   border: unset;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar, *::-webkit-scrollbar-button {
+  display: none;
 }
 
 a {
@@ -62,6 +71,20 @@ a {
 
 @font-face {
   font-family: 'montserrat';
+  font-weight: light;
+  font-style: normal;
+  src: url('/fonts/montserrat-light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'montserrat';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/fonts/montserrat-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'montserrat';
   font-weight: bold;
   font-style: normal;
   src: url('/fonts/montserrat-bold.ttf') format('truetype');
@@ -69,15 +92,7 @@ a {
 
 @font-face {
   font-family: 'montserrat';
-  font-weight: light;
-  font-style: normal;
-  src: url('/fonts/montserrat-light.ttf') format('truetype');
-}
-
-@media screen and (max-width: 925px) {
-  /* hide page scrollbar */
-  * { scrollbar-width: none; } /* Firefox */
-  * { -ms-overflow-style: none; } /* IE and Edge */
-  *::-webkit-scrollbar, *::-webkit-scrollbar-button { display: none; } /* Chrome */
-  /* end hide page scrollbar */
+  font-weight: normal;
+  font-style: italic;
+  src: url('/fonts/montserrat-regular-italic.ttf') format('truetype');
 }

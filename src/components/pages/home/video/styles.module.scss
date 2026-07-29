@@ -1,0 +1,61 @@
+$height: 70px;
+
+.home-video {
+  position: relative;
+  max-height: calc(100vh - 80px);
+  margin: -80px 0 0 0;
+
+  &__logo {
+    position: absolute;
+
+    bottom: 40px;
+    right: 90px;
+    width: calc(1517px / 394px * $height);
+    height: calc($height);
+
+    &-content {
+      object-fit: contain;
+    }
+  }
+
+  &__preload {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-image: url('/logo-white.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+
+    opacity: 1;
+    transition: opacity 1.2s ease-in-out;
+
+    &--loaded {
+      opacity: 0;
+    }
+  }
+
+  &__source {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 925px) {
+  .home-video {
+    margin: 0 0 0 0;
+
+    &__preload {
+      transition: none;
+
+      &--loaded {
+        opacity: 1;
+      }
+    }
+
+    &__source {
+    }
+  }
+}

@@ -1,0 +1,57 @@
+/* [project]/Documents/Pets/ambilux/frontend/src/components/pages/home/video/styles.module.scss.module.css [app-client] (css) */
+.styles-module-scss-module__lUtIJW__home-video {
+  max-height: calc(100vh - 80px);
+  margin: -80px 0 0;
+  position: relative;
+}
+
+.styles-module-scss-module__lUtIJW__home-video__logo {
+  width: 269.518px;
+  height: 70px;
+  position: absolute;
+  bottom: 40px;
+  right: 90px;
+}
+
+.styles-module-scss-module__lUtIJW__home-video__logo-content {
+  object-fit: contain;
+}
+
+.styles-module-scss-module__lUtIJW__home-video__preload {
+  opacity: 1;
+  background-color: #000;
+  background-image: url("/logo-white.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1.2s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.styles-module-scss-module__lUtIJW__home-video__preload--loaded {
+  opacity: 0;
+}
+
+.styles-module-scss-module__lUtIJW__home-video__source {
+  width: 100%;
+}
+
+@media screen and (max-width: 925px) {
+  .styles-module-scss-module__lUtIJW__home-video {
+    margin: 0;
+  }
+
+  .styles-module-scss-module__lUtIJW__home-video__preload {
+    transition: none;
+  }
+
+  .styles-module-scss-module__lUtIJW__home-video__preload--loaded {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=7ff96_frontend_src_components_pages_home_video_styles_module_scss_module_css_bad6b30c._.single.css.map*/

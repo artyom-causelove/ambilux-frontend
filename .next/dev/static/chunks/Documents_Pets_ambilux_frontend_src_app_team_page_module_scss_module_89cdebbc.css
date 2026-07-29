@@ -1,0 +1,76 @@
+/* [project]/Documents/Pets/ambilux/frontend/src/app/team/page.module.scss.module.css [app-client] (css) */
+.page-module-scss-module__x64u2q__team {
+  background-color: var(--color-white);
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 45px 150px;
+  display: flex;
+}
+
+.page-module-scss-module__x64u2q__team__title {
+  text-align: center;
+  margin: 0 0 15px;
+  font-family: montserrat, sans-serif;
+}
+
+.page-module-scss-module__x64u2q__team__wrapper {
+  flex-direction: column;
+  display: flex;
+}
+
+.page-module-scss-module__x64u2q__team .page-module-scss-module__x64u2q__item {
+  flex-direction: column;
+  margin: 0 0 20px;
+  font-family: montserrat, sans-serif;
+  display: flex;
+}
+
+.page-module-scss-module__x64u2q__team .page-module-scss-module__x64u2q__item__name {
+  padding: 0 0 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.page-module-scss-module__x64u2q__team .page-module-scss-module__x64u2q__item__job {
+  padding: 0 0 5px;
+}
+
+.page-module-scss-module__x64u2q__team .page-module-scss-module__x64u2q__item__awards {
+  flex-direction: column;
+  padding: 0 0 10px 10px;
+  display: flex;
+}
+
+.page-module-scss-module__x64u2q__team .page-module-scss-module__x64u2q__item__merits {
+  flex-direction: column;
+  padding: 0 0 0 10px;
+  display: flex;
+}
+
+.page-module-scss-module__x64u2q__team__button {
+  cursor: pointer;
+  height: 45px;
+  color: var(--color-white);
+  background-color: #212121;
+  border-radius: 5px;
+  align-self: center;
+  padding: 0 15px;
+  font-family: montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.page-module-scss-module__x64u2q__team__document {
+  flex-direction: column;
+  height: 1px;
+  transition: height .5s ease-in-out;
+  display: flex;
+  overflow-y: hidden;
+}
+
+.page-module-scss-module__x64u2q__team__document--open {
+  height: 1017px;
+}
+
+/*# sourceMappingURL=Documents_Pets_ambilux_frontend_src_app_team_page_module_scss_module_89cdebbc.css.map*/

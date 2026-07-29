@@ -49,7 +49,7 @@ export default function Header() {
             // scroll: true
           });
         } else {
-          const content = document.querySelector('#awd');
+          const content = document.querySelector('#content');
           const wrapper = document.querySelector('#wrapper');
           wrapper?.scrollTo({ top: content?.scrollHeight, behavior: 'smooth' });
         }
@@ -88,7 +88,7 @@ export default function Header() {
       
       if (scroll) {
         anim.addEventListener('finish', () => {
-          const content = document.querySelector('#awd');
+          const content = document.querySelector('#content');
           const wrapper = document.querySelector('#wrapper');
           wrapper?.scrollTo({ top: content?.scrollHeight, behavior: 'smooth' });
         });

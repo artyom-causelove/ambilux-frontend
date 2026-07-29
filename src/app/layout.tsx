@@ -11,6 +11,8 @@ import styles from '@/app/layout.module.scss';
 const Header = dynamic(() => import('@/components/header'), { ssr: false, });
 import Footer from '@/components/footer';
 import { useState } from 'react';
+import DesktopHeader from '@/components/header/desktop';
+import DesktopFooter from '@/components/footer/desktop';
 
 export default function RootLayout({
   children,
@@ -30,7 +32,7 @@ export default function RootLayout({
               setScroll(false);
             }
           }}>
-            <Header></Header>
+            <DesktopHeader></DesktopHeader>
             <div className={styles.background}>
               <Image
                 className={styles.backgroundImage}
@@ -39,10 +41,10 @@ export default function RootLayout({
                 fill
               />
             </div>
-            <div id='awd' className={styles.content}>
+            <div id='content' className={styles.content}>
               {children}
             </div>
-            <Footer></Footer>
+            <DesktopFooter></DesktopFooter>
           </div>
           {scroll &&
             <svg className={styles.backToTop} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={

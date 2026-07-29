@@ -12,7 +12,7 @@ body, html {
   overflow: hidden;
 }
 
-#awd {
+#content {
   view-transition-name: body;
 }
 
@@ -22,9 +22,19 @@ body, html {
   background-color: unset;
   outline: unset;
   border: unset;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   margin: 0;
   padding: 0;
   overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
 }
 
 a {
@@ -63,6 +73,20 @@ a {
 
 @font-face {
   font-family: montserrat;
+  font-weight: light;
+  font-style: normal;
+  src: url("/fonts/montserrat-light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: montserrat;
+  font-weight: normal;
+  font-style: normal;
+  src: url("/fonts/montserrat-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: montserrat;
   font-weight: bold;
   font-style: normal;
   src: url("/fonts/montserrat-bold.ttf") format("truetype");
@@ -70,24 +94,9 @@ a {
 
 @font-face {
   font-family: montserrat;
-  font-weight: light;
-  font-style: normal;
-  src: url("/fonts/montserrat-light.ttf") format("truetype");
-}
-
-@media screen and (max-width: 925px) {
-  * {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-
-  ::-webkit-scrollbar {
-    display: none;
-  }
-
-  ::-webkit-scrollbar-button {
-    display: none;
-  }
+  font-weight: normal;
+  font-style: italic;
+  src: url("/fonts/montserrat-regular-italic.ttf") format("truetype");
 }
 
 /*# sourceMappingURL=Documents_Pets_ambilux_frontend_src_scss_globals_scss_css_bad6b30c._.single.css.map*/
