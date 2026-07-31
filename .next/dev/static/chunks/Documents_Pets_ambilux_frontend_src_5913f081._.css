@@ -220,15 +220,15 @@ a {
 
 .layout-module-scss-module__Nm6aKG__backToTop {
   cursor: pointer;
+  z-index: 1000;
   filter: drop-shadow(0 0 5px #55500050);
   background-color: var(--color-white);
   border-radius: 50%;
   width: 40px;
   height: 40px;
   padding: 0 0 1px;
-  display: none;
   position: fixed;
-  bottom: 20px;
+  bottom: 100px;
   right: 20px;
 }
 
@@ -244,10 +244,6 @@ a {
 
   .layout-module-scss-module__Nm6aKG__background {
     background-size: 480px 480px;
-  }
-
-  .layout-module-scss-module__Nm6aKG__backToTop {
-    display: block;
   }
 }
 
@@ -286,29 +282,103 @@ a {
   font-weight: normal;
 }
 
+.styles-module-scss-module__tOk6ba__desktop-header__burger {
+  cursor: pointer;
+  flex-shrink: 0;
+  width: 28px;
+  height: 20px;
+  display: none;
+  position: relative;
+}
+
+.styles-module-scss-module__tOk6ba__desktop-header__burger-icon, .styles-module-scss-module__tOk6ba__desktop-header__burger-icon:before, .styles-module-scss-module__tOk6ba__desktop-header__burger-icon:after {
+  background-color: #212121;
+  border-radius: 2px;
+  width: 28px;
+  height: 3px;
+  transition: transform .25s, opacity .25s, top .25s, background-color .25s;
+  position: absolute;
+  left: 0;
+}
+
+.styles-module-scss-module__tOk6ba__desktop-header__burger-icon {
+  top: 9px;
+  overflow: visible;
+}
+
+.styles-module-scss-module__tOk6ba__desktop-header__burger-icon:before {
+  content: "";
+  top: -9px;
+}
+
+.styles-module-scss-module__tOk6ba__desktop-header__burger-icon:after {
+  content: "";
+  top: 9px;
+}
+
+.styles-module-scss-module__tOk6ba__desktop-header__burger--active .styles-module-scss-module__tOk6ba__desktop-header__burger-icon {
+  background-color: #0000;
+}
+
+.styles-module-scss-module__tOk6ba__desktop-header__burger--active .styles-module-scss-module__tOk6ba__desktop-header__burger-icon:before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.styles-module-scss-module__tOk6ba__desktop-header__burger--active .styles-module-scss-module__tOk6ba__desktop-header__burger-icon:after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.styles-module-scss-module__tOk6ba__desktop-header__mobile-nav {
+  display: none;
+}
+
 @media screen and (max-width: 1150px) {
   .styles-module-scss-module__tOk6ba__desktop-header {
     padding: 0 40px;
   }
 }
 
-@media screen and (max-width: 920px) {
-  .styles-module-scss-module__tOk6ba__desktop-header__navigation-item {
-    margin: 0 0 0 15px;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .styles-module-scss-module__tOk6ba__desktop-header {
-    justify-content: center;
-  }
-
-  .styles-module-scss-module__tOk6ba__desktop-header__logo {
+@media screen and (max-width: 925px) {
+  .styles-module-scss-module__tOk6ba__desktop-header__navigation {
     display: none;
   }
 
-  .styles-module-scss-module__tOk6ba__desktop-header__navigation-item {
-    margin: 0 0 0 20px;
+  .styles-module-scss-module__tOk6ba__desktop-header__burger {
+    display: block;
+  }
+
+  .styles-module-scss-module__tOk6ba__desktop-header__mobile-nav {
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    background-color: var(--color-white);
+    max-height: calc(100vh - 80px);
+    box-shadow: var(--shadow-vertical);
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 30px;
+    transition: opacity .25s, visibility .25s, transform .25s;
+    display: flex;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    transform: translateY(-8px);
+  }
+
+  .styles-module-scss-module__tOk6ba__desktop-header__mobile-nav--open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .styles-module-scss-module__tOk6ba__desktop-header__mobile-nav .styles-module-scss-module__tOk6ba__desktop-header__navigation-item {
+    margin: 0;
+    padding: 14px 0;
+    font-size: 18px;
   }
 }
 
@@ -387,6 +457,26 @@ a {
   .styles-module-scss-module__n1cemW__desktop-footer__presentation {
     padding: 0 15px;
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .styles-module-scss-module__n1cemW__desktop-footer {
+    padding: 0 15px;
+  }
+
+  .styles-module-scss-module__n1cemW__desktop-footer__presentation {
+    padding: 0 10px;
+    font-size: 12px;
+  }
+
+  .styles-module-scss-module__n1cemW__desktop-footer__social-item {
+    margin: 0 0 0 12px;
+  }
+
+  .styles-module-scss-module__n1cemW__desktop-footer__social-item-image {
+    width: 24px;
+    height: 24px;
   }
 }
 

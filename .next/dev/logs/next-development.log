@@ -1,26 +1,43 @@
-[00:00:10.525] Server  LOG      ✓ Ready in 6.9s
-[00:00:14.686] Server  LOG      ○ Compiling / ...
-[00:00:21.449] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:21.607] Browser WARN    Image with src "/logo-black.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:21.607] Browser WARN    Image with src "/logo-white.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:50.071] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:50.219] Browser WARN    Image with src "/logo-black.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:50.219] Browser WARN    Image with src "/logo-white.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:01.513] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/instagram.avif" "received" null
-[00:01:01.518] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/youtube.avif" "received" null
-[00:01:01.519] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/facebook.avif" "received" null
-[00:01:01.526] Server  ERROR   C:\Users\1\Documents\Pets\ambilux\frontend\node_modules\next\dist\server\image-optimizer.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:01:01.529] Server  ERROR   C:\Users\1\Documents\Pets\ambilux\frontend\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:01:01.529] Server  ERROR   C:\Users\1\Documents\Pets\ambilux\frontend\node_modules\next\dist\server\response-cache\index.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:01:01.530] Server  ERROR   C:\Users\1\Documents\Pets\ambilux\frontend\node_modules\next\dist\lib\batcher.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:01:01.531] Server  ERROR   Error: The requested resource isn't a valid image.
-[00:01:01.532] Server  ERROR   C:\Users\1\Documents\Pets\ambilux\frontend\node_modules\next\dist\server\image-optimizer.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:01:01.532] Server  ERROR   C:\Users\1\Documents\Pets\ambilux\frontend\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:01:01.532] Server  ERROR   C:\Users\1\Documents\Pets\ambilux\frontend\node_modules\next\dist\server\response-cache\index.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:01:01.532] Server  ERROR   C:\Users\1\Documents\Pets\ambilux\frontend\node_modules\next\dist\lib\batcher.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:01:01.533] Server  ERROR   Error: The requested resource isn't a valid image.
-[00:01:01.533] Server  ERROR   C:\Users\1\Documents\Pets\ambilux\frontend\node_modules\next\dist\server\image-optimizer.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:01:01.534] Server  ERROR   C:\Users\1\Documents\Pets\ambilux\frontend\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:01:01.534] Server  ERROR   C:\Users\1\Documents\Pets\ambilux\frontend\node_modules\next\dist\server\response-cache\index.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:01:01.534] Server  ERROR   C:\Users\1\Documents\Pets\ambilux\frontend\node_modules\next\dist\lib\batcher.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:01:01.535] Server  ERROR   Error: The requested resource isn't a valid image.
+[00:00:00.769] Server  LOG      ✓ Ready in 556ms
+[00:00:03.617] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.567] Browser WARN    Image with src "/logo-black.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:05.567] Browser WARN    Image with src "/logo-white.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:06.569] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.744] Browser WARN    Image with src "/logo-black.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:06.744] Browser WARN    Image with src "/logo-white.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:01.686] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:01.836] Browser WARN    Image with src "/logo-black.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:01.836] Browser WARN    Image with src "/logo-white.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:11.401] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:11.634] Browser WARN    Image with src "/logo-black.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:11.634] Browser WARN    Image with src "https://ambilux.com/api/mikopark/mikopark-picture.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:11.634] Browser WARN    Image with src "https://ambilux.com/api/mikopark/mikopark-picture.avif" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:11.634] Browser WARN    Image with src "https://ambilux.com/api/smartcity/smartcity-picture.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:11.634] Browser WARN    Image with src "https://ambilux.com/api/smartcity/smartcity-picture.avif" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:11.634] Browser WARN    Image with src "https://ambilux.com/api/sosbul/sosbul-picture.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:11.634] Browser WARN    Image with src "https://ambilux.com/api/sosbul/sosbul-picture.avif" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:11.634] Browser WARN    Image with src "https://ambilux.com/api/malinovski/malinovski-picture.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:11.634] Browser WARN    Image with src "https://ambilux.com/api/malinovski/malinovski-picture.avif" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:11.634] Browser WARN    Image with src "https://ambilux.com/api/riverside/riverside-picture.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:11.634] Browser WARN    Image with src "https://ambilux.com/api/riverside/riverside-picture.avif" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:11.634] Browser WARN    Image with src "https://ambilux.com/api/new-city-hall/new-city-hall-picture.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:11.634] Browser WARN    Image with src "https://ambilux.com/api/new-city-hall/new-city-hall-picture.avif" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:11.634] Browser WARN    Image with src "https://ambilux.com/api/quattro/quattro-picture.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:11.634] Browser WARN    Image with src "https://ambilux.com/api/quattro/quattro-picture.avif" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:14.584] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:14.701] Browser WARN    Image with src "/logo-black.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:16.547] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "https://ambilux.com/api/malinovski/malinovski-content-1.pdf" "received" "application/pdf"
+[00:04:17.511] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:17.628] Browser WARN    Image with src "/logo-black.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:05:07.179] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:07.331] Browser WARN    Image with src "/logo-black.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:05:07.331] Browser WARN    Image with src "/logo-white.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:05:36.890] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:37.039] Browser WARN    Image with src "/logo-black.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:05:37.040] Browser WARN    Image with src "/logo-white.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:06:44.079] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:45.074] Browser WARN    Image with src "/logo-black.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:06:45.563] Browser WARN    Image with src "https://ambilux.com/api/naukograd/naukograd-content-2.avif" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:06:45.698] Browser WARN    Image with src "https://ambilux.com/api/naukograd/naukograd-content-1.avif" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading

@@ -60,16 +60,21 @@
   &__button {
     cursor: pointer;
 
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: fit-content;
-    height: 45px;
-    padding: 0 15px 0 15px;
+    min-height: 45px;
+    padding: 10px 20px;
     margin: 0 auto;
 
     color: var(--color-white);
     font-family: montserrat, sans-serif;
     font-weight: normal;
     font-size: 18px;
+    line-height: 1.3;
+    text-align: center;
 
     background-color: rgb(33, 33, 33);
     border-radius: 5px;
@@ -85,6 +90,21 @@
 
     &--open {
       height: 1017px;
+    }
+  }
+}
+
+@media screen and (max-width: 925px) {
+  .team {
+    padding: 30px 20px 30px 20px;
+
+    &__document {
+      // На мобильном контент вставки перекомпоновывается иначе — фиксированные
+      // 1017px либо обрезают, либо оставляют лишнее пустое место. Вьюпорт-высота
+      // с внутренним скроллом самого iframe надёжнее.
+      &--open {
+        height: 70vh;
+      }
     }
   }
 }

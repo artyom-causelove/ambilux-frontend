@@ -36,16 +36,17 @@
   background-size: 900px 900px; // нативный размер тайла: на обычном экране 1:1
 }
 
+// bottom: 100px — 80px фиксированного футера + 20px отступа, чтобы кнопка его не перекрывала.
+// Видна на всех разрешениях (условие теперь только в JS — по факту прокрутки), не только на мобильном.
 .backToTop {
-  display: none;
   cursor: pointer;
   position: fixed;
-  bottom: 20px;
+  z-index: 1000;
+  bottom: 100px;
   right: 20px;
   width: 40px;
   height: 40px;
   padding: 0 0 1px 0;
-  
 
   filter: drop-shadow(0 0 5px #55500050);
   background-color: var(--color-white);
@@ -66,10 +67,6 @@
   // мутные пятна — уменьшаем, чтобы плотность прожилок осталась как на десктопе.
   .background {
     background-size: 480px 480px;
-  }
-
-  .backToTop {
-    display: block;
   }
 }
 

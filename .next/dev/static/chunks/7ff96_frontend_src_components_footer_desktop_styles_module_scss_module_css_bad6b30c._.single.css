@@ -76,4 +76,24 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  .styles-module-scss-module__n1cemW__desktop-footer {
+    padding: 0 15px;
+  }
+
+  .styles-module-scss-module__n1cemW__desktop-footer__presentation {
+    padding: 0 10px;
+    font-size: 12px;
+  }
+
+  .styles-module-scss-module__n1cemW__desktop-footer__social-item {
+    margin: 0 0 0 12px;
+  }
+
+  .styles-module-scss-module__n1cemW__desktop-footer__social-item-image {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 /*# sourceMappingURL=7ff96_frontend_src_components_footer_desktop_styles_module_scss_module_css_bad6b30c._.single.css.map*/

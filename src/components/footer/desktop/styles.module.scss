@@ -95,3 +95,25 @@ $height: 80px;
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .desktop-footer {
+    padding: 0 15px 0 15px;
+
+    &__presentation {
+      padding: 0 10px 0 10px;
+      font-size: 12px;
+    }
+
+    &__social {
+      &-item {
+        margin: 0 0 0 12px;
+
+        &-image {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}
