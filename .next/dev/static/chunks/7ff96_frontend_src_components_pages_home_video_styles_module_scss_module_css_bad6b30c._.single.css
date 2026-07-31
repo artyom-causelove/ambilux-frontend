@@ -1,7 +1,7 @@
 /* [project]/Documents/Pets/ambilux/frontend/src/components/pages/home/video/styles.module.scss.module.css [app-client] (css) */
 .styles-module-scss-module__lUtIJW__home-video {
   max-height: calc(100vh - 80px);
-  margin: -80px 0 0;
+  margin: -80px 0 30px;
   position: relative;
 }
 
@@ -42,7 +42,7 @@
 
 @media screen and (max-width: 925px) {
   .styles-module-scss-module__lUtIJW__home-video {
-    margin: 0;
+    margin: 0 0 30px;
   }
 
   .styles-module-scss-module__lUtIJW__home-video__preload {

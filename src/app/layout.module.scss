@@ -26,6 +26,7 @@
   // Текстура — бесшовный тайл 900×900, поэтому фон не растягивается под экран,
   // а мостится повторением: размер плитки задан в px, чтобы масштаб мрамора
   // не зависел от размера окна, а на плотных экранах картинка не мылилась.
+  filter: brightness(1.07);
   background-image: url('/background-pattened.webp');
   background-image: image-set(
     url('/background-pattened.avif') type('image/avif'),

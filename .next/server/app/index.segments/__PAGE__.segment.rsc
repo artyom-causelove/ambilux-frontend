@@ -1,8 +1,10 @@
 1:"$Sreact.fragment"
-2:I[82630,["/_next/static/chunks/cdf7247bcce0405f.js","/_next/static/chunks/8f30f5fa8eeb1cea.js","/_next/static/chunks/da2b6d0ac4326c43.js"],"Image"]
-3:I[71480,["/_next/static/chunks/cdf7247bcce0405f.js","/_next/static/chunks/8f30f5fa8eeb1cea.js","/_next/static/chunks/da2b6d0ac4326c43.js"],"default"]
-4:I[84055,["/_next/static/chunks/0e7597532b41d9b6.js","/_next/static/chunks/a073d7b5fa062023.js"],"OutletBoundary"]
-5:"$Sreact.suspense"
-:HL["/_next/static/chunks/9885b33c90426152.css","style"]
-0:{"buildId":"YM04mux1uj0Ax106PZzxf","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"page-module-scss-module__Qa8JdG__wrapper","children":[["$","section",null,{"className":"home-video-module-scss-module__giHGuq__wrapper","children":[["$","$L2",null,{"className":"home-video-module-scss-module__giHGuq__image","src":"/logo-white.png","alt":"AMBILUX ARCHITECTS","width":1517,"height":394}],["$","video",null,{"className":"home-video-module-scss-module__giHGuq__video","autoPlay":true,"loop":true,"muted":true,"playsInline":true,"poster":"/intro.webp","children":["$","source",null,{"src":"https://ambilux.com/api/main/intro.mp4","type":"video/mp4"}]}]]}],["$","div",null,{"className":"home-contacts-module-scss-module__WkhosW__contacts","children":[["$","a","instagram",{"href":"https://www.instagram.com/ambilux_architects/","target":"_blank","children":["$","$L2",null,{"src":"/instagram.avif","alt":"instagram","width":30,"height":30}]}],["$","a","youtube",{"href":"https://www.youtube.com/channel/UC1gc5w2gEwrbdDrdI9JHP3A","target":"_blank","children":["$","$L2",null,{"src":"/youtube.avif","alt":"youtube","width":30,"height":30}]}],["$","a","facebook",{"href":"https://ru-ru.facebook.com/people/Ambilux-Architects/100009167491448","target":"_blank","children":["$","$L2",null,{"src":"/facebook.avif","alt":"facebook","width":30,"height":30}]}]]}],["$","$L3",null,{}]]}],[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/9885b33c90426152.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/da2b6d0ac4326c43.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"loading":null,"isPartial":false}
-6:null
+2:I[35231,["/_next/static/chunks/0e7597532b41d9b6.js","/_next/static/chunks/a073d7b5fa062023.js"],"ClientPageRoot"]
+3:I[34323,["/_next/static/chunks/5eda4160c60131b3.js","/_next/static/chunks/485f08306ba8aa6a.js","/_next/static/chunks/a68414a6a2831bf6.js","/_next/static/chunks/1fde9b8d49d0358c.js"],"default"]
+6:I[84055,["/_next/static/chunks/0e7597532b41d9b6.js","/_next/static/chunks/a073d7b5fa062023.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+:HL["/_next/static/chunks/687183cf6d669983.css","style"]
+0:{"buildId":"2n672hszLwqg-RtLOvRww","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/687183cf6d669983.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/a68414a6a2831bf6.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/1fde9b8d49d0358c.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
+4:{}
+5:{}
+8:null

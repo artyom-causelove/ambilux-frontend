@@ -1,20 +1,17 @@
 // Прокрутка живёт на #wrapper, а не на окне: у html/body стоит overflow: hidden.
-export function scrollToContacts() {
-  const wrapper = document.getElementById('wrapper');
-  const content = document.getElementById('content');
-
-  if (wrapper && content) {
-    wrapper.scrollTo({ top: content.scrollHeight, behavior: 'smooth' });
-  }
+// #wrapper уже учитывает высоту фиксированной шапки через padding-top, поэтому
+// обычного scrollIntoView достаточно — без ручного подсчёта оффсетов.
+export function scrollToSection(id: string) {
+  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
 }
 
-// Для onTransitionReady: ждём конца слайда, потом плавно доскроллим до подвала.
+// Для onTransitionReady: ждём конца слайда, потом плавно доскроллим до секции.
 // Длительность берётся из самой анимации, чтобы не дублировать --vt-duration в JS.
-export function scrollToContactsAfterTransition() {
+export function scrollToSectionAfterTransition(id: string) {
   const animation = document.getAnimations().find(
     (item) => (item.effect as KeyframeEffect | null)?.pseudoElement === '::view-transition-new(page)'
   );
 
   // finished реджектится, если переход прервали новой навигацией
-  (animation?.finished ?? Promise.resolve()).then(scrollToContacts).catch(() => {});
+  (animation?.finished ?? Promise.resolve()).then(() => scrollToSection(id)).catch(() => {});
 }

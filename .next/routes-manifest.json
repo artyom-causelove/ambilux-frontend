@@ -27,6 +27,14 @@
         "nxtPid": "nxtPid"
       },
       "namedRegex": "^/objects/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/projects/[category]",
+      "regex": "^/projects/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPcategory": "nxtPcategory"
+      },
+      "namedRegex": "^/projects/(?<nxtPcategory>[^/]+?)(?:/)?$"
     }
   ],
   "staticRoutes": [
@@ -47,12 +55,6 @@
       "regex": "^/_not\\-found(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/_not\\-found(?:/)?$"
-    },
-    {
-      "page": "/about",
-      "regex": "^/about(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/about(?:/)?$"
     },
     {
       "page": "/admin",

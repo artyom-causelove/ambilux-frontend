@@ -1,0 +1,136 @@
+.projects {
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+  padding: 30px 45px 30px 45px;
+
+  background-color: var(--color-white);
+
+  &__title {
+    margin: 0 0 15px 0;
+
+    text-align: center;
+    font-family: montserrat, sans-serif;
+  }
+
+  &__section {
+    margin: 0 0 40px 0;
+
+    font-size: 18px;
+    font-family: montserrat, sans-serif;
+  }
+
+  &__approach {
+    display: flex;
+    flex-direction: column;
+
+    padding: 15px 0 0 20px;
+    gap: 15px;
+
+    list-style: none;
+
+    &-item {
+      padding: 0 0 0 15px;
+      border-left: 2px solid rgb(33, 33, 33);
+    }
+
+    &-label {
+      padding: 0 5px 0 0;
+      font-weight: bold;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+
+    width: 100%;
+  }
+
+  &__card {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+    display: block;
+    aspect-ratio: 4 / 3;
+
+    background-color: rgb(33, 33, 33);
+    border-radius: 8px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.15) 55%, transparent 100%);
+      transition: background-color 0.4s ease;
+    }
+
+    &-image {
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    &-placeholder {
+      position: absolute;
+      inset: 0;
+
+      background: linear-gradient(135deg, rgb(60, 60, 60), rgb(20, 20, 20));
+    }
+
+    &-title {
+      position: absolute;
+      z-index: 1;
+      left: 20px;
+      right: 20px;
+      bottom: 16px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      // Глобальный сброс (`* { overflow-y: hidden }`) заодно принудительно переводит
+      // overflow-x в auto (так требует спецификация), и стрелка при translateX на
+      // hover обрезается по границе этого span — снаружи её страхует overflow:hidden
+      // у .projects__card, поэтому здесь можно спокойно вернуть visible.
+      overflow: visible;
+
+      color: var(--color-white);
+      font-family: montserrat, sans-serif;
+      font-size: 19px;
+      text-align: left;
+    }
+
+    &-arrow {
+      transition: transform 0.3s ease;
+    }
+
+    &:hover {
+      .projects__card-image {
+        transform: scale(1.08);
+      }
+
+      .projects__card-arrow {
+        transform: translateX(6px);
+      }
+    }
+  }
+}
+
+.red-line {
+  text-indent: 20px;
+}
+
+@media screen and (max-width: 925px) {
+  .projects {
+    padding: 30px 20px 30px 20px;
+
+    &__cards {
+      grid-template-columns: 1fr;
+    }
+
+    &__card {
+      aspect-ratio: 16 / 10;
+    }
+  }
+}

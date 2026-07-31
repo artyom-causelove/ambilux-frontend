@@ -1,10 +1,10 @@
 {
   "/_global-error/page": "/_global-error",
   "/_not-found/page": "/_not-found",
-  "/about/page": "/about",
   "/admin/page": "/admin",
   "/favicon.ico/route": "/favicon.ico",
   "/objects/[id]/page": "/objects/[id]",
   "/page": "/",
+  "/projects/[category]/page": "/projects/[category]",
   "/vacancies/page": "/vacancies"
 }

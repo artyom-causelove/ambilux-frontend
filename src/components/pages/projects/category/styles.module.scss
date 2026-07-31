@@ -66,6 +66,10 @@
     &:last-of-type {
       margin: 0 auto 0 auto;
     }
+
+    & + & {
+      margin-top: 15px;
+    }
   }
 
   // Высота галереи заранее не известна, поэтому раскрытие через grid, а не height.

@@ -5,7 +5,9 @@
   align-items: center;
 
   width: 100%;
-  padding: 45px 0 100px 0;
+  // Верхний паддинг вровень с остальными карточками — расстояние между блоками
+  // задаёт общий gap на .wrapper. Нижний больше — это отступ перед футером, а не между блоками.
+  padding: 30px 0 100px 0;
 
   background-color: var(--color-white);
 }

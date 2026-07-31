@@ -7,7 +7,7 @@ import styles from './header.module.scss';
 import Image from 'next/image';
 import { useState } from 'react';
 import { useMediaQuery } from 'usehooks-ts';
-import { scrollToContacts, scrollToContactsAfterTransition } from '@/utils/scroll';
+import { scrollToSection, scrollToSectionAfterTransition } from '@/utils/scroll';
 // import Link from 'next/link';
 
 const contacts = [
@@ -37,17 +37,30 @@ export default function Header() {
 
   const headerItems = {
     home: { title: 'главная', href: '/' , type: 'link', onClick: () => {}},
-    about: { title: 'о нас', href: '/about', type: 'link', onClick: () => {}},
-    contacts: {
-      title: 'контакты',
-      href: '/contacts',
+    about: {
+      title: 'о нас',
+      href: '/#about',
       type: 'button',
       onClick: (e: any) => {
         e.preventDefault();
         if (pathname !== '/') {
-          router.push('/', { onTransitionReady: scrollToContactsAfterTransition });
+          router.push('/', { onTransitionReady: () => scrollToSectionAfterTransition('about') });
         } else {
-          scrollToContacts();
+          scrollToSection('about');
+        }
+        setMenu(false);
+      }
+    },
+    contacts: {
+      title: 'контакты',
+      href: '/#contacts',
+      type: 'button',
+      onClick: (e: any) => {
+        e.preventDefault();
+        if (pathname !== '/') {
+          router.push('/', { onTransitionReady: () => scrollToSectionAfterTransition('contacts') });
+        } else {
+          scrollToSection('contacts');
         }
         setMenu(false);
       }

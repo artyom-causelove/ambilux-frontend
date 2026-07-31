@@ -61,6 +61,12 @@ a {
   text-decoration: none;
 }
 
+// Шапка зафиксирована и лежит поверх контента — без этого scrollIntoView
+// подводит секцию строго под неё, и заголовок оказывается перекрыт.
+#content [id] {
+  scroll-margin-top: 100px;
+}
+
 @keyframes vt-slide-out {
   to { transform: translateX(-100%); }
 }

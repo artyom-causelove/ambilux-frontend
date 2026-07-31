@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "69595580a751b247425d9c5fb55df300",
-    "previewModeSigningKey": "8e1f9e2962b8342132f7d77db45c47b1f950f591d0e38c885c2e2798829582bf",
-    "previewModeEncryptionKey": "5cb8139d1749ae468f69eaa73cd64f92f0ab8d011945addff3bf706f63f599c3"
-  }
-}
+{"version":4,"routes":{"/projects/all":{},"/projects/urban":{},"/projects/architecture":{},"/projects/design":{},"/projects/competitions":{}},"dynamicRoutes":{"/projects/[category]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/projects/[category]","routeRegex":"^\\/projects\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"dafb2a6a8647ab70035c0d253c299f5d","previewModeSigningKey":"6191e9c3087901e1df74613ecd94655ea45279d2fc75a2a5e464a737992d2c7e","previewModeEncryptionKey":"b1425610505e9b18079683cc10e839154f5f9e5dd0fc293406e29d2b92941eb9"}}

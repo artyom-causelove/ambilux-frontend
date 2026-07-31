@@ -1,0 +1,72 @@
+.about {
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+  padding: 30px 45px 30px 45px;
+
+  background-color: var(--color-white);
+
+  &__title {
+    margin: 0 0 15px 0;
+
+    text-align: center;
+    font-family: montserrat, sans-serif;
+  }
+
+  &__subtitle {
+    margin: 15px 0 20px 0;
+
+    font-family: montserrat, sans-serif;
+
+    &:last-of-type {
+      margin: 50px 0 20px 0;
+    }
+  }
+
+  &__section {
+    margin: 0 0 40px 0;
+
+    font-size: 18px;
+    font-family: montserrat, sans-serif;
+
+    &-project, &-meta {
+      padding: 0 0 10px 0;
+    }
+
+    &-meta {
+      font-size: 16px;
+      font-style: italic;
+    }
+
+    &-award {
+      font-size: 16px;
+      font-style: italic;
+    }
+
+    &-title {
+      align-self: baseline;
+      color: rgb(40, 53, 147);
+    }
+
+    &-url {
+      align-self: baseline;
+      padding: 5px 0 0 15px;
+      color: rgb(40, 53, 147);
+    }
+  }
+}
+
+.media {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 15px 0;
+}
+
+.red-line {
+  text-indent: 20px;
+}
+
+.about__span {
+  display: block;
+  padding: 60px 0 0 0;
+  width: 100%;
+}

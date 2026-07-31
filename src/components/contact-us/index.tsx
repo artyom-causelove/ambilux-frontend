@@ -50,7 +50,7 @@ export default function ContactUs() {
   }
 
   return (
-    <div className={styles.wrapper}>
+    <div id="contacts" className={styles.wrapper}>
       <span className={styles.title}>СВЯЖИТЕСЬ С НАМИ</span>
       <div className={styles.separator}></div>
       <div className={styles.email}>
