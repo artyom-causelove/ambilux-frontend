@@ -6,25 +6,97 @@
   padding: 30px 45px 30px 45px;
 
   background-color: var(--color-white);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
 
   &__title {
     margin: 0 0 15px 0;
 
-    text-align: center;
+    text-align: left;
     font-family: montserrat, sans-serif;
+
+    &--center {
+      margin: 40px 0 15px 0;
+      text-align: center;
+    }
   }
 
-  &__wrapper {
+  &__lead {
     display: flex;
-    flex-direction: column;
+    gap: 30px;
+
+    padding: 0 0 30px 0;
+    margin: 10px 0 30px 0;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    &-avatar {
+      flex-shrink: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+
+      color: var(--color-white);
+      font-family: montserrat, sans-serif;
+      font-weight: bold;
+      font-size: 32px;
+
+      background-color: rgb(33, 33, 33);
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+
+      // .item__name/-job/-awards/-merits рассчитаны на наследование font-family от
+      // родителя с классом .item — здесь такого родителя нет, задаём явно.
+      font-family: montserrat, sans-serif;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+
+    margin: 0 0 40px 0;
   }
 
   .item {
     display: flex;
-    flex-direction: column;
-    margin: 0 0 20px 0;
+    align-items: center;
+    gap: 15px;
 
     font-family: montserrat, sans-serif;
+
+    &__avatar {
+      flex-shrink: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+
+      color: var(--color-white);
+      font-family: montserrat, sans-serif;
+      font-weight: bold;
+      font-size: 16px;
+
+      background-color: rgb(33, 33, 33);
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+    }
 
     &__name {
       font-size: 18px;
@@ -40,20 +112,12 @@
       display: flex;
       flex-direction: column;
       padding: 0 0 10px 10px;
-
-      &__item {
-
-      }
     }
 
     &__merits {
       display: flex;
       flex-direction: column;
       padding: 0 0 0 10px;
-
-      &__item {
-
-      }
     }
   }
 
@@ -98,6 +162,12 @@
   .team {
     padding: 30px 20px 30px 20px;
 
+    &__lead {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
     &__document {
       // На мобильном контент вставки перекомпоновывается иначе — фиксированные
       // 1017px либо обрезают, либо оставляют лишнее пустое место. Вьюпорт-высота
@@ -108,4 +178,3 @@
     }
   }
 }
-

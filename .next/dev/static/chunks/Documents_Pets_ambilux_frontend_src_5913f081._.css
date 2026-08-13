@@ -5,6 +5,8 @@
   --color-blue: blue;
   --shadow-vertical: 1px 2px 5px 0px #0000004d;
   --shadow-invertical: 1px -2px 5px 0px #0000004d;
+  --card-radius: 20px;
+  --card-shadow: 0 24px 48px #00000014;
   --vt-duration: .7s;
   --vt-easing: cubic-bezier(.87, 0, .13, 1);
 }
@@ -253,6 +255,12 @@ a {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .layout-module-scss-module__Nm6aKG__wrapper {
+    padding-bottom: 20px;
+  }
+}
+
 /* [project]/Documents/Pets/ambilux/frontend/src/components/header/desktop/styles.module.scss.module.css [app-client] (css) */
 .styles-module-scss-module__tOk6ba__desktop-header {
   z-index: 1000;
@@ -462,21 +470,7 @@ a {
 
 @media screen and (max-width: 480px) {
   .styles-module-scss-module__n1cemW__desktop-footer {
-    padding: 0 15px;
-  }
-
-  .styles-module-scss-module__n1cemW__desktop-footer__presentation {
-    padding: 0 10px;
-    font-size: 12px;
-  }
-
-  .styles-module-scss-module__n1cemW__desktop-footer__social-item {
-    margin: 0 0 0 12px;
-  }
-
-  .styles-module-scss-module__n1cemW__desktop-footer__social-item-image {
-    width: 24px;
-    height: 24px;
+    display: none;
   }
 }
 

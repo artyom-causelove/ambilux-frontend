@@ -112,14 +112,17 @@ export default function HomeProjects() {
         <section className={styles['projects__section']}>
           <p>{approachTitle}</p>
 
-          <ul className={styles['projects__approach']}>
+          <div className={styles['projects__approach']}>
             {approach.map((item, index) => (
-              <li key={index} className={styles['projects__approach-item']}>
-                <span className={styles['projects__approach-label']}>{item.label}:</span>
-                {item.text}
-              </li>
+              <div key={index} className={styles['projects__approach-item']}>
+                <span className={styles['projects__approach-number']}>
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+                <span className={styles['projects__approach-label']}>{item.label}</span>
+                <p className={styles['projects__approach-text']}>{item.text}</p>
+              </div>
             ))}
-          </ul>
+          </div>
         </section>
       </Reveal>
 

@@ -4,12 +4,9 @@ import styles from './styles.module.scss';
 
 import Reveal from '@/components/reveal';
 
+// Первый абзац из старой версии текста убран — его смысл теперь передаёт lead выше,
+// дословно повторять то же самое сразу под цифрами было бы избыточно.
 const aboutSections = [
-  `
-    Архитектурно-градостроительная компания Ambilux architects представляет собой синергию тридцатилетнего профессионального
-    опыта основателя и главного архитектора компании Юрия Михайловича Чаплыгина, мультидисциплинарность команды талантливых людей,
-    объединённых созидательными амбициями, и передового подхода к формированию пространственной среды
-  `,
   `
     Ambilux architects была основана в 2014 году. Наша философия основана на глубоком понимании того, что архитектура — это не просто создание объектов,
     а конструирование будущего, в центре которого находится человек. Начав свою деятельность в сегменте премиального малоэтажного индивидуального строительства,
@@ -182,21 +179,27 @@ export default function HomeAbout() {
   return (
     <main id="about" className={styles['about']}>
       <h1 className={styles['about__title']}>О нас</h1>
-      {aboutSections.map((section, index) => (
-        <Reveal
-          key={index}
-          amount={0.3}
-          transition={{
-            duration: 0.8,
-            delay: index * 0.15,
-            ease: [0.22, 1, 0.36, 1],
-          }}
-        >
-          <section className={`${styles['about__section']} ${styles['red-line']}`}>
-            {section}
-          </section>
-        </Reveal>
-      ))}
+
+      <div className={styles['about__body']}>
+        {aboutSections.map((section, index) => (
+          <Reveal
+            key={index}
+            amount={0.3}
+            transition={{
+              duration: 0.8,
+              delay: index * 0.15,
+              ease: [0.22, 1, 0.36, 1],
+            }}
+          >
+            <section className={styles['about__block']}>
+              <span className={styles['about__block-number']}>
+                {String(index + 1).padStart(2, '0')}
+              </span>
+              <p className={styles['red-line']}>{section}</p>
+            </section>
+          </Reveal>
+        ))}
+      </div>
 
       <span id="awards" className={styles['about__span']}></span>
       <h1 className={styles['about__title']}>Награды</h1>
@@ -212,21 +215,23 @@ export default function HomeAbout() {
           <p>{awardTitle}</p>
         </section>
 
-        {awardSections.map((section, index) => (
-          <section key={index} className={styles['about__section']}>
-            <p className={`${styles['about__section-project']} ${styles['red-line']}`}>
-              {section.project}
-            </p>
+        <div className={styles['about__awards']}>
+          {awardSections.map((section, index) => (
+            <section key={index} className={styles['about__award']}>
+              <p className={`${styles['about__section-project']} ${styles['red-line']}`}>
+                {section.project}
+              </p>
 
-            <p className={`${styles['about__section-meta']} ${styles['red-line']}`}>
-              {section.meta}
-            </p>
+              <p className={`${styles['about__section-meta']} ${styles['red-line']}`}>
+                {section.meta}
+              </p>
 
-            <p className={`${styles['about__section-award']} ${styles['red-line']}`}>
-              {section.award}
-            </p>
-          </section>
-        ))}
+              <p className={`${styles['about__section-award']} ${styles['red-line']}`}>
+                {section.award}
+              </p>
+            </section>
+          ))}
+        </div>
       </Reveal>
 
       <span id="media" className={styles['about__span']}></span>
@@ -240,28 +245,32 @@ export default function HomeAbout() {
         }}
       >
         <h2 className={styles['about__subtitle']}>Статьи:</h2>
-        {mediaSections.text.map((section, index) => (
-          <section key={index} className={`${styles['about__section']} ${styles['media']}`}>
-            <a className={`${styles['about__section-title']} ${styles['red-line']}`} href={section.url[0].href} target='_blank'>
-              {section.title}
-            </a>
-
-            { section.url.map((url, index) =>
-              <a key={index} className={`${styles['about__section-url']} ${styles['red-line']}`} href={url.href} target='_blank'>
-                {url.text}
+        <div className={styles['about__media-list']}>
+          {mediaSections.text.map((section, index) => (
+            <section key={index} className={`${styles['about__media-item']} ${styles['media']}`}>
+              <a className={`${styles['about__section-title']} ${styles['red-line']}`} href={section.url[0].href} target='_blank'>
+                {section.title}
               </a>
-            )}
-          </section>
-        ))}
+
+              { section.url.map((url, index) =>
+                <a key={index} className={`${styles['about__section-url']} ${styles['red-line']}`} href={url.href} target='_blank'>
+                  {url.text}
+                </a>
+              )}
+            </section>
+          ))}
+        </div>
 
         <h2 className={styles['about__subtitle']}>Видео:</h2>
-        {mediaSections.video.map((section, index) => (
-          <section key={index} className={`${styles['about__section']} ${styles['media']}`}>
-            <a className={`${styles['about__section-title']} ${styles['red-line']}`} href={section.url} target='_blank'>
-              {section.title}
-            </a>
-          </section>
-        ))}
+        <div className={styles['about__media-list']}>
+          {mediaSections.video.map((section, index) => (
+            <section key={index} className={`${styles['about__media-item']} ${styles['media']}`}>
+              <a className={`${styles['about__section-title']} ${styles['red-line']}`} href={section.url} target='_blank'>
+                {section.title}
+              </a>
+            </section>
+          ))}
+        </div>
       </Reveal>
 
     </main>

@@ -4,8 +4,16 @@ import { useEffect, useState } from 'react';
 import styles from './styles.module.scss';
 import Reveal from '@/components/reveal';
 
+// Реальных фото нет ни у кого — вместо пустой рамки-плейсхолдера показываем инициалы
+// (имя + последнее слово, чтобы у «Юрий Михайлович Чаплыгин» получилось «ЮЧ», а не «ЮМ»).
+const getInitials = (name: string) => {
+  const parts = name.trim().split(/\s+/);
+  return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+};
+
 export default function HomeTeam() {
   const [open, setOpen] = useState(false)
+  const [lead, ...rest] = objects;
 
   const scroll = () => {
     const el = document.getElementById('vacancy')
@@ -25,17 +33,31 @@ export default function HomeTeam() {
   return (
     <main id="team" className={styles['team']}>
       <h1 className={styles['team__title']}>Команда</h1>
+
+      <Reveal transition={{ duration: 0.5, ease: 'easeOut' }} amount={0.2}>
+        <section className={styles['team__lead']}>
+          <span className={styles['team__lead-avatar']}>{getInitials(lead.name)}</span>
+          <div className={styles['team__lead-info']}>
+            <span className={styles['item__name']}>{lead.name}</span>
+            <span className={styles['item__job']}>{lead.job}</span>
+            <div className={styles['item__awards']}>
+              {lead.awards.map((award, index) => <span key={index} className={styles['item__awards-item']}>{award}</span>)}
+            </div>
+            <div className={styles['item__merits']}>
+              {lead.merits.map((merit, index) => <span key={index} className={styles['item__merits-item']}>{merit}</span>)}
+            </div>
+          </div>
+        </section>
+      </Reveal>
+
       <Reveal transition={{ duration: 0.5, ease: 'easeOut' }} amount={0.1}>
-        <section className={styles['team__wrapper']}>
-          {objects.map((value, index) =>
+        <section className={styles['team__grid']}>
+          {rest.map((value, index) =>
             <div key={index} className={styles['item']}>
-              <span className={styles['item__name']}>{value.name}</span>
-              <span className={styles['item__job']}>{value.job}</span>
-              <div className={styles['item__awards']}>
-                {value.awards.map((award, index) => <span key={index} className={styles['item__awards-item']}>{award}</span>)}
-              </div>
-              <div className={styles['item__merits']}>
-                {value.merits.map((merit, index) => <span key={index} className={styles['item__merits-item']}>{merit}</span>)}
+              <span className={styles['item__avatar']}>{getInitials(value.name)}</span>
+              <div className={styles['item__text']}>
+                <span className={styles['item__name']}>{value.name}</span>
+                <span className={styles['item__job']}>{value.job}</span>
               </div>
             </div>
           )}
@@ -43,7 +65,7 @@ export default function HomeTeam() {
       </Reveal>
 
       <Reveal transition={{ duration: 0.5, ease: 'easeOut' }}>
-        <h2 id="vacancy" className={styles['team__title']}>Вы так же можете стать частью нашей команды!</h2>
+        <h2 id="vacancy" className={`${styles['team__title']} ${styles['team__title--center']}`}>Вы так же можете стать частью нашей команды!</h2>
         <button className={styles['team__button']} onClick={() => { setOpen(!open); scroll(); }}>
           Ознакомьтесь с существующими вакансиями
         </button>

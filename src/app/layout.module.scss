@@ -75,3 +75,10 @@
     background-size: 340px 340px;
   }
 }
+
+// Футер скрыт на телефоне (см. footer/desktop) — резерв под него больше не нужен.
+@media screen and (max-width: 480px) {
+  .wrapper {
+    padding-bottom: 20px;
+  }
+}

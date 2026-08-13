@@ -64,4 +64,10 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  .layout-module-scss-module__Nm6aKG__wrapper {
+    padding-bottom: 20px;
+  }
+}
+
 /*# sourceMappingURL=Documents_Pets_ambilux_frontend_src_app_layout_module_scss_module_css_bad6b30c._.single.css.map*/

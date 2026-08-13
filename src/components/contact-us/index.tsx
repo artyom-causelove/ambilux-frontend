@@ -54,19 +54,21 @@ export default function ContactUs() {
       <span className={styles.title}>СВЯЖИТЕСЬ С НАМИ</span>
       <div className={styles.separator}></div>
       <div className={styles.email}>
-        <a href='mailto:Inf@ambilux.com' target='_blank'>E-MAIL: inf@ambilux.com</a>
+        <span className={styles.label}>E-MAIL: </span>
+        <a href='mailto:Inf@ambilux.com' target='_blank'>inf@ambilux.com</a>
       </div>
       <div className={styles.telegram}>
-        <a href='https://t.me/ambilux_architects' target='_blank'>Telegram: https://t.me/ambilux_architects</a>
+        <span className={styles.label}>Telegram: </span>
+        <a href='https://t.me/ambilux_architects' target='_blank'>https://t.me/ambilux_architects</a>
       </div>
       <div className={styles.social}>
         {contacts.map(item =>
-          <a href={item.link} key={item.alt} target='_blank'>
+          <a className={styles.socialItem} href={item.link} key={item.alt} target='_blank'>
             <Image
               src={item.icon}
               alt={item.alt}
-              width={30}
-              height={30}
+              width={22}
+              height={22}
             />
           </a>
         )}
@@ -77,8 +79,10 @@ export default function ContactUs() {
           <input required name='email' type='email' className={styles.formEmail} minLength={3} maxLength={254} placeholder='Электронная почта'/>
         </div>
         <textarea required name='text' className={styles.formText} minLength={1} maxLength={2000} placeholder='Введите текст'></textarea>
-        <button type='submit' className={styles.button}>Отправить</button>
-        <span className={`${styles.thanks} ${vis && styles.vis}`}>Отправлено. Спасибо!</span>
+        <div className={styles.formFooter}>
+          <span className={`${styles.thanks} ${vis && styles.vis}`}>Отправлено. Спасибо!</span>
+          <button type='submit' className={styles.button}>Отправить</button>
+        </div>
       </form>
     </div>
   );
