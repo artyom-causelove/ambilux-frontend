@@ -132,11 +132,11 @@ _c = Header;
 function RootLayout(t0) {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(14);
-    if ($[0] !== "4e76c241e80fd364544e544121127ee6900cd6c84cfddadad2f3555e13d61dcc") {
+    if ($[0] !== "e417ee9522da72d0df58be4e2084212e5bb69b5765f5ff43311f7b0e4908d231") {
         for(let $i = 0; $i < 14; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "4e76c241e80fd364544e544121127ee6900cd6c84cfddadad2f3555e13d61dcc";
+        $[0] = "e417ee9522da72d0df58be4e2084212e5bb69b5765f5ff43311f7b0e4908d231";
     }
     const { children } = t0;
     const [scroll, setScroll] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);

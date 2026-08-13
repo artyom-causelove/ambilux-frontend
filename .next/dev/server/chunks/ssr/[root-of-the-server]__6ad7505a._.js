@@ -40,19 +40,24 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux
 ;
 const contacts = [
     {
-        alt: 'instagram',
-        link: 'https://www.instagram.com/ambilux_architects/',
-        icon: '/instagram.avif'
+        alt: 'Max',
+        link: 'https://max.ru/join/KWK9Y09HkYy6Cu85Z0fZjDzh8vbRVZNonZYXX9weUEQ',
+        icon: '/max.svg'
     },
     {
-        alt: 'youtube',
-        link: 'https://www.youtube.com/channel/UC1gc5w2gEwrbdDrdI9JHP3A',
-        icon: '/youtube.avif'
+        alt: 'Telegram',
+        link: 'https://t.me/chaplyginspace',
+        icon: '/telegram.svg'
     },
     {
-        alt: 'facebook',
-        link: 'https://ru-ru.facebook.com/people/Ambilux-Architects/100009167491448',
-        icon: '/facebook.avif'
+        alt: 'VK Video',
+        link: 'https://m.vkvideo.ru/@ambiluxarchitects?from=search',
+        icon: '/vk.svg'
+    },
+    {
+        alt: 'YouTube',
+        link: 'https://m.youtube.com/@ambiluxarchitects643?ra=m',
+        icon: '/youtube.svg'
     }
 ];
 function HomeContacts() {
@@ -61,6 +66,7 @@ function HomeContacts() {
         children: contacts.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                 href: item.link,
                 target: "_blank",
+                title: item.alt,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                     src: item.icon,
                     alt: item.alt,
@@ -68,17 +74,17 @@ function HomeContacts() {
                     height: 30
                 }, void 0, false, {
                     fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/pages/home/contacts/index.tsx",
-                    lineNumber: 28,
+                    lineNumber: 33,
                     columnNumber: 11
                 }, this)
             }, item.alt, false, {
                 fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/pages/home/contacts/index.tsx",
-                lineNumber: 27,
+                lineNumber: 32,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/pages/home/contacts/index.tsx",
-        lineNumber: 25,
+        lineNumber: 30,
         columnNumber: 5
     }, this);
 }

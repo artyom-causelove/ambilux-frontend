@@ -149,6 +149,7 @@
   .header-module-scss-module__sUM59q__menuWrapper {
     justify-content: center;
     gap: 20px;
+    padding: 0 70px 0 0;
     display: flex;
     position: relative;
   }

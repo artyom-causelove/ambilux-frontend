@@ -9,7 +9,7 @@
   position: relative;
 }
 
-.contact-us-module-scss-module__IW5CWG__title, .contact-us-module-scss-module__IW5CWG__separator, .contact-us-module-scss-module__IW5CWG__email, .contact-us-module-scss-module__IW5CWG__telegram, .contact-us-module-scss-module__IW5CWG__social {
+.contact-us-module-scss-module__IW5CWG__title, .contact-us-module-scss-module__IW5CWG__separator, .contact-us-module-scss-module__IW5CWG__phones, .contact-us-module-scss-module__IW5CWG__emails, .contact-us-module-scss-module__IW5CWG__social {
   text-align: center;
   width: 100%;
   font-family: montserrat;
@@ -41,16 +41,29 @@
   font-size: 21px;
 }
 
-.contact-us-module-scss-module__IW5CWG__email, .contact-us-module-scss-module__IW5CWG__telegram {
+.contact-us-module-scss-module__IW5CWG__phones, .contact-us-module-scss-module__IW5CWG__emails {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 30px;
   margin: 0 0 25px;
   font-size: 16px;
+  display: flex;
 }
 
 .contact-us-module-scss-module__IW5CWG__social {
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 20px;
   margin: 0 0 40px;
   display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  .contact-us-module-scss-module__IW5CWG__phones, .contact-us-module-scss-module__IW5CWG__emails {
+    flex-direction: column;
+    gap: 8px;
+  }
 }
 
 .contact-us-module-scss-module__IW5CWG__formText, .contact-us-module-scss-module__IW5CWG__formName, .contact-us-module-scss-module__IW5CWG__formEmail {

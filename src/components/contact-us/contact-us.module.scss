@@ -12,8 +12,8 @@
 
 .title,
 .separator,
-.email,
-.telegram,
+.phones,
+.emails,
 .social {
   font-family: 'montserrat';
   font-weight: bold;
@@ -47,8 +47,13 @@
   font-size: 21px;
 }
 
-.email,
-.telegram {
+.phones,
+.emails {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 8px 30px;
   font-size: 16px;
   margin: 0 0 25px 0;
 }
@@ -56,9 +61,19 @@
 .social {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 
   gap: 20px;
   margin: 0 0 40px 0;
+}
+
+@media screen and (max-width: 480px) {
+  .phones,
+  .emails {
+    flex-direction: column;
+    gap: 8px;
+  }
 }
 
 .formText,

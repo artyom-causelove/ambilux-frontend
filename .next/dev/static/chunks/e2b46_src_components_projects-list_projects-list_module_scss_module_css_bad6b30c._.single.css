@@ -1,0 +1,130 @@
+/* [project]/Documents/Pets/ambilux/frontend/src/components/projects-list/projects-list.module.scss.module.css [app-client] (css) */
+.projects-list-module-scss-module__fX2q0q__list {
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1175px;
+  margin: 0 auto;
+  padding: 10px 100px 30px;
+  display: flex;
+}
+
+.projects-list-module-scss-module__fX2q0q__item {
+  background-color: var(--color-white);
+  justify-content: space-between;
+  gap: 20px;
+  display: flex;
+  overflow: hidden;
+}
+
+.projects-list-module-scss-module__fX2q0q__reverse {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.projects-list-module-scss-module__fX2q0q__reverse .projects-list-module-scss-module__fX2q0q__itemInfo {
+  padding: 25px 35px 25px 0;
+}
+
+.projects-list-module-scss-module__fX2q0q__itemInfo {
+  flex-direction: column;
+  padding: 25px 0 25px 30px;
+  display: flex;
+}
+
+.projects-list-module-scss-module__fX2q0q__itemTitle, .projects-list-module-scss-module__fX2q0q__itemTimeline, .projects-list-module-scss-module__fX2q0q__itemDescription, .projects-list-module-scss-module__fX2q0q__itemSize, .projects-list-module-scss-module__fX2q0q__itemCapacity, .projects-list-module-scss-module__fX2q0q__itemSquare {
+  font-family: Helvetica, sans-serif;
+}
+
+.projects-list-module-scss-module__fX2q0q__itemType, .projects-list-module-scss-module__fX2q0q__itemAddress, .projects-list-module-scss-module__fX2q0q__itemTimeline, .projects-list-module-scss-module__fX2q0q__itemDescription, .projects-list-module-scss-module__fX2q0q__itemSize, .projects-list-module-scss-module__fX2q0q__itemCapacity, .projects-list-module-scss-module__fX2q0q__itemSquare {
+  font-family: montserrat, sans-serif;
+  font-size: 17px;
+  font-weight: lighter;
+}
+
+.projects-list-module-scss-module__fX2q0q__itemType {
+  font-size: 13px;
+}
+
+.projects-list-module-scss-module__fX2q0q__itemTitle {
+  margin: 10px 0 8px;
+  font-size: 22px;
+}
+
+.projects-list-module-scss-module__fX2q0q__itemAddress {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.projects-list-module-scss-module__fX2q0q__itemSeparator {
+  background-color: var(--color-black);
+  width: 75px;
+  height: 2px;
+  margin: 25px 0 30px;
+}
+
+.projects-list-module-scss-module__fX2q0q__itemType, .projects-list-module-scss-module__fX2q0q__itemTitle, .projects-list-module-scss-module__fX2q0q__itemAddress {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.projects-list-module-scss-module__fX2q0q__itemTimeline, .projects-list-module-scss-module__fX2q0q__itemDescription {
+  margin: 0 0 25px;
+}
+
+.projects-list-module-scss-module__fX2q0q__itemPictureWrapper {
+  cursor: pointer;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.projects-list-module-scss-module__fX2q0q__itemPicture {
+  object-fit: cover;
+}
+
+@media screen and (max-width: 925px) {
+  .projects-list-module-scss-module__fX2q0q__list {
+    padding: 30px 0;
+  }
+
+  .projects-list-module-scss-module__fX2q0q__item {
+    background-color: #0000;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .projects-list-module-scss-module__fX2q0q__itemInfo {
+    align-items: center;
+    padding: 10px 20px 50px;
+  }
+
+  .projects-list-module-scss-module__fX2q0q__reverse .projects-list-module-scss-module__fX2q0q__itemInfo {
+    padding: 10px 20px 50px;
+  }
+
+  .projects-list-module-scss-module__fX2q0q__itemType, .projects-list-module-scss-module__fX2q0q__itemAddress, .projects-list-module-scss-module__fX2q0q__itemTimeline, .projects-list-module-scss-module__fX2q0q__itemDescription, .projects-list-module-scss-module__fX2q0q__itemSize, .projects-list-module-scss-module__fX2q0q__itemCapacity, .projects-list-module-scss-module__fX2q0q__itemSquare {
+    text-align: center;
+    width: 100%;
+  }
+
+  .projects-list-module-scss-module__fX2q0q__itemTimeline, .projects-list-module-scss-module__fX2q0q__itemDescription, .projects-list-module-scss-module__fX2q0q__itemSize, .projects-list-module-scss-module__fX2q0q__itemCapacity, .projects-list-module-scss-module__fX2q0q__itemSquare {
+    font-size: 18px;
+  }
+
+  .projects-list-module-scss-module__fX2q0q__itemTitle {
+    text-align: center;
+  }
+
+  .projects-list-module-scss-module__fX2q0q__itemTimeline {
+    padding: 10px 0 0;
+  }
+
+  .projects-list-module-scss-module__fX2q0q__itemSeparator {
+    display: none;
+  }
+
+  .projects-list-module-scss-module__fX2q0q__itemPictureWrapper {
+    order: -1;
+  }
+}
+
+/*# sourceMappingURL=e2b46_src_components_projects-list_projects-list_module_scss_module_css_bad6b30c._.single.css.map*/

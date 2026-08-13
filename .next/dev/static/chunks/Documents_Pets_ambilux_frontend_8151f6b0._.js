@@ -47,29 +47,34 @@ var _s = __turbopack_context__.k.signature();
 // import Link from 'next/link';
 const contacts = [
     {
-        alt: 'instagram',
-        link: 'https://www.instagram.com/ambilux_architects/',
-        icon: '/instagram.avif'
+        alt: 'Max',
+        link: 'https://max.ru/join/KWK9Y09HkYy6Cu85Z0fZjDzh8vbRVZNonZYXX9weUEQ',
+        icon: '/max.svg'
     },
     {
-        alt: 'youtube',
-        link: 'https://www.youtube.com/channel/UC1gc5w2gEwrbdDrdI9JHP3A',
-        icon: '/youtube.avif'
+        alt: 'Telegram',
+        link: 'https://t.me/chaplyginspace',
+        icon: '/telegram.svg'
     },
     {
-        alt: 'facebook',
-        link: 'https://ru-ru.facebook.com/people/Ambilux-Architects/100009167491448',
-        icon: '/facebook.avif'
+        alt: 'VK Video',
+        link: 'https://m.vkvideo.ru/@ambiluxarchitects?from=search',
+        icon: '/vk.svg'
+    },
+    {
+        alt: 'YouTube',
+        link: 'https://m.youtube.com/@ambiluxarchitects643?ra=m',
+        icon: '/youtube.svg'
     }
 ];
 function Header() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(34);
-    if ($[0] !== "f604ee271a593f7b5213e6a24112a5b3781edba14b31ffd8c88f4dbe84805d00") {
+    if ($[0] !== "1f64ecaf3033581c4dca869dcc419478837d2c15c5ba952d03fed63331eed04f") {
         for(let $i = 0; $i < 34; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "f604ee271a593f7b5213e6a24112a5b3781edba14b31ffd8c88f4dbe84805d00";
+        $[0] = "1f64ecaf3033581c4dca869dcc419478837d2c15c5ba952d03fed63331eed04f";
     }
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2d$view$2d$transitions$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTransitionRouter"])();
     const match = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$usehooks$2d$ts$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMediaQuery"])("(max-width: 925px)");
@@ -166,7 +171,7 @@ function Header() {
                         children: value.title.toUpperCase()
                     }, key, false, {
                         fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-                        lineNumber: 122,
+                        lineNumber: 126,
                         columnNumber: 18
                     }, this);
                 }
@@ -184,7 +189,7 @@ function Header() {
                     children: value.title.toUpperCase()
                 }, key, false, {
                     fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-                    lineNumber: 124,
+                    lineNumber: 128,
                     columnNumber: 16
                 }, this);
             }
@@ -201,19 +206,19 @@ function Header() {
                     fill: true
                 }, void 0, false, {
                     fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-                    lineNumber: 138,
+                    lineNumber: 142,
                     columnNumber: 49
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-                lineNumber: 138,
+                lineNumber: 142,
                 columnNumber: 12
             }, this);
             t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$components$2f$header$2f$header$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].separator
             }, void 0, false, {
                 fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-                lineNumber: 139,
+                lineNumber: 143,
                 columnNumber: 13
             }, this);
             $[16] = t10;
@@ -246,7 +251,7 @@ function Header() {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$components$2f$header$2f$header$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].buttonIcon
             }, void 0, false, {
                 fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-                lineNumber: 166,
+                lineNumber: 170,
                 columnNumber: 13
             }, this);
             $[21] = t14;
@@ -269,19 +274,19 @@ function Header() {
                                 children: t14
                             }, void 0, false, {
                                 fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-                                lineNumber: 172,
+                                lineNumber: 176,
                                 columnNumber: 100
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-                        lineNumber: 172,
+                        lineNumber: 176,
                         columnNumber: 59
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-                lineNumber: 172,
+                lineNumber: 176,
                 columnNumber: 12
             }, this);
             $[22] = t12;
@@ -301,7 +306,7 @@ function Header() {
                         children: value_0.title.toUpperCase()
                     }, key_0, false, {
                         fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-                        lineNumber: 184,
+                        lineNumber: 188,
                         columnNumber: 18
                     }, this);
                 }
@@ -320,7 +325,7 @@ function Header() {
                     children: value_0.title.toUpperCase()
                 }, key_0, false, {
                     fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-                    lineNumber: 186,
+                    lineNumber: 190,
                     columnNumber: 16
                 }, this);
             }
@@ -350,7 +355,7 @@ function Header() {
             children: t1
         }, void 0, false, {
             fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-            lineNumber: 218,
+            lineNumber: 222,
             columnNumber: 10
         }, this);
         $[25] = t0;
@@ -371,7 +376,7 @@ function Header() {
             ]
         }, void 0, true, {
             fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-            lineNumber: 227,
+            lineNumber: 231,
             columnNumber: 10
         }, this);
         $[28] = t2;
@@ -397,6 +402,7 @@ function _HeaderContactsMap(item) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
         href: item.link,
         target: "_blank",
+        title: item.alt,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             src: item.icon,
             alt: item.alt,
@@ -404,12 +410,12 @@ function _HeaderContactsMap(item) {
             height: 40
         }, void 0, false, {
             fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-            lineNumber: 240,
-            columnNumber: 61
+            lineNumber: 244,
+            columnNumber: 78
         }, this)
     }, item.alt, false, {
         fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/header/index.tsx",
-        lineNumber: 240,
+        lineNumber: 244,
         columnNumber: 10
     }, this);
 }

@@ -159,6 +159,9 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    // Бургер лежит поверх этого блока абсолютно (right: 40px, width: 30px) —
+    // без этого отступа на узких экранах 4 иконки соцсетей заезжают под него.
+    padding: 0 70px 0 0;
   }
 
   .button {

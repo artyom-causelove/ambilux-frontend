@@ -24,15 +24,15 @@ __turbopack_context__.v({
 
 __turbopack_context__.v({
   "button": "contact-us-module-scss-module__IW5CWG__button",
-  "email": "contact-us-module-scss-module__IW5CWG__email",
+  "emails": "contact-us-module-scss-module__IW5CWG__emails",
   "form": "contact-us-module-scss-module__IW5CWG__form",
   "formEmail": "contact-us-module-scss-module__IW5CWG__formEmail",
   "formName": "contact-us-module-scss-module__IW5CWG__formName",
   "formText": "contact-us-module-scss-module__IW5CWG__formText",
   "formWrapper": "contact-us-module-scss-module__IW5CWG__formWrapper",
+  "phones": "contact-us-module-scss-module__IW5CWG__phones",
   "separator": "contact-us-module-scss-module__IW5CWG__separator",
   "social": "contact-us-module-scss-module__IW5CWG__social",
-  "telegram": "contact-us-module-scss-module__IW5CWG__telegram",
   "thanks": "contact-us-module-scss-module__IW5CWG__thanks",
   "title": "contact-us-module-scss-module__IW5CWG__title",
   "vis": "contact-us-module-scss-module__IW5CWG__vis",
@@ -55,21 +55,42 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux
 ;
 ;
 ;
-const contacts = [
+const phones = [
     {
-        alt: 'instagram',
-        link: 'https://www.instagram.com/ambilux_architects/',
-        icon: '/instagram.avif'
+        label: 'Москва',
+        value: '+7-915-750-00-99',
+        href: 'tel:+79157500099'
     },
     {
-        alt: 'youtube',
-        link: 'https://www.youtube.com/channel/UC1gc5w2gEwrbdDrdI9JHP3A',
-        icon: '/youtube.avif'
+        label: 'Новосибирск',
+        value: '+7 (383) 292-09-29',
+        href: 'tel:+73832920929'
+    }
+];
+const emails = [
+    'inf@ambilux.com',
+    'fin@ambilux.com'
+];
+const socials = [
+    {
+        alt: 'Max',
+        icon: '/max.svg',
+        link: 'https://max.ru/join/KWK9Y09HkYy6Cu85Z0fZjDzh8vbRVZNonZYXX9weUEQ'
     },
     {
-        alt: 'facebook',
-        link: 'https://ru-ru.facebook.com/people/Ambilux-Architects/100009167491448',
-        icon: '/facebook.avif'
+        alt: 'Telegram',
+        icon: '/telegram.svg',
+        link: 'https://t.me/chaplyginspace'
+    },
+    {
+        alt: 'VK Video',
+        icon: '/vk.svg',
+        link: 'https://m.vkvideo.ru/@ambiluxarchitects?from=search'
+    },
+    {
+        alt: 'YouTube',
+        icon: '/youtube.svg',
+        link: 'https://m.youtube.com/@ambiluxarchitects643?ra=m'
     }
 ];
 function ContactUs() {
@@ -101,43 +122,46 @@ function ContactUs() {
                 children: "СВЯЖИТЕСЬ С НАМИ"
             }, void 0, false, {
                 fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/contact-us/index.tsx",
-                lineNumber: 54,
+                lineNumber: 50,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$components$2f$contact$2d$us$2f$contact$2d$us$2e$module$2e$scss__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].separator
             }, void 0, false, {
                 fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/contact-us/index.tsx",
-                lineNumber: 55,
+                lineNumber: 51,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$components$2f$contact$2d$us$2f$contact$2d$us$2e$module$2e$scss__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].email,
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                    href: "mailto:Inf@ambilux.com",
-                    target: "_blank",
-                    children: "E-MAIL: inf@ambilux.com"
-                }, void 0, false, {
-                    fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/contact-us/index.tsx",
-                    lineNumber: 57,
-                    columnNumber: 9
-                }, this)
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$components$2f$contact$2d$us$2f$contact$2d$us$2e$module$2e$scss__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].phones,
+                children: phones.map((phone)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: phone.href,
+                        children: [
+                            phone.label,
+                            ": ",
+                            phone.value
+                        ]
+                    }, phone.label, true, {
+                        fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/contact-us/index.tsx",
+                        lineNumber: 55,
+                        columnNumber: 11
+                    }, this))
             }, void 0, false, {
                 fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/contact-us/index.tsx",
-                lineNumber: 56,
+                lineNumber: 53,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$components$2f$contact$2d$us$2f$contact$2d$us$2e$module$2e$scss__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].telegram,
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                    href: "https://t.me/ambilux_architects",
-                    target: "_blank",
-                    children: "Telegram: https://t.me/ambilux_architects"
-                }, void 0, false, {
-                    fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/contact-us/index.tsx",
-                    lineNumber: 60,
-                    columnNumber: 9
-                }, this)
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$components$2f$contact$2d$us$2f$contact$2d$us$2e$module$2e$scss__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].emails,
+                children: emails.map((email)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: `mailto:${email}`,
+                        target: "_blank",
+                        children: email
+                    }, email, false, {
+                        fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/contact-us/index.tsx",
+                        lineNumber: 61,
+                        columnNumber: 11
+                    }, this))
             }, void 0, false, {
                 fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/contact-us/index.tsx",
                 lineNumber: 59,
@@ -145,9 +169,10 @@ function ContactUs() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$components$2f$contact$2d$us$2f$contact$2d$us$2e$module$2e$scss__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].social,
-                children: contacts.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                children: socials.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                         href: item.link,
                         target: "_blank",
+                        title: item.alt,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                             src: item.icon,
                             alt: item.alt,
@@ -155,17 +180,17 @@ function ContactUs() {
                             height: 30
                         }, void 0, false, {
                             fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/contact-us/index.tsx",
-                            lineNumber: 65,
+                            lineNumber: 68,
                             columnNumber: 13
                         }, this)
                     }, item.alt, false, {
                         fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/contact-us/index.tsx",
-                        lineNumber: 64,
+                        lineNumber: 67,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/contact-us/index.tsx",
-                lineNumber: 62,
+                lineNumber: 65,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -185,7 +210,7 @@ function ContactUs() {
                                 placeholder: "Имя"
                             }, void 0, false, {
                                 fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/contact-us/index.tsx",
-                                lineNumber: 76,
+                                lineNumber: 74,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -198,13 +223,13 @@ function ContactUs() {
                                 placeholder: "Электронная почта"
                             }, void 0, false, {
                                 fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/contact-us/index.tsx",
-                                lineNumber: 77,
+                                lineNumber: 75,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/contact-us/index.tsx",
-                        lineNumber: 75,
+                        lineNumber: 73,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -216,7 +241,7 @@ function ContactUs() {
                         placeholder: "Введите текст"
                     }, void 0, false, {
                         fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/contact-us/index.tsx",
-                        lineNumber: 79,
+                        lineNumber: 77,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -225,7 +250,7 @@ function ContactUs() {
                         children: "Отправить"
                     }, void 0, false, {
                         fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/contact-us/index.tsx",
-                        lineNumber: 80,
+                        lineNumber: 78,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -233,19 +258,19 @@ function ContactUs() {
                         children: "Отправлено. Спасибо!"
                     }, void 0, false, {
                         fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/contact-us/index.tsx",
-                        lineNumber: 81,
+                        lineNumber: 79,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/contact-us/index.tsx",
-                lineNumber: 74,
+                lineNumber: 72,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Documents/Pets/ambilux/frontend/src/components/contact-us/index.tsx",
-        lineNumber: 53,
+        lineNumber: 49,
         columnNumber: 5
     }, this);
 }

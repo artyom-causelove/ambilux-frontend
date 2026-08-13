@@ -11,19 +11,24 @@ import { useMediaQuery } from 'usehooks-ts';
 
 const contacts = [
   {
-    alt: 'instagram',
-    link: 'https://www.instagram.com/ambilux_architects/',
-    icon: '/instagram.avif',
+    alt: 'Max',
+    link: 'https://max.ru/join/KWK9Y09HkYy6Cu85Z0fZjDzh8vbRVZNonZYXX9weUEQ',
+    icon: '/max.svg',
   },
   {
-    alt: 'youtube',
-    link: 'https://www.youtube.com/channel/UC1gc5w2gEwrbdDrdI9JHP3A',
-    icon: '/youtube.avif',
+    alt: 'Telegram',
+    link: 'https://t.me/chaplyginspace',
+    icon: '/telegram.svg',
   },
   {
-    alt: 'facebook',
-    link: 'https://ru-ru.facebook.com/people/Ambilux-Architects/100009167491448',
-    icon: '/facebook.avif',
+    alt: 'VK Video',
+    link: 'https://m.vkvideo.ru/@ambiluxarchitects?from=search',
+    icon: '/vk.svg',
+  },
+  {
+    alt: 'YouTube',
+    link: 'https://m.youtube.com/@ambiluxarchitects643?ra=m',
+    icon: '/youtube.svg',
   }
 ];
 
@@ -143,7 +148,7 @@ export default function Header() {
         <div className={styles.separator}></div>
         <div className={styles.menuWrapper}>
           {contacts.map(item =>
-            <a href={item.link} key={item.alt} target='_blank'>
+            <a href={item.link} key={item.alt} target='_blank' title={item.alt}>
               <Image
                 src={item.icon}
                 alt={item.alt}

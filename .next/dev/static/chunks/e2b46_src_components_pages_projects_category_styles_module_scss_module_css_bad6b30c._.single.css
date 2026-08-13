@@ -1,0 +1,101 @@
+/* [project]/Documents/Pets/ambilux/frontend/src/components/pages/projects/category/styles.module.scss.module.css [app-client] (css) */
+.styles-module-scss-module__OrwWMW__category {
+  flex-direction: column;
+  padding: 0 0 150px;
+  display: flex;
+}
+
+.styles-module-scss-module__OrwWMW__category__card {
+  background-color: var(--color-white);
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 45px 60px;
+  display: flex;
+}
+
+.styles-module-scss-module__OrwWMW__category__title {
+  text-align: center;
+  overflow-wrap: break-word;
+  margin: 0 0 15px;
+  font-family: montserrat, sans-serif;
+}
+
+.styles-module-scss-module__OrwWMW__category__section {
+  margin: 0 0 40px;
+  font-family: montserrat, sans-serif;
+  font-size: 18px;
+}
+
+.styles-module-scss-module__OrwWMW__category__note {
+  text-align: center;
+  margin: 20px 0 0;
+  font-family: montserrat, sans-serif;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.styles-module-scss-module__OrwWMW__category__button {
+  cursor: pointer;
+  width: 100%;
+  max-width: 520px;
+  height: 45px;
+  color: var(--color-white);
+  text-align: center;
+  background-color: #212121;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px;
+  padding: 0 15px;
+  font-family: montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  display: flex;
+}
+
+.styles-module-scss-module__OrwWMW__category__button:last-of-type {
+  margin: 0 auto;
+}
+
+.styles-module-scss-module__OrwWMW__category__button + .styles-module-scss-module__OrwWMW__category__button {
+  margin-top: 15px;
+}
+
+.styles-module-scss-module__OrwWMW__category__gallery {
+  grid-template-rows: 0fr;
+  transition: grid-template-rows .5s ease-in-out;
+  display: grid;
+}
+
+.styles-module-scss-module__OrwWMW__category__gallery--open {
+  grid-template-rows: 1fr;
+}
+
+.styles-module-scss-module__OrwWMW__category__gallery-inner {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.styles-module-scss-module__OrwWMW__red-line {
+  text-indent: 20px;
+}
+
+@media screen and (max-width: 925px) {
+  .styles-module-scss-module__OrwWMW__category {
+    padding: 0 0 100px;
+  }
+
+  .styles-module-scss-module__OrwWMW__category__card {
+    padding: 30px 20px 40px;
+  }
+
+  .styles-module-scss-module__OrwWMW__category__button {
+    max-width: 420px;
+    height: auto;
+    padding: 12px 15px;
+  }
+}
+
+/*# sourceMappingURL=e2b46_src_components_pages_projects_category_styles_module_scss_module_css_bad6b30c._.single.css.map*/
