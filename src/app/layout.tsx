@@ -44,6 +44,7 @@ export default function RootLayout({
             </div>
             <DesktopFooter></DesktopFooter>
           </div>
+          <span className={styles.wip}>Сайт находится в разработке</span>
           {scroll &&
             <svg className={styles.backToTop} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={
               () => document.querySelector('#wrapper')?.scrollTo({ top: 0, behavior: 'smooth' })

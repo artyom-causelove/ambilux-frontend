@@ -53,6 +53,23 @@
   border-radius: 50%;
 }
 
+// Плашка «в разработке» в духе водяного знака неактивированной Windows: заметна, но не мешает.
+// Над футером (80px) и левее кнопки «наверх», клики проходят насквозь.
+.wip {
+  position: fixed;
+  z-index: 1001;
+  bottom: 88px;
+  right: 80px;
+
+  pointer-events: none;
+  user-select: none;
+
+  color: rgba(0, 0, 0, 0.35);
+  font-family: montserrat, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+}
+
 @media screen and (max-width: 925px) {
   .content {
     min-height: unset;
@@ -80,5 +97,11 @@
 @media screen and (max-width: 480px) {
   .wrapper {
     padding-bottom: 20px;
+  }
+
+  .wip {
+    bottom: 8px;
+    right: 16px;
+    font-size: 12px;
   }
 }

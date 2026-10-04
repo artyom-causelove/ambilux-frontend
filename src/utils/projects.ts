@@ -66,6 +66,9 @@ export const projectCategories: Record<string, ProjectCategory> = {
     },
     galleryLabel: 'Галерея градостроительных концепций',
     paths: [
+      'akademcity',
+      'science-quarter',
+      'asonov',
       'malinovski',
       'mikopark',
       'sosbul',
