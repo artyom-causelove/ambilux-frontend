@@ -15,37 +15,59 @@
   overflow-x: hidden;
   height: 100vh;
   width: 100vw;
-  padding: 40px 0 0 0;
+  padding: 80px 0 0 0;
 }
 
 .background {
   z-index: -1;
   position: fixed;
-  top: 0;
-  min-height: 100vh;
-  min-width: 100vw;
+  inset: 0;
 
-  aspect-ratio: 1920 / 1080;
+  // Текстура — бесшовный тайл 900×900, поэтому фон не растягивается под экран,
+  // а мостится повторением: размер плитки задан в px, чтобы масштаб мрамора
+  // не зависел от размера окна, а на плотных экранах картинка не мылилась.
+  filter: brightness(1.07);
+  background-image: url('/background-pattened.webp');
+  background-image: image-set(
+    url('/background-pattened.avif') type('image/avif'),
+    url('/background-pattened.webp') type('image/webp')
+  );
+  background-repeat: repeat;
+  background-size: 900px 900px; // нативный размер тайла: на обычном экране 1:1
 }
 
-.backgroundImage {
-  object-fit: cover;
-}
-
+// bottom: 100px — 80px фиксированного футера + 20px отступа, чтобы кнопка его не перекрывала.
+// Видна на всех разрешениях (условие теперь только в JS — по факту прокрутки), не только на мобильном.
 .backToTop {
-  display: none;
   cursor: pointer;
   position: fixed;
-  bottom: 20px;
+  z-index: 1000;
+  bottom: 100px;
   right: 20px;
   width: 40px;
   height: 40px;
   padding: 0 0 1px 0;
-  
 
   filter: drop-shadow(0 0 5px #55500050);
   background-color: var(--color-white);
   border-radius: 50%;
+}
+
+// Плашка «в разработке» в духе водяного знака неактивированной Windows: заметна, но не мешает.
+// Над футером (80px) и левее кнопки «наверх», клики проходят насквозь.
+.wip {
+  position: fixed;
+  z-index: 1001;
+  bottom: 88px;
+  right: 80px;
+
+  pointer-events: none;
+  user-select: none;
+
+  color: rgba(0, 0, 0, 0.35);
+  font-family: montserrat, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 925px) {
@@ -53,20 +75,33 @@
     min-height: unset;
   }
 
-  .body {
-    padding: 0;
-  }
-  
   .wrapper {
     height: 100vh;
-    padding: 0 0 100px 0;
+    padding: 80px 0 100px 0;
   }
 
+  // На узком экране плитка в 900px не влезает целиком и мрамор вырождается в
+  // мутные пятна — уменьшаем, чтобы плотность прожилок осталась как на десктопе.
   .background {
-    top: 0;
+    background-size: 480px 480px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .background {
+    background-size: 340px 340px;
+  }
+}
+
+// Футер скрыт на телефоне (см. footer/desktop) — резерв под него больше не нужен.
+@media screen and (max-width: 480px) {
+  .wrapper {
+    padding-bottom: 20px;
   }
 
-  .backToTop {
-    display: block;
+  .wip {
+    bottom: 8px;
+    right: 16px;
+    font-size: 12px;
   }
 }

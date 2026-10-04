@@ -1,0 +1,180 @@
+.team {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+  padding: 30px 45px 30px 45px;
+
+  background-color: var(--color-white);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+
+  &__title {
+    margin: 0 0 15px 0;
+
+    text-align: left;
+    font-family: montserrat, sans-serif;
+
+    &--center {
+      margin: 40px 0 15px 0;
+      text-align: center;
+    }
+  }
+
+  &__lead {
+    display: flex;
+    gap: 30px;
+
+    padding: 0 0 30px 0;
+    margin: 10px 0 30px 0;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    &-avatar {
+      flex-shrink: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+
+      color: var(--color-white);
+      font-family: montserrat, sans-serif;
+      font-weight: bold;
+      font-size: 32px;
+
+      background-color: rgb(33, 33, 33);
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+
+      // .item__name/-job/-awards/-merits рассчитаны на наследование font-family от
+      // родителя с классом .item — здесь такого родителя нет, задаём явно.
+      font-family: montserrat, sans-serif;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+
+    margin: 0 0 40px 0;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    font-family: montserrat, sans-serif;
+
+    &__avatar {
+      flex-shrink: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+
+      color: var(--color-white);
+      font-family: montserrat, sans-serif;
+      font-weight: bold;
+      font-size: 16px;
+
+      background-color: rgb(33, 33, 33);
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__name {
+      font-size: 18px;
+      font-weight: bold;
+      padding: 0 0 5px 0;
+    }
+
+    &__job {
+      padding: 0 0 5px 0;
+    }
+
+    &__awards {
+      display: flex;
+      flex-direction: column;
+      padding: 0 0 10px 10px;
+    }
+
+    &__merits {
+      display: flex;
+      flex-direction: column;
+      padding: 0 0 0 10px;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+    min-height: 45px;
+    padding: 10px 20px;
+    margin: 0 auto;
+
+    color: var(--color-white);
+    font-family: montserrat, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.3;
+    text-align: center;
+
+    background-color: rgb(33, 33, 33);
+    border-radius: 5px;
+  }
+
+  &__document {
+    display: flex;
+    overflow-y: hidden;
+    flex-direction: column;
+
+    height: 1px;
+    transition: height 0.5s ease-in-out;
+
+    &--open {
+      height: 1017px;
+    }
+  }
+}
+
+@media screen and (max-width: 925px) {
+  .team {
+    padding: 30px 20px 30px 20px;
+
+    &__lead {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    &__document {
+      // На мобильном контент вставки перекомпоновывается иначе — фиксированные
+      // 1017px либо обрезают, либо оставляют лишнее пустое место. Вьюпорт-высота
+      // с внутренним скроллом самого iframe надёжнее.
+      &--open {
+        height: 70vh;
+      }
+    }
+  }
+}

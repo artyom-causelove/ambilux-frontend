@@ -1,6 +1,10 @@
 /* [project]/Documents/Pets/ambilux/frontend/src/app/page.module.scss.module.css [app-client] (css) */
 .page-module-scss-module__Qa8JdG__wrapper {
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
   width: 100vw;
+  display: flex;
 }
 
 /*# sourceMappingURL=Documents_Pets_ambilux_frontend_src_app_page_module_scss_module_css_bad6b30c._.single.css.map*/

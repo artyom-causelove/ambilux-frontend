@@ -2,5 +2,5 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///C:/Users/1/Documents/Pets/ambilux/frontend/src/app/page.module.scss"],"sourcesContent":[".wrapper {\r\n  width: 100vw;\r\n}"],"names":[],"mappings":"AAAA"}}]
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///C:/Users/1/Documents/Pets/ambilux/frontend/src/app/page.module.scss"],"sourcesContent":[".wrapper {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n\r\n  width: 100vw;\r\n  gap: 60px;\r\n}"],"names":[],"mappings":"AAAA"}}]
 }

@@ -46,26 +46,30 @@ export default function ContactUs() {
   }
 
   return (
-    <div className={styles.wrapper}>
+    <div id="contacts" className={styles.wrapper}>
       <span className={styles.title}>СВЯЖИТЕСЬ С НАМИ</span>
       <div className={styles.separator}></div>
-
       <div className={styles.phones}>
         {phones.map(phone =>
-          <a href={phone.href} key={phone.label}>{phone.label}: {phone.value}</a>
+          <a href={phone.href} key={phone.label}>
+            <span className={styles.label}>{phone.label}: </span>{phone.value}
+          </a>
         )}
       </div>
-
       <div className={styles.emails}>
         {emails.map(email =>
           <a href={`mailto:${email}`} key={email} target='_blank'>{email}</a>
         )}
       </div>
-
       <div className={styles.social}>
         {socials.map(item =>
-          <a href={item.link} key={item.alt} target='_blank' title={item.alt}>
-            <Image src={item.icon} alt={item.alt} width={30} height={30} />
+          <a className={styles.socialItem} href={item.link} key={item.alt} target='_blank' title={item.alt}>
+            <Image
+              src={item.icon}
+              alt={item.alt}
+              width={22}
+              height={22}
+            />
           </a>
         )}
       </div>
@@ -75,8 +79,10 @@ export default function ContactUs() {
           <input required name='email' type='email' className={styles.formEmail} minLength={3} maxLength={254} placeholder='Электронная почта'/>
         </div>
         <textarea required name='text' className={styles.formText} minLength={1} maxLength={2000} placeholder='Введите текст'></textarea>
-        <button type='submit' className={styles.button}>Отправить</button>
-        <span className={`${styles.thanks} ${vis && styles.vis}`}>Отправлено. Спасибо!</span>
+        <div className={styles.formFooter}>
+          <span className={`${styles.thanks} ${vis && styles.vis}`}>Отправлено. Спасибо!</span>
+          <button type='submit' className={styles.button}>Отправить</button>
+        </div>
       </form>
     </div>
   );

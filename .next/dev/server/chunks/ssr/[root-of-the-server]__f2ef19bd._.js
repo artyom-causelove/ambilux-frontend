@@ -17,12 +17,7 @@ __turbopack_context__.n(__turbopack_context__.i("[project]/Documents/Pets/ambilu
 
 __turbopack_context__.v({
   "about": "page-module-scss-module__4bqRWa__about",
-  "creator": "page-module-scss-module__4bqRWa__creator",
-  "description": "page-module-scss-module__4bqRWa__description",
-  "fio": "page-module-scss-module__4bqRWa__fio",
-  "logo": "page-module-scss-module__4bqRWa__logo",
-  "profession": "page-module-scss-module__4bqRWa__profession",
-  "project": "page-module-scss-module__4bqRWa__project",
+  "about__section": "page-module-scss-module__4bqRWa__about__section",
 });
 }),
 "[project]/Documents/Pets/ambilux/frontend/src/app/about/page.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
@@ -33,99 +28,66 @@ __turbopack_context__.s([
     ()=>About
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/Pets/ambilux/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/Pets/ambilux/frontend/node_modules/next/image.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$app$2f$about$2f$page$2e$module$2e$scss__$5b$app$2d$rsc$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/Documents/Pets/ambilux/frontend/src/app/about/page.module.scss [app-rsc] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/Pets/ambilux/frontend/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-rsc] (ecmascript)");
 ;
 ;
 ;
-const projects = [
-    '2014-2015 Участник общественной рабочей группы по защите Новосибирского дендропарка.',
-    '2018-2019 Участник межведомственной рабочей группы по созданию межвузовского кампуса Новосибирской области.',
-    '2018-2020 Инициатор программы развития общественного центра наукограда Кольцово.',
-    '2019-2021 Участник создания концепции «Большого Академгородка», «СмартСити», «I-CITY», в рамках национального проекта Новосибирского наукополиса.',
-    '2021 - НВ Участник межведомственной рабочей группы по вопросам комплексного развития перспективной территории СмартСити-Новосибирск - зоны опережающего развития Новосибирского наукополиса.',
-    '2021 - НВ Член градостроительного совета Сибирского отделения Российской Академии Наук',
-    '',
-    'Награды в открытых международных конкурсах:',
-    '2022 Лучший проект генерального плана городского округа (поселения). Стратегический мастер-план «АКАДЕМСИТИ» (СмартСити-Новосибирск) / НОПРИЗ/ - диплом I степени',
-    '2021 Лучший реализованный проект объекта культуры / НОПРИЗ/ - диплом I степени',
-    '2021 Лучшее архитектурное бюро / Золотая капитель / - Золотой диплом',
-    '2021 Многофункциональный комплекс «Наукоград» / Золотая капитель/ - диплом «Суперфинал»',
-    '2021 Реализация резиденции «PRIZMATIQ villa» / Золотая капитель/ - Золотой диплом',
-    '2020 Концепция многофункционального культурного центра с элементами конгресс-холла / Мэрия наукограда «Кольцово»/ Благодарственное письмо мэра',
-    '2020 Проект развития административного центра «Чхонджу-сити», Республика Корея / НОПРИЗ/ - диплом II степени.',
-    '2020 Реализация резиденции «PRIZMATIQ villa»/ НОПРИЗ/ - диплом I степени',
-    '2019 Проект резиденции «PRIZMATIQ villa» /Eurazian prize/ - бронзовый диплом',
-    '2019 Проект развития общественного центра наукограда Кольцово. Многофункциональный комплекс «Наукоград» /НОПРИЗ/ — диплом I степени',
-    '2019 Градостроительная концепция развития исторического центра, эко-регенерация р. Сутолока г.Уфа / САР- экоберег /— 2 место',
-    '2016 Проект развития набережной реки Миасс в Челябинске, для ШОС/правительство ЧО, САР, СДР. TATLIN / — 1/2 место',
-    '2015 Проект перcпективного развития новосибирского дендропарка /Мэрия г. Новосибирска/ I место/ Благодарственное письмо мэра г. Новосибирска',
-    '2015 Проект реконструкции ДК «Академия»/ Золотая капитель/ - Серебряный диплом',
-    '2012 Проект развития общественного пространства на территории бывшей гостиницы «Россия», парка «Зарядье» /Правительство Москвы/ - диплом оргкомитета.',
-    '2007 Концепция высотного МФК по ул. Кирова. Новосибирск / Инвестиционная группа / Золотая капитель/ - диплом оргкомитета'
+const sections = [
+    `
+    Архитектурно-градостроительная компания Ambilux architects представляет собой синергию тридцатилетнего профессионального
+    опыта основателя и главного архитектора компании Юрия Михайловича Чаплыгина, мультидисциплинарность команды талантливых людей,
+    объединённых созидательными амбициями, и передового подхода к формированию пространственной среды
+  `,
+    `
+    Ambilux architects была основана в 2014 году. Наша философия основана на глубоком понимании того, что архитектура — это не просто создание объектов,
+    а конструирование будущего, в центре которого находится человек. Начав свою деятельность в сегменте премиального малоэтажного индивидуального строительства,
+    компания зарекомендовала себя как создатель эксклюзивных, функциональных и эстетически выверенных пространств. Этот опыт позволил нам отточить внимание к деталям и
+    развить глубокое понимание потребностей конечного пользователя - человека. Этот прочный фундамент стал основой для перехода к более масштабным проектам. На текущий
+    момент ключевым направлением деятельности компании является градостроительство.
+  `,
+    `
+    Постепенно мы перешли от проектирования «индивидуального мира» человека к созданию целостных экосистем для жизни, работы и развития. Мы ставим перед собой задачу о
+    создании самых эффективных градостроительных решений – о создании нового градостроительства.
+  `,
+    `
+    Эффективность нашего подхода подтверждена широкой географией реализованных проектов. Наши архитектурные решения воплощены на территории Российской Федерации,
+    в странах ближнего зарубежья, Западной Европы и Северной Америки. Градостроительные решения в настоящий момент реализуются в различных регионах Российской Федерации.
+    Способность успешно работать в разных культурных и климатических контекстах демонстрирует универсальность и гибкость наших методов.
+  `
 ];
 function About() {
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$app$2f$about$2f$page$2e$module$2e$scss__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].about,
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$app$2f$about$2f$page$2e$module$2e$scss__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].logo,
-                src: "/logo-black.avif",
-                alt: "AMBILUX",
-                width: 281,
-                height: 50
-            }, void 0, false, {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
+        className: __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$app$2f$about$2f$page$2e$module$2e$scss__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"]['about'],
+        children: sections.map((section, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$app$2f$about$2f$page$2e$module$2e$scss__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"]['about__section'],
+                children: section.split('').map((char, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["motion"].span, {
+                        initial: {
+                            opacity: 0,
+                            y: 20
+                        },
+                        animate: {
+                            opacity: 1,
+                            y: 0
+                        },
+                        transition: {
+                            duration: 0.4,
+                            delay: index * 0.04
+                        },
+                        children: char
+                    }, index, false, {
+                        fileName: "[project]/Documents/Pets/ambilux/frontend/src/app/about/page.tsx",
+                        lineNumber: 35,
+                        columnNumber: 13
+                    }, this))
+            }, index, false, {
                 fileName: "[project]/Documents/Pets/ambilux/frontend/src/app/about/page.tsx",
-                lineNumber: 34,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$app$2f$about$2f$page$2e$module$2e$scss__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].description,
-                children: "Ambilux architects - команда талантливых людей, объединённых созидательными амбициями. Нами разработана и успешно применяется методика для создания моделей комплексного развития территорий, которое с недавнего времени является основным направлением компании."
-            }, void 0, false, {
-                fileName: "[project]/Documents/Pets/ambilux/frontend/src/app/about/page.tsx",
-                lineNumber: 41,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$app$2f$about$2f$page$2e$module$2e$scss__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].creator,
-                src: "/creator.avif",
-                alt: "Creator photo",
-                width: 273,
-                height: 272
-            }, void 0, false, {
-                fileName: "[project]/Documents/Pets/ambilux/frontend/src/app/about/page.tsx",
-                lineNumber: 47,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$app$2f$about$2f$page$2e$module$2e$scss__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].fio,
-                children: "Чаплыгин Юрий Михайлович"
-            }, void 0, false, {
-                fileName: "[project]/Documents/Pets/ambilux/frontend/src/app/about/page.tsx",
-                lineNumber: 54,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$app$2f$about$2f$page$2e$module$2e$scss__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].profession,
-                children: "архитектор, общественный деятель, основатель Ambilux architects"
-            }, void 0, false, {
-                fileName: "[project]/Documents/Pets/ambilux/frontend/src/app/about/page.tsx",
-                lineNumber: 55,
-                columnNumber: 7
-            }, this),
-            projects.map((project, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Pets$2f$ambilux$2f$frontend$2f$src$2f$app$2f$about$2f$page$2e$module$2e$scss__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].project,
-                    children: project
-                }, index, false, {
-                    fileName: "[project]/Documents/Pets/ambilux/frontend/src/app/about/page.tsx",
-                    lineNumber: 57,
-                    columnNumber: 9
-                }, this))
-        ]
-    }, void 0, true, {
+                lineNumber: 33,
+                columnNumber: 9
+            }, this))
+    }, void 0, false, {
         fileName: "[project]/Documents/Pets/ambilux/frontend/src/app/about/page.tsx",
-        lineNumber: 33,
+        lineNumber: 31,
         columnNumber: 5
     }, this);
 }

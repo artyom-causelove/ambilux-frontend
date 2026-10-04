@@ -1,0 +1,144 @@
+.about {
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+  padding: 30px 45px 30px 45px;
+
+  background-color: var(--color-white);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+
+  &__title {
+    margin: 0 0 15px 0;
+
+    text-align: left;
+    font-family: montserrat, sans-serif;
+  }
+
+  // Абзацы — карточки в столбик, каждая на всю ширину.
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    margin: 0 0 40px 0;
+  }
+
+  &__block {
+    padding: 25px;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+
+    font-size: 16px;
+    font-family: montserrat, sans-serif;
+
+    &-number {
+      display: block;
+      margin: 0 0 12px 0;
+
+      font-family: montserrat, sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+      color: rgb(170, 170, 170);
+    }
+  }
+
+  &__subtitle {
+    margin: 15px 0 20px 0;
+
+    font-family: montserrat, sans-serif;
+
+    &:last-of-type {
+      margin: 50px 0 20px 0;
+    }
+  }
+
+  &__section {
+    margin: 0 0 40px 0;
+
+    font-size: 18px;
+    font-family: montserrat, sans-serif;
+
+    &-project, &-meta {
+      padding: 0 0 10px 0;
+    }
+
+    &-meta {
+      font-size: 16px;
+      font-style: italic;
+    }
+
+    &-award {
+      font-size: 16px;
+      font-style: italic;
+    }
+
+    &-title {
+      align-self: baseline;
+      color: rgb(40, 53, 147);
+    }
+
+    &-url {
+      align-self: baseline;
+      padding: 5px 0 0 15px;
+      color: rgb(40, 53, 147);
+    }
+  }
+
+  &__awards {
+    display: flex;
+    flex-direction: column;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  &__award {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    // .about__section-project/-meta/-award рассчитаны на наследование font-family
+    // от обёртки — раньше это была .about__section, теперь .about__award.
+    font-family: montserrat, sans-serif;
+  }
+
+  &__media-list {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 0 15px 0;
+  }
+
+  &__media-item {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    // .about__section-title/-url рассчитаны на наследование font-family от обёртки.
+    font-family: montserrat, sans-serif;
+  }
+}
+
+.media {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.red-line {
+  text-indent: 20px;
+}
+
+.about__span {
+  display: block;
+  padding: 60px 0 0 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 925px) {
+  .about {
+    padding: 30px 20px 30px 20px;
+
+    &__section {
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "devFiles": [],
+  "ampDevFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "pages": {
+    "/_error": [
+      "static/chunks/c4e9c_next_dist_compiled_5cc6b197._.js",
+      "static/chunks/c4e9c_next_dist_shared_lib_82edd747._.js",
+      "static/chunks/c4e9c_next_dist_client_a3842a57._.js",
+      "static/chunks/c4e9c_next_dist_46c517b7._.js",
+      "static/chunks/c4e9c_next_error_843fd8f1.js",
+      "static/chunks/[next]_entry_page-loader_ts_9f1d44fe._.js",
+      "static/chunks/c4e9c_react-dom_cc6ce2dd._.js",
+      "static/chunks/c4e9c_bdb0b44d._.js",
+      "static/chunks/[root-of-the-server]__9ab5fedb._.js",
+      "static/chunks/Documents_Pets_ambilux_frontend_pages__error_2da965e7._.js",
+      "static/chunks/turbopack-Documents_Pets_ambilux_frontend_pages__error_b66105fe._.js"
+    ]
+  },
+  "ampFirstPages": []
+}

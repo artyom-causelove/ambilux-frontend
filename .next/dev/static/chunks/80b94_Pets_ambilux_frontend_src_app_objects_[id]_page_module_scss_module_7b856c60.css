@@ -1,0 +1,24 @@
+/* [project]/Documents/Pets/ambilux/frontend/src/app/objects/[id]/page.module.scss.module.css [app-client] (css) */
+.page-module-scss-module__XgLNgq__wrapper {
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 70px 0 30px;
+  display: flex;
+}
+
+.page-module-scss-module__XgLNgq__imageWrapper {
+  position: relative;
+}
+
+.page-module-scss-module__XgLNgq__image {
+  object-fit: cover;
+}
+
+@media screen and (max-width: 925px) {
+  .page-module-scss-module__XgLNgq__wrapper {
+    padding: 10px 0;
+  }
+}
+
+/*# sourceMappingURL=80b94_Pets_ambilux_frontend_src_app_objects_%5Bid%5D_page_module_scss_module_7b856c60.css.map*/
