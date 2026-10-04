@@ -5,6 +5,7 @@ import styles from './page.module.scss';
 import { useMediaQuery } from 'usehooks-ts';
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
+import { fileUrl } from '@/utils/projects';
 
 type ObjectFile = { id: number; path: string; width?: number; height?: number };
 
@@ -43,7 +44,7 @@ export default function Object() {
           {pdfs.map(file =>
             <a
               className={styles.download}
-              href={`https://ambilux.com/api/${file.path}`}
+              href={fileUrl(file.path)}
               target='_blank'
               key={file.id}
             >
@@ -65,7 +66,7 @@ export default function Object() {
           <Image
             className={styles.image}
             alt='Object picture'
-            src={`https://ambilux.com/api/${file.path}`}
+            src={fileUrl(file.path)}
             sizes={match ? '100vw' : `${file.width}px`}
             fill
           />

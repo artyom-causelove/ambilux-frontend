@@ -6,7 +6,7 @@ import { ReactNode, useEffect, useState } from 'react';
 import { useMediaQuery } from 'usehooks-ts';
 
 import styles from './projects-list.module.scss';
-import { pickProjects, ProjectItem } from '@/utils/projects';
+import { fileUrl, pickProjects, ProjectItem } from '@/utils/projects';
 
 // paths не задан или null — показываем все объекты в порядке выдачи API.
 export default function ProjectsList({ paths }: { paths?: string[] | null }) {
@@ -34,7 +34,7 @@ export default function ProjectsList({ paths }: { paths?: string[] | null }) {
         {child}
     </a>;
 
-    if (item.page === 'file') return <a className={className} href={`https://ambilux.com/api/${item.files[0].path}`} target='_blank'>{child}</a>;
+    if (item.page === 'file') return <a className={className} href={fileUrl(item.files[0].path)} target='_blank'>{child}</a>;
 
     return <a className={className} href={item.link} target='_blank'>{child}</a>;
   };
@@ -71,7 +71,7 @@ export default function ProjectsList({ paths }: { paths?: string[] | null }) {
                   undefined,
                   <Image
                     className={styles.itemPicture}
-                    src={`https://ambilux.com/api/${item.picture.path}`}
+                    src={fileUrl(item.picture.path)}
                     alt={item.title}
                     fill
                   />

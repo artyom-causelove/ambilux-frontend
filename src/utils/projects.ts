@@ -142,6 +142,10 @@ export const projectLinks: { slug: string; label: string }[] = [
   { slug: 'competitions', label: 'Конкурсы' }
 ];
 
+// Путь из API: обычно ключ в S3 (отдаётся через редирект бэкенда), но файлы с ведущим «/»
+// лежат статикой во фронтенде (public/projects) — пока у нас нет ключа на запись в бакет.
+export const fileUrl = (path: string) => path.startsWith('/') ? path : `https://ambilux.com/api/${path}`;
+
 // Порядок карточек задаёт карта, а не выдача API. Удалённый на бэкенде слаг молча выпадает.
 export const pickProjects = (items: ProjectItem[], paths: string[]) =>
   paths

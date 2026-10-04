@@ -6,7 +6,7 @@ import { useEffect, useMemo, useState } from 'react';
 
 import styles from './styles.module.scss';
 import Reveal from '@/components/reveal';
-import { pickProjects, projectCategories, projectLinks, ProjectItem } from '@/utils/projects';
+import { fileUrl, pickProjects, projectCategories, projectLinks, ProjectItem } from '@/utils/projects';
 
 const intro = `
   В ответ на вызовы XXI века — эпохи цифровизации, глобализации и стремительно меняющихся социальных сценариев —
@@ -142,7 +142,7 @@ export default function HomeProjects() {
                 {picture ?
                   <Image
                     className={styles['projects__card-image']}
-                    src={`https://ambilux.com/api/${picture.path}`}
+                    src={fileUrl(picture.path)}
                     alt={label}
                     sizes="(max-width: 925px) 100vw, 380px"
                     fill
