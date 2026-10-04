@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 17, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/app/vacancies/page.module.scss [app-rsc] (css module)"],"sourcesContent":["__turbopack_context__.v({\n  \"info\": \"page-module-scss-module__76-AkG__info\",\n  \"logo\": \"page-module-scss-module__76-AkG__logo\",\n  \"vacancies\": \"page-module-scss-module__76-AkG__vacancies\",\n});\n"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA"}},
+    {"offset": {"line": 26, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/1/Documents/Pets/ambilux/frontend/src/app/vacancies/page.tsx"],"sourcesContent":["import Image from 'next/image';\r\nimport styles from './page.module.scss';\r\n\r\nexport default function Vacancies() {\r\n  return (\r\n    <div className={styles.vacancies}>\r\n      <Image\r\n        className={styles.logo}\r\n        src='/logo-black.avif'\r\n        alt='AMBILUX'\r\n        width={281}\r\n        height={50}\r\n      />\r\n      <p className={styles.info}>На данный момент нет доступных вакансий, однако Вы можете отправить резюме на <a href='mailto:team@ambilux.com' target='_blank'>team@ambilux.com</a></p>\r\n    </div>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;AAAA;AACA;;;;AAEe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAW,uJAAM,CAAC,SAAS;;0BAC9B,8OAAC,wIAAK;gBACJ,WAAW,uJAAM,CAAC,IAAI;gBACtB,KAAI;gBACJ,KAAI;gBACJ,OAAO;gBACP,QAAQ;;;;;;0BAEV,8OAAC;gBAAE,WAAW,uJAAM,CAAC,IAAI;;oBAAE;kCAA8E,8OAAC;wBAAE,MAAK;wBAA0B,QAAO;kCAAS;;;;;;;;;;;;;;;;;;AAGjK"}}]
+}

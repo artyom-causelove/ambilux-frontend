@@ -1,0 +1,181 @@
+/* [project]/Documents/Pets/ambilux/frontend/src/components/contact-us/contact-us.module.scss.module.css [app-client] (css) */
+.contact-us-module-scss-module__IW5CWG__wrapper {
+  background-color: var(--color-white);
+  border-radius: var(--card-radius);
+  width: 100%;
+  max-width: 1200px;
+  box-shadow: var(--card-shadow);
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 30px 45px 100px;
+  display: flex;
+  position: relative;
+}
+
+.contact-us-module-scss-module__IW5CWG__title, .contact-us-module-scss-module__IW5CWG__separator, .contact-us-module-scss-module__IW5CWG__phones, .contact-us-module-scss-module__IW5CWG__emails, .contact-us-module-scss-module__IW5CWG__social {
+  text-align: center;
+  width: 100%;
+  font-family: montserrat;
+  font-weight: bold;
+}
+
+.contact-us-module-scss-module__IW5CWG__separator {
+  background-color: var(--color-black);
+  width: 240px;
+  height: 2px;
+  margin: 10px 0 35px;
+}
+
+.contact-us-module-scss-module__IW5CWG__thanks {
+  color: green;
+  opacity: 0;
+  font-family: helvetica, sans-serif;
+  font-size: 15px;
+  transition: opacity .2s ease-in-out;
+}
+
+.contact-us-module-scss-module__IW5CWG__thanks.contact-us-module-scss-module__IW5CWG__vis {
+  opacity: 1;
+}
+
+.contact-us-module-scss-module__IW5CWG__label {
+  font-weight: normal;
+}
+
+.contact-us-module-scss-module__IW5CWG__title {
+  font-size: 21px;
+}
+
+.contact-us-module-scss-module__IW5CWG__phones, .contact-us-module-scss-module__IW5CWG__emails {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 30px;
+  margin: 0 0 25px;
+  font-size: 16px;
+<<<<<<< HEAD
+  display: flex;
+=======
+  font-weight: bold;
+>>>>>>> fix-page-animation
+}
+
+.contact-us-module-scss-module__IW5CWG__social {
+  flex-wrap: wrap;
+  justify-content: center;
+<<<<<<< HEAD
+  align-items: center;
+  gap: 20px;
+=======
+  gap: 16px;
+>>>>>>> fix-page-animation
+  margin: 0 0 40px;
+  display: flex;
+}
+
+<<<<<<< HEAD
+@media screen and (max-width: 480px) {
+  .contact-us-module-scss-module__IW5CWG__phones, .contact-us-module-scss-module__IW5CWG__emails {
+    flex-direction: column;
+    gap: 8px;
+  }
+=======
+.contact-us-module-scss-module__IW5CWG__socialItem {
+  border: 1px solid #00000026;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  display: flex;
+>>>>>>> fix-page-animation
+}
+
+.contact-us-module-scss-module__IW5CWG__formText, .contact-us-module-scss-module__IW5CWG__formName, .contact-us-module-scss-module__IW5CWG__formEmail {
+  background-color: #f5f4f2;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 16px;
+  font-family: helvetica, sans-serif;
+  font-size: 17px;
+}
+
+.contact-us-module-scss-module__IW5CWG__formText:focus, .contact-us-module-scss-module__IW5CWG__formName:focus, .contact-us-module-scss-module__IW5CWG__formEmail:focus {
+  background-color: #edece9;
+}
+
+.contact-us-module-scss-module__IW5CWG__form {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.contact-us-module-scss-module__IW5CWG__formWrapper {
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  display: flex;
+}
+
+.contact-us-module-scss-module__IW5CWG__formName, .contact-us-module-scss-module__IW5CWG__formEmail {
+  width: calc(50% - 10px);
+}
+
+.contact-us-module-scss-module__IW5CWG__formText {
+  resize: none;
+  width: 100%;
+  height: 150px;
+  margin: 20px 0 0;
+}
+
+.contact-us-module-scss-module__IW5CWG__formFooter {
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin: 20px 0 0;
+  display: flex;
+}
+
+.contact-us-module-scss-module__IW5CWG__button {
+  cursor: pointer;
+  color: var(--color-white);
+  background-color: #212121;
+  border-radius: 8px;
+  height: 45px;
+  padding: 0 25px;
+  font-family: montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  transition: opacity .1s ease-in-out;
+}
+
+.contact-us-module-scss-module__IW5CWG__button:hover {
+  opacity: .7;
+}
+
+:is(.contact-us-module-scss-module__IW5CWG__formText:user-invalid, .contact-us-module-scss-module__IW5CWG__formName:user-invalid, .contact-us-module-scss-module__IW5CWG__formEmail:user-invalid) {
+  background-color: #fae8e8;
+}
+
+@media screen and (max-width: 925px) {
+  .contact-us-module-scss-module__IW5CWG__wrapper {
+    padding: 30px 20px 100px;
+  }
+
+  .contact-us-module-scss-module__IW5CWG__formName, .contact-us-module-scss-module__IW5CWG__formEmail {
+    width: calc(50% - 8px);
+  }
+
+  .contact-us-module-scss-module__IW5CWG__formText, .contact-us-module-scss-module__IW5CWG__formName, .contact-us-module-scss-module__IW5CWG__formEmail, .contact-us-module-scss-module__IW5CWG__button {
+    font-size: 16px;
+  }
+
+  .contact-us-module-scss-module__IW5CWG__formFooter {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=7ff96_frontend_src_components_contact-us_contact-us_module_scss_module_css_bad6b30c._.single.css.map*/

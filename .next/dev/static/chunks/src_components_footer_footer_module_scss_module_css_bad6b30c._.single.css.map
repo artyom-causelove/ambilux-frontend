@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///C:/Users/1/Documents/Pets/ambilux/frontend/src/components/footer/footer.module.scss"],"sourcesContent":[".footer {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n\r\n  height: 100px;\r\n  width: 100%;\r\n  padding: 5px 0 15px 0;\r\n  margin: 10px 0 0 0;\r\n\r\n  box-shadow: var(--shadow-invertical);\r\n}\r\n\r\n.title,\r\n.button {\r\n  font-family: 'montserrat', sans-serif;\r\n  font-weight: bold;\r\n  font-size: 16px;\r\n  color: var(--color-black);\r\n}\r\n\r\n.button {\r\n  cursor: pointer;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;;;;;;AAcA;;;;;;;AAQA"}}]
+}

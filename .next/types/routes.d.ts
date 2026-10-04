@@ -4,16 +4,18 @@
 type AppRoutes = "/" | "/admin" | "/objects/[id]" | "/projects/[category]" | "/vacancies"
 type PageRoutes = never
 type LayoutRoutes = "/"
-type RedirectRoutes = never
+type RedirectRoutes = "/about" | "/team"
 type RewriteRoutes = never
 type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRoutes
 
 
 interface ParamMap {
   "/": {}
+  "/about": {}
   "/admin": {}
   "/objects/[id]": { "id": string; }
   "/projects/[category]": { "category": string; }
+  "/team": {}
   "/vacancies": {}
 }
 

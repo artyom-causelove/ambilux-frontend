@@ -1,0 +1,32 @@
+/* [project]/src/app/vacancies/page.module.scss.module.css [app-client] (css) */
+.page-module-scss-module__76-AkG__vacancies {
+  background-color: var(--color-white);
+  max-width: 980px;
+  min-height: 1500px;
+  margin: 0 auto;
+  padding: 60px 69px 40px;
+}
+
+.page-module-scss-module__76-AkG__logo {
+  margin: 0 0 38px;
+}
+
+.page-module-scss-module__76-AkG__info {
+  color: var(--color-black);
+  font-family: montserrat, sans-serif;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 925px) {
+  .page-module-scss-module__76-AkG__vacancies {
+    min-height: unset;
+    margin: 20px 0;
+    padding: 20px 30px;
+  }
+
+  .page-module-scss-module__76-AkG__logo {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=src_app_vacancies_page_module_scss_module_296ab0a9.css.map*/

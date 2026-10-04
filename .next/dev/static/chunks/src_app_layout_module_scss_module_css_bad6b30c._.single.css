@@ -1,0 +1,93 @@
+/* [project]/src/app/layout.module.scss.module.css [app-client] (css) */
+.layout-module-scss-module__uQLIpG__body {
+  width: 100vw;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.layout-module-scss-module__uQLIpG__content {
+  width: 100vw;
+  min-height: calc(100vh - 150px);
+  overflow-x: hidden;
+}
+
+.layout-module-scss-module__uQLIpG__wrapper {
+  width: 100vw;
+  height: 100vh;
+  padding: 80px 0 0;
+  overflow: hidden scroll;
+}
+
+.layout-module-scss-module__uQLIpG__background {
+  z-index: -1;
+  filter: brightness(1.07);
+  background-image: -webkit-image-set(url("/background-pattened.avif") 1x type("image/avif"), url("/background-pattened.webp") 1x type("image/webp"));
+  background-image: image-set("/background-pattened.avif" 1x type("image/avif"), "/background-pattened.webp" 1x type("image/webp"));
+  background-repeat: repeat;
+  background-size: 900px 900px;
+  position: fixed;
+  inset: 0;
+}
+
+.layout-module-scss-module__uQLIpG__backToTop {
+  cursor: pointer;
+  z-index: 1000;
+  filter: drop-shadow(0 0 5px #55500050);
+  background-color: var(--color-white);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0 0 1px;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+}
+
+.layout-module-scss-module__uQLIpG__wip {
+  z-index: 1001;
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+  color: #00000059;
+  font-family: montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  position: fixed;
+  bottom: 88px;
+  right: 80px;
+}
+
+@media screen and (max-width: 925px) {
+  .layout-module-scss-module__uQLIpG__content {
+    min-height: unset;
+  }
+
+  .layout-module-scss-module__uQLIpG__wrapper {
+    height: 100vh;
+    padding: 80px 0 100px;
+  }
+
+  .layout-module-scss-module__uQLIpG__background {
+    background-size: 480px 480px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .layout-module-scss-module__uQLIpG__background {
+    background-size: 340px 340px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .layout-module-scss-module__uQLIpG__wrapper {
+    padding-bottom: 20px;
+  }
+
+  .layout-module-scss-module__uQLIpG__wip {
+    font-size: 12px;
+    bottom: 8px;
+    right: 16px;
+  }
+}
+
+/*# sourceMappingURL=src_app_layout_module_scss_module_css_bad6b30c._.single.css.map*/

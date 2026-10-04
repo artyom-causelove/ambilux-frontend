@@ -1,0 +1,25 @@
+/* [project]/src/components/footer/footer.module.scss.module.css [app-client] (css) */
+.footer-module-scss-module__BKh3Zq__footer {
+  width: 100%;
+  height: 100px;
+  box-shadow: var(--shadow-invertical);
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 0;
+  padding: 5px 0 15px;
+  display: flex;
+}
+
+.footer-module-scss-module__BKh3Zq__title, .footer-module-scss-module__BKh3Zq__button {
+  color: var(--color-black);
+  font-family: montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-module-scss-module__BKh3Zq__button {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=src_components_footer_footer_module_scss_module_css_bad6b30c._.single.css.map*/

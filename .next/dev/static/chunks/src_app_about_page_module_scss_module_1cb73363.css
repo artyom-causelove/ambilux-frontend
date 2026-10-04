@@ -1,0 +1,49 @@
+/* [project]/src/app/about/page.module.scss.module.css [app-client] (css) */
+.page-module-scss-module__-ytPBG__about {
+  background-color: var(--color-white);
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 60px 45px 40px;
+}
+
+.page-module-scss-module__-ytPBG__logo {
+  margin: 0 0 38px;
+}
+
+.page-module-scss-module__-ytPBG__description {
+  color: #10283f;
+  margin: 0 0 50px;
+  font-family: montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.page-module-scss-module__-ytPBG__creator {
+  margin: 0 0 47px;
+}
+
+.page-module-scss-module__-ytPBG__fio, .page-module-scss-module__-ytPBG__profession {
+  color: var(--color-black);
+  font-family: montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.page-module-scss-module__-ytPBG__profession {
+  margin: 0 0 40px;
+}
+
+.page-module-scss-module__-ytPBG__project {
+  margin: 0 0 22px;
+  font-family: montserrat, sans-serif;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 925px) {
+  .page-module-scss-module__-ytPBG__logo {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=src_app_about_page_module_scss_module_1cb73363.css.map*/

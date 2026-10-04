@@ -1,0 +1,15 @@
+<<<<<<< HEAD
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "e8d2e2c2d32d1519c9ce810b655e9da0",
+    "previewModeSigningKey": "0c2b9bf47d6adc1951d2eacd271bd1e0e8dfae0d51e4559947ebede9e366e3a4",
+    "previewModeEncryptionKey": "27f319fdc2ad17730669887bc674a96d5b2a6be79f289d647c484b702fcdd704"
+  }
+}
+=======
+{"version":4,"routes":{"/projects/all":{},"/projects/urban":{},"/projects/architecture":{},"/projects/design":{},"/projects/competitions":{}},"dynamicRoutes":{"/projects/[category]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/projects/[category]","routeRegex":"^\\/projects\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"9f0526a05aa2b19615213cb48435506a","previewModeSigningKey":"a82b01d6b6c48fa78f8e730ec7788374a63ee87e0932cf4225a1e7403126d4b6","previewModeEncryptionKey":"3c79cb411564c3324320fbf233961acc5bec6db9142e86c2840fe028a8a049e4"}}
+>>>>>>> fix-page-animation
