@@ -165,7 +165,7 @@
       "manualClientBasePath": false,
       "cpus": 23,
       "memoryBasedWorkersCount": false,
-      "imgOptConcurrency": null,
+      "imgOptConcurrency": 1,
       "imgOptTimeoutInSeconds": 7,
       "imgOptMaxInputPixels": 268402689,
       "imgOptSequentialRead": null,
