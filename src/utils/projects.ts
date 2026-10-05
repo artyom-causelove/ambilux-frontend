@@ -68,10 +68,8 @@ export const projectCategories: Record<string, ProjectCategory> = {
     },
     galleryLabel: 'Галерея градостроительных концепций',
     cover: '/projects/akademcity/akademcity-cover.jpg',
+    // Разбивка от заказчика (05.10.2026); порядок неважен — список перемешивается при показе.
     paths: [
-      'akademcity',
-      'science-quarter',
-      'asonov',
       'malinovski',
       'mikopark',
       'sosbul',
@@ -79,9 +77,12 @@ export const projectCategories: Record<string, ProjectCategory> = {
       'riverside',
       'new-city-hall',
       'quattro',
-      'naukograd',
+      'kampus',
       'big-academ',
-      'historical-center'
+      'historical-center', // «Уфа»
+      'akademcity',
+      'science-quarter',
+      'asonov'
     ]
   },
 
@@ -105,39 +106,36 @@ export const projectCategories: Record<string, ProjectCategory> = {
     ],
     galleryLabel: 'Галерея архитектурных проектов',
     cover: 'naukograd/naukograd-content-8.avif',
-    // «МФК» из спеки — это два объекта: НАУКОГРАД и культурно-развлекательный центр.
+    // Разбивка от заказчика (05.10.2026). «МФКРЦ наукоград» — культурно-развлекательный центр,
+    // «МФК наукоград» — НАУКОГРАД, «Талдом» — VALDOM.
     paths: [
-      'naukograd',
-      'cultural-entertaiment',
-      'new-city-hall',
-      'prizmatiq',
-      'roshtils',
-      'trid',
-      'valdom',
+      'malinovski',
       'mikopark',
-      'quattro',
+      'sosbul',
+      'cultural-entertaiment',
       'riverside',
+      'valdom',
+      'pelles',
+      'new-city-hall',
+      'quattro',
       'kampus',
-      'pelles'
+      'roshtils',
+      'prizmatiq',
+      'naukograd',
+      'trid',
+      'science-quarter'
     ]
   },
 
-  design: {
-    title: 'Дизайн',
-    paragraphs: [],
-    note: 'Информация по данному разделу появится позже',
-    galleryLabel: null,
-    paths: [],
-    // Своих проектов у раздела пока нет — на карточку поставлено фото VALDOM.
-    cover: 'valdom/valdom-content-1.avif'
-  },
+  // «Дизайн» скрыт (05.10.2026): своих проектов нет, а пустые вкладки заказчик просил убрать.
+  // Старый адрес /projects/design перенаправляется на все проекты (next.config.ts).
 
   competitions: {
     title: 'Конкурсы',
     paragraphs: [],
     galleryLabel: 'Галерея конкурсных проектов',
     cover: 'new-city-hall/new-city-hall-content-4.avif',
-    paths: ['cultural-entertaiment', 'new-city-hall']
+    paths: ['cultural-entertaiment', 'new-city-hall', 'historical-center']
   }
 };
 
@@ -145,7 +143,6 @@ export const projectLinks: { slug: string; label: string }[] = [
   { slug: 'all', label: 'Проекты' },
   { slug: 'urban', label: 'Градостроительство' },
   { slug: 'architecture', label: 'Архитектура' },
-  { slug: 'design', label: 'Дизайн' },
   { slug: 'competitions', label: 'Конкурсы' }
 ];
 

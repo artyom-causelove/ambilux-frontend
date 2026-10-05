@@ -1,15 +1,13 @@
 'use client';
 
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import styles from './styles.module.scss';
 import Reveal from '@/components/reveal';
 
-// Реальных фото нет ни у кого — вместо пустой рамки-плейсхолдера показываем инициалы
-// (имя + последнее слово, чтобы у «Юрий Михайлович Чаплыгин» получилось «ЮЧ», а не «ЮМ»).
-const getInitials = (name: string) => {
-  const parts = name.trim().split(/\s+/);
-  return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
-};
+// Фото лежат в public/team под номером позиции в objects (0 — руководитель), уже ужаты
+// до WebP 320×320 — оптимизатор Next для них не нужен, отдаём как есть.
+const photo = (index: number) => `/team/${index}.webp`;
 
 const DOC_IFRAME_URL = 'https://docs.google.com/document/d/e/2PACX-1vTPvdaCEgL7vFvr8IjgQrFDJId4HXANaR6jo52ej8XPafR1Z06mnCpGXLDTzppi4ltZqvscL9KHkrbk/pub?embedded=true';
 
@@ -48,7 +46,7 @@ export default function HomeTeam() {
 
       <Reveal transition={{ duration: 0.5, ease: 'easeOut' }} amount={0.2}>
         <section className={styles['team__lead']}>
-          <span className={styles['team__lead-avatar']}>{getInitials(lead.name)}</span>
+          <Image className={styles['team__lead-avatar']} src={photo(0)} alt={lead.name} width={110} height={110} unoptimized />
           <div className={styles['team__lead-info']}>
             <span className={styles['item__name']}>{lead.name}</span>
             <span className={styles['item__job']}>{lead.job}</span>
@@ -66,7 +64,7 @@ export default function HomeTeam() {
         <section className={styles['team__grid']}>
           {rest.map((value, index) =>
             <div key={index} className={styles['item']}>
-              <span className={styles['item__avatar']}>{getInitials(value.name)}</span>
+              <Image className={styles['item__avatar']} src={photo(index + 1)} alt={value.name} width={48} height={48} unoptimized />
               <div className={styles['item__text']}>
                 <span className={styles['item__name']}>{value.name}</span>
                 <span className={styles['item__job']}>{value.job}</span>
@@ -137,7 +135,7 @@ const objects = [{
   merits: []
 }, {
   name: 'Петр Горбунов',
-  job: 'ГАП, ведущий архитектор',
+  job: 'ГАП',
   awards: [],
   merits: []
 }, {

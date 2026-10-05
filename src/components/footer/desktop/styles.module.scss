@@ -25,6 +25,10 @@ $height: 80px;
   &__presentation {
     cursor: pointer;
 
+    // Ссылка вместо кнопки — центрируем текст так же, как было у button
+    display: inline-flex;
+    align-items: center;
+
     height: calc($height / 2 + 5px);
     padding: 0 15px 0 15px;
 

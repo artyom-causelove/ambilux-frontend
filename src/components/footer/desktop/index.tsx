@@ -6,9 +6,14 @@ export default function DesktopFooter() {
   return <div id='site-footer' className={styles['desktop-footer']}>
     <h1 className={styles['desktop-footer__logo']}>© 2026 Ambilux architects</h1>
 
-    <button className={styles['desktop-footer__presentation']}>
+    {/* Исходник 57 МБ, на сайте — версия 10 МБ (страницы отрендерены в JPEG 2200px) */}
+    <a
+      className={styles['desktop-footer__presentation']}
+      href='/ambilux-presentation-2025.pdf'
+      download='AMBILUX presentation 2025.pdf'
+    >
       Скачать презентацию
-    </button>
+    </a>
 
     <div className={styles['desktop-footer__social']}>
       <a className={styles['desktop-footer__social-item']} href='https://max.ru/join/KWK9Y09HkYy6Cu85Z0fZjDzh8vbRVZNonZYXX9weUEQ' target='_blank'>

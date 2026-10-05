@@ -152,8 +152,7 @@ export default function HomeProjects() {
                     className={styles['projects__card-image']}
                     src={fileUrl(picture)}
                     alt={label}
-                    // Последняя карточка («Конкурсы») растянута на две колонки
-                    sizes={`(max-width: 925px) 100vw, ${index === projectLinks.length - 1 ? 760 : 380}px`}
+                    sizes="(max-width: 925px) 100vw, 580px"
                     fill
                   /> :
                   <div className={styles['projects__card-placeholder']}></div>

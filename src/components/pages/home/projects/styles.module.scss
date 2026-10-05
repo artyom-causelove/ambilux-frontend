@@ -64,17 +64,11 @@
 
   &__cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    // Четыре карточки (без «Дизайна») — сетка 2×2.
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 
     width: 100%;
-
-    // Каждая карточка обёрнута в Reveal (div > motion.div > a) — прямой ребёнок грида
-    // это div-обёртка Reveal, а не сама ссылка. «Конкурсы» всегда последняя в
-    // projectLinks, растягиваем её на 2 колонки.
-    > div:last-child {
-      grid-column: span 2;
-    }
   }
 
   &__card {
@@ -161,10 +155,6 @@
 
     &__cards {
       grid-template-columns: 1fr;
-
-      > div:last-child {
-        grid-column: span 1;
-      }
     }
 
     &__card {

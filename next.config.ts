@@ -16,7 +16,9 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       { source: '/about', destination: '/', permanent: false },
-      { source: '/team', destination: '/', permanent: false }
+      { source: '/team', destination: '/', permanent: false },
+      // Раздел «Дизайн» скрыт, пока в нём нет проектов
+      { source: '/projects/design', destination: '/projects/all', permanent: false }
     ];
   },
 };

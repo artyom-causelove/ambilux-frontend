@@ -6,9 +6,20 @@ import { ReactNode, useEffect, useState } from 'react';
 import { useMediaQuery } from 'usehooks-ts';
 
 import styles from './projects-list.module.scss';
-import { fileUrl, pickProjects, ProjectItem } from '@/utils/projects';
+import { fileUrl, ProjectItem } from '@/utils/projects';
 
-// paths не задан или null — показываем все объекты в порядке выдачи API.
+// Фишер–Йетс: заказчик просил, чтобы порядок проектов был разным при каждом заходе,
+// иначе соседние разделы выглядят одинаково.
+const shuffle = <T,>(list: T[]) => {
+  const result = [...list];
+  for (let i = result.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+  return result;
+};
+
+// paths не задан или null — показываем все объекты. Порядок случайный при каждой загрузке.
 export default function ProjectsList({ paths }: { paths?: string[] | null }) {
   const router = useTransitionRouter();
   const [data, setData] = useState<ProjectItem[]>([]);
@@ -17,11 +28,12 @@ export default function ProjectsList({ paths }: { paths?: string[] | null }) {
   useEffect(() => {
     fetch('https://ambilux.com/api/objects')
       .then(response => response.json())
-      .then(parsed => setData(parsed))
+      .then(parsed => setData(shuffle(parsed)))
       .catch(() => {});
   }, []);
 
-  const items = paths ? pickProjects(data, paths) : data;
+  // Фильтруем, а не pickProjects: тот вернул бы порядок paths и отменил перемешивание.
+  const items = paths ? data.filter(item => paths.includes(item.path)) : data;
 
   const getLink = (item: ProjectItem, className: string | undefined, child: ReactNode) => {
     // Путь абсолютный: относительный увёл бы со страницы категории в /projects/objects/...
@@ -41,8 +53,10 @@ export default function ProjectsList({ paths }: { paths?: string[] | null }) {
 
   return (
     <div className={styles.list}>
-      {items.map((item) =>
-        <div className={`${styles.item} ${item.reverse ? styles.reverse : ''}`} key={item.id}>
+      {items.map((item, index) =>
+        // Сторона картинки чередуется по позиции: поле reverse из API рассчитано
+        // на фиксированный порядок и после перемешивания давало два одинаковых подряд.
+        <div className={`${styles.item} ${index % 2 ? styles.reverse : ''}`} key={item.id}>
           <div className={styles.itemInfo}>
             {item.type && getLink(item, styles.itemType, <span>{item.type}</span>)}
             {item.title && getLink(item, styles.itemTitle, <span>{item.title}</span>)}
