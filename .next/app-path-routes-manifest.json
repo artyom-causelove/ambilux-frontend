@@ -6,5 +6,6 @@
   "/objects/[id]/page": "/objects/[id]",
   "/page": "/",
   "/projects/[category]/page": "/projects/[category]",
+  "/vacancies-doc/route": "/vacancies-doc",
   "/vacancies/page": "/vacancies"
 }

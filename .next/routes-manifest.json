@@ -85,6 +85,12 @@
       "regex": "^/vacancies(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/vacancies(?:/)?$"
+    },
+    {
+      "page": "/vacancies-doc",
+      "regex": "^/vacancies\\-doc(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/vacancies\\-doc(?:/)?$"
     }
   ],
   "dataRoutes": [],

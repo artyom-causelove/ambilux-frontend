@@ -257,6 +257,36 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/vacancies-doc": {
+      "initialHeaders": {
+        "content-type": "text/html; charset=utf-8",
+        "x-next-cache-tags": "_N_T_/layout,_N_T_/vacancies-doc/layout,_N_T_/vacancies-doc/route,_N_T_/vacancies-doc"
+      },
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": 300,
+      "initialExpireSeconds": 31536000,
+      "srcRoute": "/vacancies-doc",
+      "dataRoute": null,
+      "prefetchDataRoute": null,
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/vacancies": {
       "experimentalBypassFor": [
         {

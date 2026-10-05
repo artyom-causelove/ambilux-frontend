@@ -6,5 +6,6 @@
   "/objects/[id]/page": "app/objects/[id]/page.js",
   "/page": "app/page.js",
   "/projects/[category]/page": "app/projects/[category]/page.js",
+  "/vacancies-doc/route": "app/vacancies-doc/route.js",
   "/vacancies/page": "app/vacancies/page.js"
 }
