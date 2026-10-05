@@ -11,12 +11,18 @@ type ObjectFile = { id: number; path: string; width?: number; height?: number };
 
 const isPdf = (file: ObjectFile) => file.path.toLowerCase().endsWith('.pdf');
 
+// Сколько абзацев описания видно до «Читать полностью»: в начале docx идут название, адрес, год.
+const PREVIEW_PARAGRAPHS = 5;
+
 export default function Object() {
   const params = useParams();
 
   const match = useMediaQuery('(max-width: 925px)');
   const [data, setData] = useState<any>(null);
   const [text, setText] = useState<string[]>([]);
+  // Описания длинные (до сотни абзацев) — без сворачивания до галереи на телефоне не долистать.
+  const [expanded, setExpanded] = useState(false);
+  const visibleText = expanded ? text : text.slice(0, PREVIEW_PARAGRAPHS);
 
   useEffect(() => {
     fetch(`https://ambilux.com/api/objects/${params.id}`)
@@ -52,9 +58,15 @@ export default function Object() {
             </a>
           )}
 
-          {text.map((paragraph, index) =>
+          {visibleText.map((paragraph, index) =>
             <p className={styles.paragraph} key={index}>{paragraph}</p>
           )}
+
+          {text.length > PREVIEW_PARAGRAPHS &&
+            <button className={styles.more} onClick={() => setExpanded(!expanded)}>
+              {expanded ? 'Свернуть' : 'Читать полностью'}
+            </button>
+          }
         </div>
       }
 
