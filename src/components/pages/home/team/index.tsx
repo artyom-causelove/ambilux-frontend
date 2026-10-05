@@ -46,7 +46,7 @@ export default function HomeTeam() {
 
       <Reveal transition={{ duration: 0.5, ease: 'easeOut' }} amount={0.2}>
         <section className={styles['team__lead']}>
-          <Image className={styles['team__lead-avatar']} src={photo(0)} alt={lead.name} width={110} height={110} unoptimized />
+          <Image className={styles['team__lead-avatar']} src={photo(0)} alt={lead.name} width={67} height={67} unoptimized />
           <div className={styles['team__lead-info']}>
             <span className={styles['item__name']}>{lead.name}</span>
             <span className={styles['item__job']}>{lead.job}</span>
@@ -64,7 +64,7 @@ export default function HomeTeam() {
         <section className={styles['team__grid']}>
           {rest.map((value, index) =>
             <div key={index} className={styles['item']}>
-              <Image className={styles['item__avatar']} src={photo(index + 1)} alt={value.name} width={48} height={48} unoptimized />
+              <Image className={styles['item__avatar']} src={photo(index + 1)} alt={value.name} width={67} height={67} unoptimized />
               <div className={styles['item__text']}>
                 <span className={styles['item__name']}>{value.name}</span>
                 <span className={styles['item__job']}>{value.job}</span>

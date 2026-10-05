@@ -1,3 +1,9 @@
+// Размер фото = высота трёх строк текста карточки: имя, отступ, две строки должности.
+$name-line: 22px;
+$name-gap: 5px;
+$job-line: 20px;
+$avatar-size: $name-line + $name-gap + 2 * $job-line; // 67px
+
 .team {
   display: flex;
   flex-direction: column;
@@ -33,12 +39,9 @@
     &-avatar {
       flex-shrink: 0;
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      width: 110px;
-      height: 110px;
+      // Как у всех остальных (заказчик: «у всех одинаково»)
+      width: $avatar-size;
+      height: $avatar-size;
       border-radius: 50%;
       object-fit: cover;
 
@@ -57,7 +60,8 @@
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    // По три человека в ряд (просьба заказчика); на узких экранах меньше — см. медиазапросы
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 
     margin: 0 0 40px 0;
@@ -73,12 +77,10 @@
     &__avatar {
       flex-shrink: 0;
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      width: 48px;
-      height: 48px;
+      // Ровно три строки текста (имя + должность в две строки) — стандарт заказчика,
+      // одинаково у всех, включая руководителя (team__lead-avatar)
+      width: $avatar-size;
+      height: $avatar-size;
       border-radius: 50%;
       object-fit: cover;
 
@@ -88,15 +90,22 @@
     &__text {
       display: flex;
       flex-direction: column;
+
+      // Без нижнего отступа у последней строки — иначе три строки выше фото
+      > :last-child {
+        padding-bottom: 0;
+      }
     }
 
     &__name {
       font-size: 18px;
+      line-height: $name-line;
       font-weight: bold;
-      padding: 0 0 5px 0;
+      padding: 0 0 $name-gap 0;
     }
 
     &__job {
+      line-height: $job-line;
       padding: 0 0 5px 0;
     }
 
@@ -217,6 +226,10 @@
       gap: 20px;
     }
 
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     &__document {
       // На мобильном контент вставки перекомпоновывается иначе — фиксированные
       // 1017px либо обрезают, либо оставляют лишнее пустое место. Вьюпорт-высота
@@ -224,6 +237,14 @@
       &--open {
         height: 70vh;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .team {
+    &__grid {
+      grid-template-columns: 1fr;
     }
   }
 }
