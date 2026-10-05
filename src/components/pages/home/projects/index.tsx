@@ -80,18 +80,26 @@ export default function HomeProjects() {
   // Обложка карточки — первое ещё не занятое фото из объектов категории (порядок задан paths).
   // Категории пересекаются по объектам (например, «Наукоград» — и архитектура, и градостроительство),
   // поэтому без учёта уже занятых фото соседние карточки показывали бы одну и ту же картинку.
+  // Обложки карточек подобраны вручную (cover в projectCategories): превью picture у старых
+  // объектов всего 480px и на крупной карточке мылится, а в галереях первыми часто идут листы
+  // с текстом и схемами. Без cover — превью первого ещё не занятого объекта категории.
   const cardPictures = useMemo(() => {
     const usedPaths = new Set<string>();
-    const result: Record<string, ProjectItem['picture']> = {};
+    const result: Record<string, string> = {};
 
     for (const { slug } of projectLinks) {
       const category = projectCategories[slug];
+      if (category.cover) {
+        result[slug] = category.cover;
+        continue;
+      }
+
       const items = category.paths ? pickProjects(objects, category.paths) : objects;
       const picked = items.find(item => item.picture && !usedPaths.has(item.path));
 
       if (picked) {
         usedPaths.add(picked.path);
-        result[slug] = picked.picture;
+        result[slug] = picked.picture!.path;
       }
     }
 
@@ -142,9 +150,10 @@ export default function HomeProjects() {
                 {picture ?
                   <Image
                     className={styles['projects__card-image']}
-                    src={fileUrl(picture.path)}
+                    src={fileUrl(picture)}
                     alt={label}
-                    sizes="(max-width: 925px) 100vw, 380px"
+                    // Последняя карточка («Конкурсы») растянута на две колонки
+                    sizes={`(max-width: 925px) 100vw, ${index === projectLinks.length - 1 ? 760 : 380}px`}
                     fill
                   /> :
                   <div className={styles['projects__card-placeholder']}></div>

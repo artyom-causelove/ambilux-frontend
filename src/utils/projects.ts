@@ -24,6 +24,7 @@ export type ProjectCategory = {
   article?: { label: string; href: string };  // кнопка на внешнюю статью
   galleryLabel: string | null;                // null — без кнопки, список открыт сразу
   paths: string[] | null;                     // null — все объекты из API в порядке ответа
+  cover?: string;                             // картинка карточки на главной (путь API), подобрана вручную
 };
 
 // У API нет поля категории, поэтому разбиение живёт здесь: категория -> path-слаги
@@ -33,7 +34,8 @@ export const projectCategories: Record<string, ProjectCategory> = {
     title: 'Проекты',
     paragraphs: [],
     galleryLabel: null,
-    paths: null
+    paths: null,
+    cover: 'quattro/quattro-content-2.avif'
   },
 
   urban: {
@@ -65,6 +67,7 @@ export const projectCategories: Record<string, ProjectCategory> = {
       href: 'https://nnsib.ru/page104133576.html'
     },
     galleryLabel: 'Галерея градостроительных концепций',
+    cover: '/projects/akademcity/akademcity-cover.jpg',
     paths: [
       'akademcity',
       'science-quarter',
@@ -101,6 +104,7 @@ export const projectCategories: Record<string, ProjectCategory> = {
       `
     ],
     galleryLabel: 'Галерея архитектурных проектов',
+    cover: 'naukograd/naukograd-content-8.avif',
     // «МФК» из спеки — это два объекта: НАУКОГРАД и культурно-развлекательный центр.
     paths: [
       'naukograd',
@@ -123,13 +127,16 @@ export const projectCategories: Record<string, ProjectCategory> = {
     paragraphs: [],
     note: 'Информация по данному разделу появится позже',
     galleryLabel: null,
-    paths: []
+    paths: [],
+    // Своих проектов у раздела пока нет — на карточку поставлено фото VALDOM.
+    cover: 'valdom/valdom-content-1.avif'
   },
 
   competitions: {
     title: 'Конкурсы',
     paragraphs: [],
     galleryLabel: 'Галерея конкурсных проектов',
+    cover: 'new-city-hall/new-city-hall-content-4.avif',
     paths: ['cultural-entertaiment', 'new-city-hall']
   }
 };
