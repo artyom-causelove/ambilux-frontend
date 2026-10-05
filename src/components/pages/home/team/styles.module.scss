@@ -144,6 +144,63 @@
     border-radius: 5px;
   }
 
+  // Текст вакансий своей вёрсткой: раскрывается по высоте содержимого (0fr → 1fr),
+  // без фиксированной высоты и внутреннего скролла, как было у iframe.
+  &__doc {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-in-out;
+
+    &--open {
+      grid-template-rows: 1fr;
+    }
+
+    &-inner {
+      min-height: 0;
+      overflow: hidden;
+    }
+
+    &-text {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 30px 0 0 0;
+
+      color: var(--color-black);
+      font-family: montserrat, sans-serif;
+      font-size: 16px;
+      line-height: 1.55;
+
+      * {
+        overflow: visible;
+      }
+
+      p {
+        margin: 0 0 16px 0;
+      }
+
+      // Номер списка рисуется слева от текста, в этом отступе; 22px хватало только
+      // на «9.», у «10.» первая цифра срезалась краем блока (overflow: hidden у -inner).
+      ol,
+      ul {
+        padding: 0 0 0 2.2em;
+      }
+
+      li {
+        margin: 0 0 20px 0;
+      }
+
+      a {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        overflow-wrap: anywhere;
+      }
+
+      strong {
+        font-weight: bold;
+      }
+    }
+  }
+
   &__document {
     display: flex;
     overflow-y: hidden;

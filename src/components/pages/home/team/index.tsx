@@ -11,9 +11,21 @@ const getInitials = (name: string) => {
   return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
 };
 
+const DOC_IFRAME_URL = 'https://docs.google.com/document/d/e/2PACX-1vTPvdaCEgL7vFvr8IjgQrFDJId4HXANaR6jo52ej8XPafR1Z06mnCpGXLDTzppi4ltZqvscL9KHkrbk/pub?embedded=true';
+
 export default function HomeTeam() {
   const [open, setOpen] = useState(false)
+  // Текст вакансий из Google Doc, очищенный на сервере (см. app/vacancies-doc/route.ts).
+  // null — ещё грузится, '' — не удалось, тогда показываем исходный iframe.
+  const [doc, setDoc] = useState<string | null>(null);
   const [lead, ...rest] = objects;
+
+  useEffect(() => {
+    fetch('/vacancies-doc')
+      .then(response => response.ok ? response.text() : '')
+      .then(setDoc)
+      .catch(() => setDoc(''));
+  }, []);
 
   const scroll = () => {
     const el = document.getElementById('vacancy')
@@ -70,13 +82,20 @@ export default function HomeTeam() {
           Ознакомьтесь с существующими вакансиями
         </button>
       </Reveal>
-      <div className={`${styles['team__document']} ${open && styles['team__document--open']}`}>
-        <iframe
-          src="https://docs.google.com/document/d/e/2PACX-1vTPvdaCEgL7vFvr8IjgQrFDJId4HXANaR6jo52ej8XPafR1Z06mnCpGXLDTzppi4ltZqvscL9KHkrbk/pub?embedded=true"
-          style={{ maxWidth: 'calc(630px + 96px * 2)', width: '100%', alignSelf: 'center' }}
-          height={1017}
-        />
-      </div>
+      {doc === '' ?
+        <div className={`${styles['team__document']} ${open && styles['team__document--open']}`}>
+          <iframe
+            src={DOC_IFRAME_URL}
+            style={{ maxWidth: 'calc(630px + 96px * 2)', width: '100%', alignSelf: 'center' }}
+            height={1017}
+          />
+        </div> :
+        <div className={`${styles['team__doc']} ${open ? styles['team__doc--open'] : ''}`}>
+          <div className={styles['team__doc-inner']}>
+            <div className={styles['team__doc-text']} dangerouslySetInnerHTML={{ __html: doc ?? '' }} />
+          </div>
+        </div>
+      }
     </main>
   );
 }
