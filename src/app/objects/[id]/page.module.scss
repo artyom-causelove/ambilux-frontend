@@ -17,6 +17,11 @@
 
 // Ширина как у изображений галереи (980px), чтобы текст и картинки шли одной колонкой.
 .info {
+  // Как и у картинок (position: relative) — иначе на iPhone блок оказывался под фоном.
+  position: relative;
+  z-index: 1;
+  transform: translateZ(0);
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
