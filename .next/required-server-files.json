@@ -309,6 +309,11 @@
         "source": "/team",
         "destination": "/",
         "permanent": false
+      },
+      {
+        "source": "/projects/design",
+        "destination": "/projects/all",
+        "permanent": false
       }
     ]
   },

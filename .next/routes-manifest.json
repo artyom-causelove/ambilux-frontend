@@ -23,6 +23,12 @@
       "destination": "/",
       "statusCode": 307,
       "regex": "^(?!/_next)/team(?:/)?$"
+    },
+    {
+      "source": "/projects/design",
+      "destination": "/projects/all",
+      "statusCode": 307,
+      "regex": "^(?!/_next)/projects/design(?:/)?$"
     }
   ],
   "headers": [],
