@@ -311,6 +311,11 @@
         "permanent": false
       },
       {
+        "source": "/our-team",
+        "destination": "/#team",
+        "permanent": false
+      },
+      {
         "source": "/projects/design",
         "destination": "/projects/all",
         "permanent": false

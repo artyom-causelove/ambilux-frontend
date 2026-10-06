@@ -5,7 +5,7 @@ type AppRoutes = "/" | "/admin" | "/objects/[id]" | "/projects/[category]" | "/v
 type AppRouteHandlerRoutes = "/vacancies-doc"
 type PageRoutes = never
 type LayoutRoutes = "/"
-type RedirectRoutes = "/about" | "/projects/design" | "/team"
+type RedirectRoutes = "/about" | "/our-team" | "/projects/design" | "/team"
 type RewriteRoutes = never
 type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRoutes | AppRouteHandlerRoutes
 
@@ -15,6 +15,7 @@ interface ParamMap {
   "/about": {}
   "/admin": {}
   "/objects/[id]": { "id": string; }
+  "/our-team": {}
   "/projects/[category]": { "category": string; }
   "/projects/design": {}
   "/team": {}

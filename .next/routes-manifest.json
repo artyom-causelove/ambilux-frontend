@@ -25,6 +25,12 @@
       "regex": "^(?!/_next)/team(?:/)?$"
     },
     {
+      "source": "/our-team",
+      "destination": "/#team",
+      "statusCode": 307,
+      "regex": "^(?!/_next)/our-team(?:/)?$"
+    },
+    {
       "source": "/projects/design",
       "destination": "/projects/all",
       "statusCode": 307,
