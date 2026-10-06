@@ -17,6 +17,8 @@ const nextConfig: NextConfig = {
     return [
       { source: '/about', destination: '/', permanent: false },
       { source: '/team', destination: '/', permanent: false },
+      // Ссылка со старого сайта; якорь задаём сами — во входящем адресе его нет
+      { source: '/our-team', destination: '/#team', permanent: false },
       // Раздел «Дизайн» скрыт, пока в нём нет проектов
       { source: '/projects/design', destination: '/projects/all', permanent: false }
     ];
