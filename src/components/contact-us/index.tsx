@@ -19,6 +19,10 @@ const socials = [
   { alt: 'YouTube', icon: '/youtube.svg', link: 'https://m.youtube.com/@ambiluxarchitects643?ra=m' },
 ];
 
+// Форма обратной связи временно скрыта по просьбе заказчика (07.10.2026), не удалена:
+// вернуть — поставить true. Контакты над формой показываются всегда.
+const SHOW_FEEDBACK_FORM = false;
+
 export default function ContactUs() {
   const [vis, setVis] = useState(false);
 
@@ -73,7 +77,7 @@ export default function ContactUs() {
           </a>
         )}
       </div>
-      <form className={styles.form} onSubmit={onSubmit} action='#'>
+      {SHOW_FEEDBACK_FORM && <form className={styles.form} onSubmit={onSubmit} action='#'>
         <div className={styles.formWrapper}>
           <input required name='name' className={styles.formName} minLength={1} maxLength={60} placeholder='Имя'/>
           <input required name='email' type='email' className={styles.formEmail} minLength={3} maxLength={254} placeholder='Электронная почта'/>
@@ -83,7 +87,7 @@ export default function ContactUs() {
           <span className={`${styles.thanks} ${vis && styles.vis}`}>Отправлено. Спасибо!</span>
           <button type='submit' className={styles.button}>Отправить</button>
         </div>
-      </form>
+      </form>}
     </div>
   );
 }
